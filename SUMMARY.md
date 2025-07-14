@@ -10,3 +10,7 @@
 ## Product Guides
 
 * [📊 Dashboards](product-guides/dashboards.md)
+
+***
+
+* [🚥 Machine monitoring](machine-monitoring.md)
