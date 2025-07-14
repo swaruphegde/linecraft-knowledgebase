@@ -137,3 +137,21 @@ You can further focus on one particular machine's downtime details by clicking t
 **Downtime details**\
 You can view the downtime details of a machine and its sub-assemblies (if they exist) by clicking on the "Downtime details" button after selecting a machine in the machine heatmap.
 
+<figure><img src=".gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
+
+You will be redirected to the downtime details screen that highlights:
+
+1. The downtime causes list - This lists down all downtimes of the selected machine and their causes.&#x20;
+2. A downtimes graph that represents the downtime trends of the selected machine
+3. The IO transition sequence of the selected machine - This represents each state transition of the machine with its machine status. Upon selecting a state either from the graph or from the transition sequence, following details the state will be displayed:
+   1. Name of the state
+   2. Option to perform analysis of the state
+   3. Option to copy the state name for use in other modules of the product
+   4. Start and end time of the state
+   5. Duration of the state
+   6. Category of the state
+   7. Status of the state and duration of the state's status
+
+<figure><img src=".gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
+
+You will be able to roll up to gross downtimes by clicking on the "Gross downtimes" button on the downtime details screen. Additionally, you will also be able to download the downtimes graph as a PDF, image or an excel by clicking the download button.
