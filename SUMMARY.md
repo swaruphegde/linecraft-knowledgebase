@@ -12,3 +12,4 @@
 * [📊 Dashboards](product-guides/dashboards.md)
 * [🚥 Machine monitoring](product-guides/machine-monitoring.md)
 * [🗓️ Production overview](product-guides/production-overview.md)
+* [❗ Bottlenecks](product-guides/bottlenecks.md)
