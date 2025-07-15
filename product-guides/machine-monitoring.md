@@ -12,11 +12,11 @@ You can also view machine-level details and understand individual machine perfor
 
 You can access the machine monitoring module from the main menu. &#x20;
 
-<figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 You will be displayed all machines of your line in a real-time view on the landing page of the machine monitoring module. This view represents the real-time status of your machines if they are cycling, down or idle.&#x20;
 
-<figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 You can view details of a machine for a specific period in the machine overview screen. For each machine, you will be displayed its:&#x20;
 
@@ -25,15 +25,15 @@ You can view details of a machine for a specific period in the machine overview 
 
 On the same screen, you can change the time duration to view machine performance for a different period.&#x20;
 
-<figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 You can view all parameters of a machine by navigating to the parameters section. You can either opt to view the parameters in a table form or a graph form.&#x20;
 
 On this screen, you will also be able to drill down to view aggregate downtimes and aggregate cycles of a machine. &#x20;
 
-<figure><img src=".gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 You can also navigate to the heatmap view of cells and machines from the heatmap tab of the machine monitoring module. This will redirect you to the existing heatmap which will open in a new browser tab. &#x20;
 
@@ -43,7 +43,7 @@ To access a heatmap view of your line's OEE and APQ parameters, navigate to the 
 
 Additionally, you can switch the heatmap to display various performance parameters and apply filters by part types or shifts.
 
-<figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 You can filter the heatmap by various parameters to view their values during the selected date range:\
 Available Parameters\
@@ -76,7 +76,7 @@ When viewing the machine-level heatmap, you’ll see a list of all machines on y
 * The selected parameter’s values for the specified date range
 * Machine-specific average, minimum, and maximum values for that parameter
 
-<figure><img src=".gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 Selecting a machine provides a detailed view of:
 
@@ -84,7 +84,7 @@ Selecting a machine provides a detailed view of:
 2. Key metrics: Availability, Performance, and Quality
 3. Additional insights: Downtime details, Cycle details, and Opportunity analysis
 
-<figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 **Cell heatmap view**\
 When switching to cell-level heatmap view, you’ll see all cells on your line with:
@@ -92,7 +92,7 @@ When switching to cell-level heatmap view, you’ll see all cells on your line w
 * Selected parameter values for the chosen date range
 * Cell-specific average, minimum, and maximum values
 
-<figure><img src=".gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 Upon selecting a cell, detailed insights include:
 
@@ -100,7 +100,7 @@ Upon selecting a cell, detailed insights include:
 2. Metrics for Availability, Performance, and Quality
 3. Further analysis: Gross downtimes, Interaction history, and Opportunities
 
-<figure><img src=".gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 ## Heatmap drilldowns
 
@@ -119,7 +119,7 @@ You can perform the following drilldowns from the heatmap to identify root cause
 
 You can view the downtimes of all machines of a cell from the cell-level heatmap by clicking on the "Gross downtimes" button after selecting a cell.
 
-<figure><img src=".gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 You will be redirected to the gross downtime screen that highlights:
 
@@ -130,7 +130,7 @@ You will be redirected to the gross downtime screen that highlights:
    2. List of downtime causes, ranked by either duration or count
    3. Downtime causes trend of either count or duration
 
-<figure><img src=".gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 You can further focus on one particular machine's downtime details by clicking the "Downtime details" button from the gross downtimes screen. Additionally, you will be able to download PDFs, images and excel sheets of the non-production interval and downtime causes trend graphs by clicking on their respective download buttons.
 
@@ -138,7 +138,7 @@ You can further focus on one particular machine's downtime details by clicking t
 
 You can view the downtime details of a machine and its sub-assemblies (if they exist) by clicking on the "Downtime details" button after selecting a machine in the machine heatmap.
 
-<figure><img src=".gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
 
 You will be redirected to the downtime details screen that highlights:
 
@@ -153,7 +153,7 @@ You will be redirected to the downtime details screen that highlights:
    6. Category of the state
    7. Status of the state and duration of the state's status
 
-<figure><img src=".gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
 
 You will be able to roll up to gross downtimes by clicking on the "Gross downtimes" button on the downtime details screen. Additionally, you will also be able to download the downtimes graph as a PDF, image or an excel by clicking the download button.
 
@@ -161,7 +161,7 @@ You will be able to roll up to gross downtimes by clicking on the "Gross downtim
 
 In order to understand and view how machines within a cell are interacting with each other, you can click the "Interactions" button after selecting a cell in the heatmaps view.
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 You will then be redirected to the interactions page that displays the following information:
 
@@ -176,7 +176,7 @@ You will then be redirected to the interactions page that displays the following
    6. Part type that is being operated on by the machine and its related information
    7. Option to analyze the IO transition sequence of the machine
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 You will be able to drilldown further to view the cycle details of a particular machine by clicking the "Cycles" button on the interactions screen. Additionally, you will also be able to download the PDF, image and excel of the gantt chart of the cell's machines by clicking on the download button.
 
@@ -184,7 +184,7 @@ You will be able to drilldown further to view the cycle details of a particular 
 
 In order to view the cycle details of a machine, you can click the "Cycles" button by selecting a machine's detail in the heatmap.
 
-<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 You will then be redirected to the cycles screen that includes the following details:
 
@@ -203,7 +203,7 @@ You will then be redirected to the cycles screen that includes the following det
    6. Part type the machine was working on along with its details
    7. Option to analyze the IO transition sequence of the machine
 
-<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 You can download the gantt chart of the machine in PDF, image or excel format by clicking on the download button. Additionally, you can roll back up to the interactions view by clicking the "Interactions" button.
 
@@ -224,7 +224,7 @@ You can drilldown to the IO transitions from the interactions or the cycles scre
    4. State ID - A unique number associated with every state
    5. Duration and status of the state
 
-<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 You can filter the graph by selecting up to 5 parameters to view as well as download it as a PDF, image or excel by clicking on the download button.
 
@@ -234,6 +234,6 @@ You can compare two different cycles of a machine on the IO level screen by sett
 
 Once these two are set for comparison, simply click on the compare button to view a comparative graph and IO transition view of the selected states.
 
-<figure><img src=".gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
 
 You can navigate back to the cycles graph or the interactions screen by clicking their respective buttons.
