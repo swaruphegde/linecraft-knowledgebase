@@ -124,3 +124,51 @@ This will open the downtimes page for the selected hour, with the stoppage/s hig
 
 #### Performance opportunities
 
+**Static delays**
+
+Conditions in which the asset is waiting between operations, usually a delay that is added by the PLC programmers that can be eliminated. To drilldown into a Static Delays opportunity, click on the card pertaining to this opportunity for the selected asset. This will open a section that shows you the state histogram for all the states in the cycles of the selected asset along with each states num instances, modes, means and standard deviations.
+
+<figure><img src="../.gitbook/assets/image (65).png" alt=""><figcaption></figcaption></figure>
+
+From here, you can select a state and click on A/B comparison to compare a fast and slow cycle for the selected state.
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+#### Variable cycle times
+
+Cycles for the same asset are taking variable amounts of time. This indicates that the same operation can be performed more optimally (in the faster cycles). The fast and slow cycles can be compared to exploit this opportunity. To drilldown into a Static Delays opportunity, click on the card pertaining to this opportunity for the selected asset. This will open a section that shows you the state histogram for all the states in the cycles of the selected asset along with each states num instances, modes, means and standard deviations.
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+From here, you can select a state and click on A/B comparison to compare a fast and slow cycle for the selected state.
+
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+#### Interface delays
+
+When assets are exchanging signals there are often delays and interlocks programmed into the system. These delays can be removed to improve the cycle time of both interfacing assets. To drilldown into an Interface delays opportunity, click on the card pertaining to this opportunity for the selected asset. This will open a section that shows you all the hour intervals in which the selected asset faced an Interface delay along with the start time and end time for the interval.
+
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+From here, you can select an interval and move into interactions from the button available below. This will show you the interaction graph between the selected asset and the asset it is facing interaction delays with.
+
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+#### Cyclical walls
+
+It is sometimes observed that assets are simultaneously waiting on each other - either directly or through a chain of waits. This indicates that the assets are sub optimally programmed to work together. Typical root causes for this type of opportunity are :
+
+* Sub-optimal priority logic for common zones
+* Sub-optimal wait positions for automation
+
+To drilldown into a Cyclical Waits opportunity, click on the card pertaining to this opportunity for the selected asset. This will open a section that shows you all the hour intervals in which the selected asset faced Cyclical Waits along with the start time and end time for the interval.
+
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+From here, you can select an interval and move into interactions from the button available below. This will show you the interaction graph between the selected asset and the asset it is facing cyclical waits with.
+
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+#### Interaction wait delays
+
+There are sometimes delays programmed into the asset while interfacing with other assets. This means that even after the asset has been given the go-ahead to process a part / release a part, it still waits for a time before performing the action. These delays can be removed to improve the cycle time.

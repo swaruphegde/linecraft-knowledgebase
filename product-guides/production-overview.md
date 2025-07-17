@@ -29,9 +29,9 @@ The overview section of the production overview module provides a holistic view 
 
 This information can be viewed either shift-wise or day-wise.&#x20;
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Analysis
 
@@ -49,7 +49,7 @@ The analysis section of the production overview module enables you to view graph
    3. Asset-wise OEE&#x20;
    4. Asset-wise bad parts pareto&#x20;
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Manage schedule
 
@@ -62,25 +62,25 @@ You will be able to:&#x20;
 4. Reset changes to default values&#x20;
 5. Modify targets for each part type in each shift for the selected date range&#x20;
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Shift and target modification
 
 Shifts and JPH can also be modified for a duration of time, directly from the production schedules screen. To do this, simply click on the edit icon in the top left corner and select if you would like to modify your shifts or targets.
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 To modify shift timings, add or edit breaks and mark shifts as off, you can click on the modify shifts option in the dropdown
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 Clicking on dates on the calendar allow you to edit the shifts for those days. Dates marked in red already have modifications made and can only be edited one at a time. Clicking on Reset resets all the modifications made for that month.
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 Hovering over the information icon will give you information about the configured shifts and timings. The shift group can be changed from the top drop down, however no new shift groups can be added from this feature.
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 The table below the shift groups will show you the current specified shift timings for the selected date or date range, In the event that you have selected a modified date, it will show modified shift timings.
 
