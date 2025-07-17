@@ -6,7 +6,7 @@ description: Performance of the line in terms of planned vs. actual production a
 
 Production Overview allows you to ensure your line is meeting targets and helps monitor shift level production.&#x20;You can access production overview from the main menu by clicking on the production overview module.
 
-<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Overview
 
@@ -29,7 +29,7 @@ The overview section of the production overview module provides a holistic view 
 
 This information can be viewed either shift-wise or day-wise.&#x20;
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -84,23 +84,23 @@ Hovering over the information icon will give you information about the configure
 
 The table below the shift groups will show you the current specified shift timings for the selected date or date range, In the event that you have selected a modified date, it will show modified shift timings.
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 To modify a particular shift, simply hover over it and click on the edit icon that appears over it. This will move the screen to the edit mode from where you can change the shift timings, add breaks or mark shifts as off. However you cannot add or delete a shift from this screen.
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 To modify the targets for your part types for a day or a date range, you can click on the modify targets button from the modification dropdown.
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 Clicking on dates on the calendar allow you to edit the targets for those days. Dates marked in red already have modifications made and can only be edited one at a time. Clicking on Reset resets all the modifications made for that month.
 
-<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
 To modify a particular part type target, simply hover over it and click on the edit icon that appears over it. This will move the screen to the edit mode from where you can change the targets for the part types that are configured. However you cannot add or delete a part type from this screen.
 
-<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Calendar
 

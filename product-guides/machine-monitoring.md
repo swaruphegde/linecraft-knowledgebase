@@ -84,7 +84,7 @@ Selecting a machine provides a detailed view of:
 2. Key metrics: Availability, Performance, and Quality
 3. Additional insights: Downtime details, Cycle details, and Opportunity analysis
 
-<figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Cell heatmap view**\
 When switching to cell-level heatmap view, you’ll see all cells on your line with:
@@ -92,7 +92,7 @@ When switching to cell-level heatmap view, you’ll see all cells on your line w
 * Selected parameter values for the chosen date range
 * Cell-specific average, minimum, and maximum values
 
-<figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Upon selecting a cell, detailed insights include:
 
@@ -100,7 +100,7 @@ Upon selecting a cell, detailed insights include:
 2. Metrics for Availability, Performance, and Quality
 3. Further analysis: Gross downtimes, Interaction history, and Opportunities
 
-<figure><img src="../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Heatmap drilldowns
 
@@ -119,7 +119,7 @@ You can perform the following drilldowns from the heatmap to identify root cause
 
 You can view the downtimes of all machines of a cell from the cell-level heatmap by clicking on the "Gross downtimes" button after selecting a cell.
 
-<figure><img src="../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 You will be redirected to the gross downtime screen that highlights:
 
@@ -130,7 +130,7 @@ You will be redirected to the gross downtime screen that highlights:
    2. List of downtime causes, ranked by either duration or count
    3. Downtime causes trend of either count or duration
 
-<figure><img src="../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 You can further focus on one particular machine's downtime details by clicking the "Downtime details" button from the gross downtimes screen. Additionally, you will be able to download PDFs, images and excel sheets of the non-production interval and downtime causes trend graphs by clicking on their respective download buttons.
 
@@ -138,7 +138,7 @@ You can further focus on one particular machine's downtime details by clicking t
 
 You can view the downtime details of a machine and its sub-assemblies (if they exist) by clicking on the "Downtime details" button after selecting a machine in the machine heatmap.
 
-<figure><img src="../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (43) (1).png" alt=""><figcaption></figcaption></figure>
 
 You will be redirected to the downtime details screen that highlights:
 
@@ -153,7 +153,7 @@ You will be redirected to the downtime details screen that highlights:
    6. Category of the state
    7. Status of the state and duration of the state's status
 
-<figure><img src="../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (44) (1).png" alt=""><figcaption></figcaption></figure>
 
 You will be able to roll up to gross downtimes by clicking on the "Gross downtimes" button on the downtime details screen. Additionally, you will also be able to download the downtimes graph as a PDF, image or an excel by clicking the download button.
 
@@ -161,7 +161,7 @@ You will be able to roll up to gross downtimes by clicking on the "Gross downtim
 
 In order to understand and view how machines within a cell are interacting with each other, you can click the "Interactions" button after selecting a cell in the heatmaps view.
 
-<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
 
 You will then be redirected to the interactions page that displays the following information:
 
@@ -234,6 +234,6 @@ You can compare two different cycles of a machine on the IO level screen by sett
 
 Once these two are set for comparison, simply click on the compare button to view a comparative graph and IO transition view of the selected states.
 
-<figure><img src="../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (45) (1).png" alt=""><figcaption></figcaption></figure>
 
 You can navigate back to the cycles graph or the interactions screen by clicking their respective buttons.
