@@ -29,7 +29,7 @@ The overview section of the production overview module provides a holistic view 
 
 This information can be viewed either shift-wise or day-wise.&#x20;
 
-<figure><img src="../.gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 

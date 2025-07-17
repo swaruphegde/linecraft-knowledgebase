@@ -17,3 +17,5 @@
 * [📉 Loss management](product-guides/loss-management.md)
 * [🔔 Condition monitoring](product-guides/condition-monitoring.md)
 * [📦 Part tracing](product-guides/part-tracing.md)
+* [📑 Reports](product-guides/reports.md)
+* [🔩 Settings](product-guides/settings.md)

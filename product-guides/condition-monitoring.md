@@ -8,7 +8,7 @@ description: Configure alerts for conditions that you would like to track
 
 Condition monitoring allows the user to set up alerts for conditions that they would like to be alerted about.&#x20;You can access condition monitoring from the main menu by clicking the "Condition Monitoring" module.
 
-<figure><img src="../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
 
 The overview tab displays a summarized view of the following, pertaining to the alerts that have been set up:
 
@@ -34,7 +34,7 @@ By default, you will be displayed the above information for the last 7 days. You
 
 You will be able to create a new alert by clicking the "Create alert" button on the overview section.&#x20;
 
-<figure><img src="../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
 
 ## Creating an alert
 
@@ -49,9 +49,9 @@ You will be displayed the alert creation screen when they click on the “Create
 3. Once the alert conditions are set, you can select the channels/people to send the alerts to
 4. Once an alert has been created, you can view alerts that you have created under the “My Alerts” tab
 
-<figure><img src="../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
 
 ## My alerts
 
@@ -67,7 +67,7 @@ You can modify or delete existing alerts by clicking on the modify action from t
 
 You can delete an alert group (all alerts that are part of the group) from the “delete group” button from the list of alerts.
 
-<figure><img src="../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
 
 **View by level**&#x20;
 
@@ -77,7 +77,7 @@ Like group name view, you can sort and filter the list of alerts. By default, th
 
 Unlike the group name view, you can only modify an alert. You will, however, not be able to delete an alert or an alert group from the level view of the list&#x20;
 
-<figure><img src="../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
 
 ## Team alerts
 
@@ -89,7 +89,7 @@ You will have the option to sort and filter the list of team alerts. By default,
 
 You can also enable/disable alerts from the list.
 
-<figure><img src="../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>
 
 ## Alert history
 
@@ -101,7 +101,7 @@ You can sort and filter the list of received alerts. By default, the alerts will
 
 Whenever there are new alerts, then a “Load new alerts” button will be available to you, through which they can sync alerts and update their alerts history to the latest.&#x20;
 
-<figure><img src="../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
 
 ## Alert notifications
 
@@ -111,8 +111,8 @@ Whenever an alert is triggered, then all recipient you will get: &#x20;
 2. SMS (if configured)
 3. Email (if configured)
 
-<figure><img src="../.gitbook/assets/image (40).png" alt=""><figcaption><p>In-app notification</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (58).png" alt=""><figcaption><p>In-app notification</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (41).png" alt=""><figcaption><p>Email</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (59).png" alt=""><figcaption><p>Email</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (42).png" alt="" width="188"><figcaption><p>SMS</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (60).png" alt="" width="188"><figcaption><p>SMS</p></figcaption></figure>
