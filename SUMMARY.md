@@ -19,3 +19,7 @@
 * [📦 Part tracing](product-guides/part-tracing.md)
 * [📑 Reports](product-guides/reports.md)
 * [🔩 Settings](product-guides/settings.md)
+
+***
+
+* [ℹ️ Contact us](contact-us.md)
