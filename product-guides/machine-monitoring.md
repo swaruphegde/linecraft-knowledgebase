@@ -176,7 +176,7 @@ You will then be redirected to the interactions page that displays the following
    6. Part type that is being operated on by the machine and its related information
    7. Option to analyze the IO transition sequence of the machine
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 You will be able to drilldown further to view the cycle details of a particular machine by clicking the "Cycles" button on the interactions screen. Additionally, you will also be able to download the PDF, image and excel of the gantt chart of the cell's machines by clicking on the download button.
 

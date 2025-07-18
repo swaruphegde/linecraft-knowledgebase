@@ -22,7 +22,7 @@ If your line is on the monitor plan, you will not be able to see bottleneck card
 
 Below this, you will see a list of sub-tabs with 4 options. These are the 4 different types of dashboards that you can view:
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Template dashboard
 
