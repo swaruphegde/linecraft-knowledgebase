@@ -6,6 +6,10 @@ description: >-
 
 # 📊 Dashboards
 
+## Feature walkthrough
+
+{% embed url="https://app.supademo.com/demo/cmdofjn8m16q79f96k8bjof77?utm_source=link" %}
+
 ## Overview
 
 The dashboard provides you with a first glance of the most important data points on your line. These can either be standard KPIs that all lines will track or specific data points that you would like to be able to see at a glance.
