@@ -4,6 +4,10 @@ description: Performance of the line in terms of planned vs. actual production a
 
 # 🗓️ Production overview
 
+## Feature walkthrough
+
+{% embed url="https://app.supademo.com/demo/cmdplkbn62h4d9f96t0q8opxj?utm_source=link" %}
+
 Production Overview allows you to ensure your line is meeting targets and helps monitor shift level production.&#x20;You can access production overview from the main menu by clicking on the production overview module.
 
 <figure><img src="../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
