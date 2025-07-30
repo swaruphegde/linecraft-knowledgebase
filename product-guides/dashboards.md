@@ -8,7 +8,7 @@ description: >-
 
 ## Feature walkthrough
 
-{% embed url="https://app.supademo.com/demo/cmdofjn8m16q79f96k8bjof77?utm_source=link" %}
+{% embed url="https://app.supademo.com/demo/cmdofjn8m16q79f96k8bjof77?utm_source=link" fullWidth="true" %}
 
 ## Overview
 
