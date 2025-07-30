@@ -4,6 +4,10 @@ description: Monitor the OEE, Availability, Performance and Quality of all your 
 
 # 🚥 Machine monitoring
 
+## Feature overview
+
+{% embed url="https://app.supademo.com/demo/cmdpk2q6u2f269f96dqvzqxd5?utm_source=link" %}
+
 ## Overview
 
 The machine monitoring module provides real-time visibility into machine-level performance and enables state-based prioritization. It provides you with a comprehensive view of all machines on your line with their real-time status. &#x20;
