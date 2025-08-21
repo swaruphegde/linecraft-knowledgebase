@@ -84,10 +84,6 @@ If there was any rework done on the part that means that part has to pass throug
 
 Clicking on “Process Parameter” button from the part summary section will open up the process parameter table. Process Parameters for all the assets will be listed here.&#x20;
 
-<figure><img src="../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
-
-## Process parameters
-
 You can click on the view process parameters to open the process parameters side panel for this particular instance.\
 The side panel will have a table that shows:
 
@@ -96,3 +92,5 @@ The side panel will have a table that shows:
 * Max limit (NA in case of Boolean process parameter)
 * Actual Value recorded when part passed (in case of reworks, this column will be present multiple times for each instance). Its color will be red if it was out of range(NOK in case of Boolean) and green if within range (OK in case of Boolean)
 * Aggregator used to calculate the actual value.
+
+<figure><img src="../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
