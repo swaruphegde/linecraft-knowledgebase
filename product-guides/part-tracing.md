@@ -82,7 +82,7 @@ If there was any rework done on the part that means that part has to pass throug
 
 ## Process parameter table
 
-Clicking on “Process Parameter” button from the part summary section will open up the process parameter table. Process Parameters for all the assets will be listed here. For some parameters where there is no min max value, like recipe number. These will be displayed in grey color.
+Clicking on “Process Parameter” button from the part summary section will open up the process parameter table. Process Parameters for all the assets will be listed here.&#x20;
 
 <figure><img src="../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
 
