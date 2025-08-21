@@ -63,12 +63,6 @@ Displays the part details of the current part. It also has a button to check the
 
 <figure><img src="../.gitbook/assets/image (65).png" alt=""><figcaption></figcaption></figure>
 
-## Process parameter table
-
-Clicking on “Process Parameter” button from the part summary section will open up the process parameter table. Process Parameters for all the assets will be listed here. For some parameters where there is no min max value, like recipe number. These will be displayed in grey color.
-
-<figure><img src="../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
-
 ## Gantt chart
 
 Shows the journey of the part across various assets. The list of assets on the left also has the search box to filter and show specific assets. For each asset it shows graphical representation of time spent by the part in that asset, a cycle time bar which shows red color if it exceeded target cycle time and green if within target cycle time and the target cycle time dotted line. Hovering over the bar will show the numerical values for above data in a tooltip.
@@ -85,6 +79,12 @@ Clicking on any bar of the Gannt chart will expand the row of that asset showing
 <figure><img src="../.gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
 
 If there was any rework done on the part that means that part has to pass through some of the assets more than once. You can check other information of other instances by clicking the arrow below Cycle statistics information. If the asset didn’t pass more than once from this asset, the arrows will be replaced with text indicating that there are no other instances present for this asset for this part.
+
+## Process parameter table
+
+Clicking on “Process Parameter” button from the part summary section will open up the process parameter table. Process Parameters for all the assets will be listed here. For some parameters where there is no min max value, like recipe number. These will be displayed in grey color.
+
+<figure><img src="../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
 
 ## Process parameters
 
