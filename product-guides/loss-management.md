@@ -4,10 +4,6 @@ description: Attribute your losses and analyze what is causing the most issues o
 
 # 📉 Loss management
 
-## Feature walkthrough
-
-{% embed url="https://app.supademo.com/demo/cmdpqn5lb2pi39f967ma22boi?utm_source=link" %}
-
 ## Overview
 
 The loss management feature allows the user to attribute losses on the production line and use these attributions to track and analyze the losses on their line.

@@ -6,10 +6,6 @@ description: >-
 
 # ❗ Bottlenecks
 
-## Feature walkthrough
-
-{% embed url="https://app.supademo.com/demo/cmdpq1d6b2o839f96628qrzls?utm_source=link" %}
-
 ## Overview
 
 A cell or operation becomes a bottleneck when it throttles the line flow. This happens when both downstream and upstream cells wait for the cell in question.

@@ -6,10 +6,6 @@ description: >-
 
 # ✴️ Critical machines
 
-## Feature walkthrough
-
-{% embed url="https://app.supademo.com/demo/cmdpqa4pr2oqn9f96ratef2m2?utm_source=link" %}
-
 ## Overview
 
 The critical assets feature ranks assets and the cells it belongs to by various parameters in terms of the worst performing cell first. You can access the critical assets module by clicking on the "Critical assets" card from the main menu.
