@@ -12,7 +12,7 @@ The dashboard provides you with a first glance of the most important data points
 
 The top section of the dashboard consists of cards that depict your top 5 bottlenecks over the last 2 weeks. This feature is only available as part of the analyze and optimize plan.
 
-<figure><img src="../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (114).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -22,7 +22,7 @@ If your line is on the monitor plan, you will not be able to see bottleneck card
 
 Below this, you will see a list of sub-tabs with 4 options. These are the 4 different types of dashboards that you can view:
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (115).png" alt=""><figcaption></figcaption></figure>
 
 #### Template dashboard
 
@@ -58,7 +58,7 @@ Linecraft AI provides a wide range of pre-set templates that you can leverage to
 
 The OEE trend graph highlights the OEE trend over a specified period of time along with the target OEE, in a line-chart view.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (116).png" alt=""><figcaption></figcaption></figure>
 
 #### **JPH trend**
 
@@ -67,26 +67,26 @@ The JPH trend graph highlights the JPH trend over a specified period of time alo
 1. Average JPH
 2. JPH availability, performance and quality losses
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (117).png" alt=""><figcaption></figcaption></figure>
 
 #### **On-shift good part production**
 
 The on-shift good part production graph highlights the number of good parts produced during defined shift timings along with the production target
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (118).png" alt=""><figcaption></figcaption></figure>
 
 #### **Overall production**
 
 The Overall production graph highlights the total number of parts (good and bad) produced during the defined shift timings and beyond that as well along with the target production
 
-<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (119).png" alt=""><figcaption></figcaption></figure>
 
 #### Downtime v/s uptime (cell and machine)
 
 The downtime vs uptime graphs come in two variants: cell and machine.\
 The cell downtime vs uptime graph highlights the duration when cells were down vs when they were up. The machine variant of it displays the same information, but for machines
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (120).png" alt=""><figcaption></figcaption></figure>
 
 #### JPH timeseries (cell and machine)
 
@@ -97,7 +97,7 @@ The JPH time series graphs come in two variants: cell and machine. The cell-wise
 3. JPH performance loss
 4. JPH quality loss
 
-<figure><img src="../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (121).png" alt=""><figcaption></figcaption></figure>
 
 #### OEE time series (cell and machine)
 
@@ -109,76 +109,78 @@ The OEE time series graphs come in two variants: cell and machine. The cell-wise
 4. Quality
 5. Target OEE
 
-<figure><img src="../.gitbook/assets/image (8) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (122).png" alt=""><figcaption></figcaption></figure>
 
 #### MTBF time series
 
 The MTBF time series represents the mean time taken between consecutive failures and the average MTBF, over a period of time
 
-<figure><img src="../.gitbook/assets/image (9) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (123).png" alt=""><figcaption></figcaption></figure>
 
 #### MTTR time series
 
 The MTTR time series represents the mean time taken to repair failures and the average MTTR , over a period of time
 
-<figure><img src="../.gitbook/assets/image (10) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (124).png" alt=""><figcaption></figcaption></figure>
 
 #### Bad parts pareto
 
 The bad parts pareto represents a pareto chart of bad parts produced by a machine and how much each machine is contributing to the total number of bad parts produced
 
-<figure><img src="../.gitbook/assets/image (12) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (125).png" alt=""><figcaption></figcaption></figure>
 
 #### Bottleneck impact
 
 The bottleneck impact represents the impact of bottleneck cells and machines on the entire line as a percentage value
 
-<figure><img src="../.gitbook/assets/image (13) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (126).png" alt=""><figcaption></figcaption></figure>
 
 ## Analysis dashboard
 
 This subtab allows the user to add graphs for data points that are historic in nature. To create a graph, click on the create custom graph from the top right corner.
-
-<figure><img src="../.gitbook/assets/image (14) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This will open a form where you will need to fill the following details:
 
 1. Name of the graph
 2. Parameter and Level Selection
 3. Chart Parameter selection for Date range, Chart type, Resolution & Aggregator Selection
-4. Entity/Machine selection for selecting the desired Machine/Cell/Process IO/ State
+4.  Entity/Machine selection for selecting the desired Machine/Cell/Process IO/ State
 
-<figure><img src="../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (127).png" alt=""><figcaption></figcaption></figure>
 
 The analysis dashboard consists of a wide variety of parameters that you can select to plot a graph of your choice. You can also enter a custom formula of your own.
 
+<figure><img src="../.gitbook/assets/image (128).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (129).png" alt=""><figcaption></figcaption></figure>
+
 To create a custom formula, select custom formula from the parameter dropdown. This will then give you an option to either pick a pre created formula or create a new one. In the event that you have not yet created a custom formula, you will only see one option in the dropdown.
 
-<figure><img src="../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (130).png" alt=""><figcaption></figcaption></figure>
 
 You can then use the custom formula creation screen to create the formula that you want. Simply choose the parameters that you would like to add and any mathematical operations required and click on Create.
 
-<figure><img src="../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (131).png" alt=""><figcaption></figcaption></figure>
 
 Once a formula is created, it will show up in the list of custom formulas
 
-<figure><img src="../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (132).png" alt=""><figcaption></figcaption></figure>
 
 Select variables and aggregators for your formula and you are good to go!
 
-<figure><img src="../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (133).png" alt=""><figcaption></figcaption></figure>
 
 The selected parameters will be turned into a graph and will show up in the preview page
 
-<figure><img src="../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (134).png" alt=""><figcaption></figcaption></figure>
 
 Here you have graph setting options like Graph Name, Selected Date Range, Filter Option, Resolution and Chart type.
 
-<figure><img src="../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (135).png" alt=""><figcaption></figcaption></figure>
 
 The plotted graph is displayed in this section of the screen. The standard chart interactions like zooming on the selected area, moving forward and backwards in the range are available here. The plotted graph also has a target line plotted for it. Incase of a range target 2 lines i.e. min and max are plotted.
 
-<figure><img src="../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (136).png" alt=""><figcaption></figcaption></figure>
 
 Once the graph is created and save, it will show up directly in your analysis dashboard. In the event that you would like to edit this graph, you can do so by clicking on the edit icon on the graph itself.
 
@@ -186,7 +188,7 @@ Once the graph is created and save, it will show up directly in your analysis da
 
 This subtab allows the user to add graphs for data points that are real-time in nature, specifically for IoT and Quality parameters.
 
-<figure><img src="../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (137).png" alt=""><figcaption></figcaption></figure>
 
 To create a graph, click on the create custom graph from the top right corner.
 
@@ -196,7 +198,7 @@ This will open a form where you will need to fill the following details:\
 \- Chart Parameter selection for Date range and Chart type\
 \- Entity/Machine selection for selecting the desired Machine/Cell/Process IO/ State
 
-<figure><img src="../.gitbook/assets/image (24) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (138).png" alt=""><figcaption></figcaption></figure>
 
 The IoT and Quality dashboard consists of a choice of the following parameters:
 
@@ -204,21 +206,23 @@ The IoT and Quality dashboard consists of a choice of the following parameters:
 * IoT Parameters
 * Custom Formula
 
-<figure><img src="../.gitbook/assets/image (25) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (139).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (140).png" alt=""><figcaption></figcaption></figure>
 
 Once the graph is created and save, it will show up directly in your IoT and Quality dashboard. In the event that you would like to edit this graph, you can do so by clicking on the edit icon on the graph itself.
 
-<figure><img src="../.gitbook/assets/image (26) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (141).png" alt=""><figcaption></figcaption></figure>
 
 ## KPI dashboard
 
 This subtab allows the user to add KPI trackers for data points that are real-time in nature, specifically for parameters other than IoT and Quality parameters.
 
-<figure><img src="../.gitbook/assets/image (27) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (142).png" alt=""><figcaption></figcaption></figure>
 
 To create a KPI tracker, click on the create custom graph from the top right corner.
 
-<figure><img src="../.gitbook/assets/image (28) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (143).png" alt=""><figcaption></figcaption></figure>
 
 This will open a form where you will need to fill the following details:\
 \- Name of the graph\
@@ -226,6 +230,10 @@ This will open a form where you will need to fill the following details:\
 \- Chart Parameter selection for Date range and Chart type\
 \- Entity/Machine selection for selecting the desired Machine/Cell/Process IO/ State
 
-<figure><img src="../.gitbook/assets/image (41) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (144).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (145).png" alt=""><figcaption></figcaption></figure>
 
 Once the graph is created and save, it will show up directly in your IoT and Quality dashboard. In the event that you would like to edit this graph, you can do so by clicking on the edit icon on the graph itself.
+
+<figure><img src="../.gitbook/assets/image (146).png" alt=""><figcaption></figcaption></figure>
