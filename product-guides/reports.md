@@ -12,29 +12,29 @@ The reports feature allows the user to create out-of-the-box reports using set t
 
 The reports dashboard consists of high level data for the reports module, primarily the last 5 scheduled reports, the last 5 received reports, a breakdown of the scheduled and received reports by modules and KPIs for the total reports sent, received etc.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The reports dashboard also allows you to schedule a new report. You can select a template from the template drawer. To view all templates, click on “View all templates” in the top right corner of the drawer.
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Scheduling a report
 
 You can also schedule a report by clicking on the global button in the top right corner of the main page
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 Either of these methods will take you to a pop up to select a template. These templates are organized based on the modules they correspond to.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 Each template also has a description of the data present within the report.
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 Each template also has a preview associated to it in the pop up. From here, you can select a template and click on continue.
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 This will take you to the report scheduling page. The template you selected, will be pre filled under report - which is the first dropdown on this page. However, you can still edit this section or change your selected template from here.
 

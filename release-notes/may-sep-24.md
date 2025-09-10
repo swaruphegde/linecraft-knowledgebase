@@ -74,7 +74,7 @@ Enhanced Visibility of Input/Output Transitions on UI:&#x20;We've added a dropd
 
 Wipro Pari Andon Dashboard Improvements: We've enhanced the dashboard's KPIs to provide more accurate information during production off times and when no production is occurring.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 Heatmap Export Improvements:&#x20;We've aligned heatmap exports with the data shown on the UI for more accurate reporting.
 

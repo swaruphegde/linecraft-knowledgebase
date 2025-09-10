@@ -22,7 +22,7 @@ If your line is on the monitor plan, you will not be able to see bottleneck card
 
 Below this, you will see a list of sub-tabs with 4 options. These are the 4 different types of dashboards that you can view:
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Template dashboard
 
@@ -58,7 +58,7 @@ Linecraft AI provides a wide range of pre-set templates that you can leverage to
 
 The OEE trend graph highlights the OEE trend over a specified period of time along with the target OEE, in a line-chart view.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **JPH trend**
 
@@ -67,19 +67,19 @@ The JPH trend graph highlights the JPH trend over a specified period of time alo
 1. Average JPH
 2. JPH availability, performance and quality losses
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **On-shift good part production**
 
 The on-shift good part production graph highlights the number of good parts produced during defined shift timings along with the production target
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Overall production**
 
 The Overall production graph highlights the total number of parts (good and bad) produced during the defined shift timings and beyond that as well along with the target production
 
-<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Downtime v/s uptime (cell and machine)
 
