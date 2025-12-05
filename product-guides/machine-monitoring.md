@@ -46,8 +46,7 @@ To access a heatmap view of your line's OEE and APQ parameters, navigate to the 
 <figure><img src="../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 You can filter the heatmap by various parameters to view their values during the selected date range:\
-Available Parameters\
-
+Available Parameters<br>
 
 1. OEE
 2. Availability
@@ -65,8 +64,7 @@ Available Parameters\
 4. Quality
    1. Overall Quality
    2. Bad Part JPH
-   3. Bad Parts\
-
+   3. Bad Parts<br>
 
 You can either view the heatmap of all machines or cells of your line. By default, you will be displayed the heatmap of your machines. \
 \

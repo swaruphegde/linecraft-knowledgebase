@@ -38,8 +38,7 @@ You will be able to create a new alert by clicking the "Create alert" button on 
 
 ## Creating an alert
 
-You will be displayed the alert creation screen when they click on the “Create alert” button on the overview screen. You can set up alerts by entering the following information: \
-
+You will be displayed the alert creation screen when they click on the “Create alert” button on the overview screen. You can set up alerts by entering the following information: <br>
 
 1. Group name for the alert being configured – this is used to classify various types of alerts
 2. Trigger conditions for the alert – you can select the following conditions for triggering the alert

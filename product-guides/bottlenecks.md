@@ -87,8 +87,7 @@ There are majorly three types of opportunity cards. These are:
 
 #### Availability opportunities
 
-Availability opportunities are down time opportunities that are caused by assets in a cell being down and unavailable to produce. These generally explain the root cause of bottlenecks but are not necessarily actionable.\
-
+Availability opportunities are down time opportunities that are caused by assets in a cell being down and unavailable to produce. These generally explain the root cause of bottlenecks but are not necessarily actionable.<br>
 
 To drilldown into an availability opportunity, click on the card pertaining to availability opportunities for the selected asset. This will open a section that shows you all the hour intervals in which the selected asset faced a downtime along with the total number of downtimes in that hour and the total downtime duration.
 
