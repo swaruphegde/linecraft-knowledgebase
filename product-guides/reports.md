@@ -8,14 +8,6 @@ description: Create and schedule reports from industry standard templates
 
 The reports feature allows the user to create out-of-the-box reports using set templates and schedule these reports to be sent using a desired frequency. The reports module consists of the following sections:
 
-## Image test
-
-<figure><img src="../.gitbook/assets/image (148).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/image (149).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/image (150).png" alt=""><figcaption></figcaption></figure>
-
 ## Dashboard
 
 The reports dashboard consists of high level data for the reports module, primarily the last 5 scheduled reports, the last 5 received reports, a breakdown of the scheduled and received reports by modules and KPIs for the total reports sent, received etc.
