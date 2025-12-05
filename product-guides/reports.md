@@ -12,11 +12,11 @@ The reports feature allows the user to create out-of-the-box reports using set t
 
 The reports dashboard consists of high level data for the reports module, primarily the last 5 scheduled reports, the last 5 received reports, a breakdown of the scheduled and received reports by modules and KPIs for the total reports sent, received etc.
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (151).png" alt=""><figcaption></figcaption></figure>
 
 The reports dashboard also allows you to schedule a new report. You can select a template from the template drawer. To view all templates, click on “View all templates” in the top right corner of the drawer.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (152).png" alt=""><figcaption></figcaption></figure>
 
 ## Scheduling a report
 
