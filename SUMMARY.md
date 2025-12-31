@@ -9,7 +9,11 @@
 
 ## Product Guides
 
-* [📊 Dashboards](product-guides/dashboards.md)
+* [📊 Dashboards](product-guides/dashboards/README.md)
+  * [Template Dashboard](product-guides/dashboards/template-dashboard.md)
+  * [Analysis Dashboard](product-guides/dashboards/analysis-dashboard.md)
+  * [IOT Quality Dashboard](product-guides/dashboards/iot-quality-dashboard.md)
+  * [KPI Dashboard](product-guides/dashboards/kpi-dashboard.md)
 * [🚥 Machine monitoring](product-guides/machine-monitoring.md)
 * [🗓️ Production overview](product-guides/production-overview.md)
 * [❗ Bottlenecks](product-guides/bottlenecks.md)

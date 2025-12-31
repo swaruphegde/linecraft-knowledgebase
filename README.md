@@ -1,7 +1,5 @@
 ---
-description: >-
-  Manufacturing intelligence and insights to achieve your best production, every
-  day
+description: Manufacturing intelligence and insights to achieve best production, every day
 ---
 
 # 👋 Welcome to Linecraft AI
