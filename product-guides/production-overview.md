@@ -27,9 +27,9 @@ The overview section of the production overview module provides a holistic view 
 
 This information can be viewed either shift-wise or day-wise.&#x20;
 
-<figure><img src="../.gitbook/assets/image (109).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Production Overview.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (110).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Production Overview-1 (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Analysis
 
@@ -47,7 +47,7 @@ The analysis section of the production overview module enables you to view graph
    3. Asset-wise OEE&#x20;
    4. Asset-wise bad parts pareto&#x20;
 
-<figure><img src="../.gitbook/assets/image (111).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Production Overview-2.png" alt=""><figcaption></figcaption></figure>
 
 ## Manage schedule
 
@@ -60,10 +60,10 @@ You will be able to:&#x20;
 4. Reset changes to default values&#x20;
 5. Modify targets for each part type in each shift for the selected date range&#x20;
 
-<figure><img src="../.gitbook/assets/image (112).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Production Overview-4.png" alt=""><figcaption></figcaption></figure>
 
 ## Calendar
 
 You will be redirected to a new browser tab when you click on the calendar section. This section will display a calendar view of the selected machine’s day-wise production information. You can hover over a date to view a detailed view of production metrics for that particular day.
 
-<figure><img src="../.gitbook/assets/image (113).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Production Overview-3.png" alt=""><figcaption></figcaption></figure>
