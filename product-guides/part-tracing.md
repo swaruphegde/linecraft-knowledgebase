@@ -10,14 +10,12 @@ description: >-
 
 The part tracing feature allows you to track the journey of a specified part on the line. This includes the assets it passed through and it’s parameters at each step.
 
-<figure><img src="../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Part Trace.png" alt=""><figcaption></figcaption></figure>
 
 To view the journey of the part there are two ways:&#x20;
 
 * Entering the serial number of the part.
 * Selecting a part from the list of parts that passed through the line for the specified date range.
-
-<figure><img src="../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
 
 #### Serial number search
 
@@ -45,7 +43,7 @@ The KPI cards are available on the left side of the table to switch to different
 
 Clicking on the serial number of any part opens a button that takes you to Part Tracing Gannt Chart of that part.
 
-<figure><img src="../.gitbook/assets/image (63).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Part Trace-2.png" alt=""><figcaption></figcaption></figure>
 
 The part tracing module has four main sections:
 
@@ -67,7 +65,7 @@ Displays the part details of the current part. It also has a button to check the
 
 Shows the journey of the part across various assets. The list of assets on the left also has the search box to filter and show specific assets. For each asset it shows graphical representation of time spent by the part in that asset, a cycle time bar which shows red color if it exceeded target cycle time and green if within target cycle time and the target cycle time dotted line. Hovering over the bar will show the numerical values for above data in a tooltip.
 
-<figure><img src="../.gitbook/assets/image (67).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Part Trace-2 (1).png" alt=""><figcaption></figcaption></figure>
 
 Clicking on any bar of the Gannt chart will expand the row of that asset showing following information
 
@@ -93,4 +91,4 @@ The side panel will have a table that shows:
 * Actual Value recorded when part passed (in case of reworks, this column will be present multiple times for each instance). Its color will be red if it was out of range(NOK in case of Boolean) and green if within range (OK in case of Boolean)
 * Aggregator used to calculate the actual value.
 
-<figure><img src="../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Part Trace-3.png" alt=""><figcaption></figcaption></figure>

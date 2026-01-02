@@ -19,7 +19,7 @@ Once inside, you will be displayed the following sections in the critical assets
 
 You can view critical cells and assets over a duration of time. To get the best results, a 2-week time range is recommended. This is also the default time range.&#x20;
 
-<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Critical Assets.png" alt=""><figcaption></figcaption></figure>
 
 You can view critical assets by:
 
@@ -54,31 +54,31 @@ Currently, we provide the following graphs:
 
 The self performance graph will show you a self cycle histogram for the selected cell across the selected time range. This graph also provides an insight into how many cycles were over cycling and how much time was lost due to it. This graph will open by default when APQ or self performance is used to sort the left side list.
 
-<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Critical Assets (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Total performance
 
 The total performance graph will show you a total cycle histogram for the selected cell across the selected time range. This graph also provides an insight into how many cycles were over cycling and how much time was lost due to it. This graph will open by default when Total Performance is used to sort the left side list.
 
-<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Critical Assets-1.png" alt=""><figcaption></figcaption></figure>
 
 #### Downtime frequency
 
 The downtime frequency graph will show you a count of downtimes by causes for the selected cell across the selected time range. Selecting a bar on the graph will show you the corresponding cause description and you can move into aggregate downtime details from here. This graph will open by default when Downtime Frequency is used to sort the left side list.
 
-<figure><img src="../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Critical Assets-2.png" alt=""><figcaption></figcaption></figure>
 
 #### Downtime duration
 
 The downtime duration graph will show you the duration of downtimes by causes for the selected cell across the selected time range. Selecting a bar on the graph will show you the corresponding cause description and you can move into aggregate downtime details from here. This graph will open by default when Downtime Duration is used to sort the left side list.
 
-<figure><img src="../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Critical Assets-3.png" alt=""><figcaption></figcaption></figure>
 
 #### Bad parts
 
 The bad parts graph will show you a count of bad parts produced by day for the selected cell across the selected time range. This graph will open by default when Bad Parts is used to sort the left side list.
 
-<figure><img src="../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Critical Assets-4.png" alt=""><figcaption></figcaption></figure>
 
 ## Critical machines' opportunities
 

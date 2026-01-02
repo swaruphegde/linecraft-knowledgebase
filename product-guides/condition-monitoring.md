@@ -34,7 +34,7 @@ By default, you will be displayed the above information for the last 7 days. You
 
 You will be able to create a new alert by clicking the "Create alert" button on the overview section.&#x20;
 
-<figure><img src="../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Alerts Stats.png" alt=""><figcaption></figcaption></figure>
 
 ## Creating an alert
 
@@ -48,7 +48,7 @@ You will be displayed the alert creation screen when they click on the “Create
 3. Once the alert conditions are set, you can select the channels/people to send the alerts to
 4. Once an alert has been created, you can view alerts that you have created under the “My Alerts” tab
 
-<figure><img src="../.gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Multi-condition.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
 
@@ -100,7 +100,7 @@ You can sort and filter the list of received alerts. By default, the alerts will
 
 Whenever there are new alerts, then a “Load new alerts” button will be available to you, through which they can sync alerts and update their alerts history to the latest.&#x20;
 
-<figure><img src="../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/All Alerts.png" alt=""><figcaption></figcaption></figure>
 
 ## Alert notifications
 

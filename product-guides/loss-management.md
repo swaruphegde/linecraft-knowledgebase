@@ -8,7 +8,7 @@ description: Attribute your losses and analyze what is causing the most issues o
 
 The loss management feature allows the user to attribute losses on the production line and use these attributions to track and analyze the losses on their line.
 
-<figure><img src="../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Loss.png" alt=""><figcaption></figcaption></figure>
 
 This feature can be accessed from multiple points in the product:
 
@@ -46,7 +46,7 @@ The loss attribution feature has 4 major sections:
 
 All losses that are not attributed yet, will be populated in the table on this page.
 
-<figure><img src="../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
+
 
 To attribute a single loss, the user will click on the edit button which enables data entry. For Cause of Loss, Fix and Remarks, the user will get auto suggestions as they start typing.
 
@@ -54,7 +54,7 @@ To attribute a single loss, the user will click on the edit button which enables
 
 To attribute cumulatively, the user can select multiple losses and click on the “attribute selected” button which will open a pop-up for them to enter the data.
 
-<figure><img src="../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Loss-1 (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Attributed losses
 
@@ -70,22 +70,30 @@ Here, you can edit the attributed losses.
 
 All losses that have started but don’t have an end time yet, will get recorded under ongoing losses. These losses will not have an end time or duration. As they are still ongoing, they cannot be attributed. Once the loss has an end time, it will move to the unattributed tab and can then be attributed.
 
-<figure><img src="../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Loss-2.png" alt=""><figcaption></figcaption></figure>
 
 #### Loss analysis
 
 The loss analysis tab consists of 5 types of graphs that allow the user to get an in-depth understanding of the losses on their line.
 
 * The APQ loss breakdown graph shows you how much loss% each asset had, and its breakdown by availability, performance and quality.
+
+<figure><img src="../.gitbook/assets/Loss-4 (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/Loss-5.png" alt=""><figcaption></figcaption></figure>
+
 * The loss type breakdown graph shows you how much loss each asset had by count or duration, and its breakdown by loss type.
+
+<figure><img src="../.gitbook/assets/Loss-5.png" alt=""><figcaption></figcaption></figure>
+
 * The loss type pareto graph shows you how much each loss type contributed to the total loss count and duration, allowing you to analyze which loss type is the worst.
 
-<figure><img src="../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Loss-6.png" alt=""><figcaption></figcaption></figure>
 
 * The loss type timeseries graph shows you how much loss the line had per day by count or duration, and its breakdown by loss type.
 
-<figure><img src="../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Loss-7.png" alt=""><figcaption></figcaption></figure>
 
 * The cause of loss pareto graph shows you how much each cause of loss contributed to the total loss count and duration, allowing you to analyze which cause is the worst.
 
-<figure><img src="../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Loss-8.png" alt=""><figcaption></figcaption></figure>
