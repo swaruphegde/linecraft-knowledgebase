@@ -2,11 +2,11 @@
 description: 'Wipro Linecraft AI Product Updates: March-April 2024'
 ---
 
-# Mar-Apr '24
+# PSS 6.0.0
 
 {% hint style="info" %}
-Last PSS Version: 4.22.8 \
-Current PSS Version: 5.0.0
+Last PSS Version: 5.0.0\
+Current PSS Version: 6.0.0
 {% endhint %}
 
 We are pleased to present the most recent updates to the Linecraft product, aimed at improving data accuracy, reliability, enhancing user experience, and boosting productivity. This release introduces a variety of new features, enhancements, and bug fixes to align with our customers' evolving needs.

@@ -2,11 +2,11 @@
 description: 'Wipro Linecraft AI Product Updates: Jan-Feb 2024'
 ---
 
-# Jan-Feb '24
+# PSS 5.0.0
 
 {% hint style="info" %}
-Last Version: 4.0.1\
-New Version: 4.22.8
+Last Version: 4.0.0\
+New Version: 5.0.0
 {% endhint %}
 
 Ensuring exceptional experiences with every interaction is now essential, rather than optional. To achieve this objective, we are implementing a modularization concept in the revamp of our product. The aim is to streamline the product, enhance user experience, and optimize performance even further.
