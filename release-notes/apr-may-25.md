@@ -4,13 +4,15 @@ description: 'Wipro Linecraft AI Product Updates: April-May 2025'
 
 # Apr-May '25
 
+
+
 {% hint style="info" %}
 Last PSS Version: 7.2.0&#x20;
 
 New PSS Version: 7.3.0&#x20;
 {% endhint %}
 
-We’re excited to announce the launch of the Machine Monitoring module, providing real-time visibility into machine-level performance and enabling state-based prioritization. A new Parameters View has been introduced to offer KPI-driven insights across availability, performance, and quality. State Analysis now supports drill-down from cycles to state-level statistics for deeper root-cause investigation. Additional enhancements include redesigned heatmaps for improved readability, contextual subject lines in scheduled report emails, and in-app notifications for on-demand report availability.
+We’re excited to announce the launch of the **Machine Monitoring module**, providing real-time visibility into machine-level performance and enabling state-based prioritization. A **new Parameters View** has been introduced to offer KPI-driven insights across availability, performance, and quality. State Analysis now supports **drill-down from cycles to state-level statistics** for deeper root-cause investigation. **Additional enhancements** include redesigned heatmaps for improved readability, contextual subject lines in scheduled report emails, and in-app notifications for on-demand report availability.
 
 ## Features and improvements
 
@@ -72,7 +74,9 @@ Ability to directly view and edit IOT and Quality parameters under Settings and 
 
 <figure><img src="../.gitbook/assets/image (102).png" alt=""><figcaption></figcaption></figure>
 
-#### Improved Logic for Identifying Critical Parallel Cells in the Critical Assets Module&#xD; The updated logic enhances the identification of parallel cells by analyzing bad part counts. By evaluating the contribution of each cell to overall part-level losses, the logic accurately ranks critical cells, even within parallel configurations.
+#### Improved Logic for Identifying Critical Parallel Cells in the Critical Assets Module&#xD;
+
+The updated logic enhances the identification of parallel cells by analyzing bad part counts. By evaluating the contribution of each cell to overall part-level losses, the logic accurately ranks critical cells, even within parallel configurations.
 
 This enhancement will ensure accurate identification of critical cells, including those in parallel arrangements, allowing for precise ranking in the Critical Assets module.
 
