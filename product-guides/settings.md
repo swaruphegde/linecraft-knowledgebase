@@ -8,10 +8,6 @@ description: View and edit preferences and settings of the product
 
 The Settings feature can be accessed from the main menu or the navigation bar.
 
-<figure><img src="../.gitbook/assets/image (78).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/image (79).png" alt=""><figcaption></figcaption></figure>
-
 You can access the following features:
 
 * Shifts
@@ -19,25 +15,21 @@ You can access the following features:
 * Profile
 * Sign out
 
-<figure><img src="../.gitbook/assets/image (80).png" alt=""><figcaption></figcaption></figure>
-
 ## Shifts
 
 You can access the shifts feature by clicking on the shifts tab from the left navigation.
 
-<figure><img src="../.gitbook/assets/image (81).png" alt=""><figcaption></figcaption></figure>
+
 
 The default Shift group is pre-selected. You can change the shift group by clicking the dropdown.
 
-<figure><img src="../.gitbook/assets/image (82).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Settings.png" alt=""><figcaption></figcaption></figure>
 
 Clicking the kebab menu gives you options to:
 
 1. Set Shift group as default (If only one shift group exists this option will be disabled until another shift group is added)
 2. Edit title of shift group.
 3. Delete shift group (can only be done when more then one shift group exists)
-
-<figure><img src="../.gitbook/assets/image (83).png" alt=""><figcaption></figcaption></figure>
 
 Shift Groups can be added by clicking the ‘Add Shift Group’ button. Clicking this button opens a new page. Here you have to input the Shift group name in the input field provided.
 
@@ -65,7 +57,7 @@ To add a new shift to this shift group, click on the ‘Add shift’ button at t
 
 Targets can be configured for each part type. The unit of targets is JPH.
 
-<figure><img src="../.gitbook/assets/image (89).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Settings-1.png" alt=""><figcaption></figcaption></figure>
 
 Already existing targets appear in a row, with part type name, target and last updated time stamp.
 
