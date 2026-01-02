@@ -14,7 +14,7 @@ It is an advanced decision-making tool designed to unlock hidden bottlenecks, op
 
 The platform is built on over 40 years of manufacturing and automation expertise and serves manufacturing giants across three continents.
 
-<figure><img src="../.gitbook/assets/image (40) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (164).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 For the best experience, we recommend using the Linecraft product on Google Chrome or Microsoft Edge.
