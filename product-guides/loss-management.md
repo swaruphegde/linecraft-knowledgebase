@@ -80,8 +80,6 @@ The loss analysis tab consists of 5 types of graphs that allow the user to get a
 
 <figure><img src="../.gitbook/assets/Loss-4 (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/Loss-5.png" alt=""><figcaption></figcaption></figure>
-
 * The loss type breakdown graph shows you how much loss each asset had by count or duration, and its breakdown by loss type.
 
 <figure><img src="../.gitbook/assets/Loss-5.png" alt=""><figcaption></figcaption></figure>
