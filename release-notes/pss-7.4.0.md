@@ -50,10 +50,6 @@ Added capabilities to configure line visibility, update project status, adjust a
 
 <figure><img src="../.gitbook/assets/image (158).png" alt=""><figcaption></figcaption></figure>
 
-#### Improved EOL production count logic
-
-Enhanced logic for End-of-Line (EOL) production by introducing EOLD marking within product configurations for more accurate line-level production tracking.
-
 #### Configurator visibility in reports and alerts
 
 Now recipients can view the configurator who set up a report or alert, and have the option to unsubscribe, ensuring correct configurations and preventing duplicates or mismatches
