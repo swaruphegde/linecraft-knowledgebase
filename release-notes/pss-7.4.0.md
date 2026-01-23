@@ -50,9 +50,9 @@ Added capabilities to configure line visibility, update project status, adjust a
 
 <figure><img src="../.gitbook/assets/image (158).png" alt=""><figcaption></figcaption></figure>
 
-#### Configurator visibility in reports and alerts
+#### Configurator visibility in reports
 
-Now recipients can view the configurator who set up a report or alert, and have the option to unsubscribe, ensuring correct configurations and preventing duplicates or mismatches
+Now recipients can view the configurator who set up a report, ensuring better visibility into configurations and preventing duplicates or mismatches
 
 <figure><img src="../.gitbook/assets/image (159).png" alt=""><figcaption></figcaption></figure>
 
