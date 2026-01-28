@@ -12,7 +12,7 @@ We’re excited to roll out powerful updates that elevate visibility, intelligen
 
 #### Critical Machines Report
 
-Introducing a _Critical Machine Report_ to identify top critical machines based on self-performance. This helps optimize ramp-up lines for better design and output and address bottlenecks and quality issues on existing lines
+Introducing a new report template, _Critical Machine Report_ to identify top critical machines based on self-performance. This helps optimize ramp-up lines for better design and output and address bottlenecks and quality issues on existing lines
 
 <figure><img src="../.gitbook/assets/image (153).png" alt=""><figcaption></figcaption></figure>
 
