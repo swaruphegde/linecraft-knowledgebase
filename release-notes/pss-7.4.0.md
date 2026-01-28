@@ -30,9 +30,9 @@ Launching a more interactive and insights-driven production report to support be
 
 <figure><img src="../.gitbook/assets/image (155).png" alt=""><figcaption></figcaption></figure>
 
-#### **Machine monitoring: Cycle insights (Auto-analysis)**
+#### **Machine monitoring: Cycle insights**
 
-We've introduced **Auto analysis**, a powerful machine learning driven feature within **Cycle insights** that automatically analyses production cycles to uncover key patterns and detect anomalies. With this new capability, users can:
+We've introduced **Cycle Insights**, a powerful machine learning driven feature that automatically analyses production cycles to uncover key patterns and detect anomalies. With this new capability, users can:
 
 1. **Understand typical machine behavior** over selected time ranges
 2. **Identify deviations** and problematic states in production cycles
