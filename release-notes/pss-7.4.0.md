@@ -6,7 +6,7 @@ Last PSS Version: 7.3.0&#x20;
 New PSS Version: 7.4.0&#x20;
 {% endhint %}
 
-We’re excited to roll out powerful updates that elevate visibility, intelligence, and control across production operations. The new **Critical Machines Report** and **revamped Production Report** deliver sharper insights for smarter, data-driven performance tracking. **Cycle Insights** now provides state-level visibility, enabling proactive optimization through intelligent analytics. Plus, the **all-new Linecraft Administration Application** streamlines management with enhanced security and seamless control.
+We’re excited to roll out powerful updates that elevate visibility, intelligence, and control across production operations. The new **Critical Machines Report** and **revamped Production Report** deliver sharper insights for smarter, data-driven performance tracking. As part of **Machine Monitoring** module, we are introducing **Cycle Insights** which provides state-level visibility, enabling proactive optimization through intelligent analytics. Plus, the **all-new Linecraft Administration Application** streamlines management with enhanced security and seamless control.
 
 ## Features and improvements
 
