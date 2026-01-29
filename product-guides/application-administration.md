@@ -94,19 +94,8 @@ Role Mode&#x20;
 * Permissions:&#x20;
   * Read-only access to key product modules&#x20;
 * Restrictions:&#x20;
-  * No access to Application Administration&#x20;
-  * No access to Configuration Manager&#x20;
+  * No access to Application Administration and Configuration Manager&#x20;
 
 **Summary**&#x20;
 
 The Application Administration Module establishes a robust foundation for secure, scalable, and governed access control in Linecraft. By introducing a dedicated Super Admin role, predefined enterprise roles, and entity-aware user management, the platform is well-positioned to support enterprise growth while maintaining operational clarity and security.&#x20;
-
-
-
-&#x20;
-
-&#x20;
-
-&#x20;
-
-&#x20;
