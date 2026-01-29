@@ -21,25 +21,25 @@ This module is designed as an independent application within the Linecraft ecosy
   * Add new Organization / Plant / Line&#x20;
   * Navigate to line-specific configuration and dashboards (based on role)&#x20;
 
-<figure><img src="../.gitbook/assets/unknown.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/1.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/unknown (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/2.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/unknown (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/3.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/unknown (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/4.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/No PLC Mapped.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/No PLC Mapped-1.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/No PLC Mapped-2.png" alt=""><figcaption></figcaption></figure>
 
 **Role Management**  \
 Role Mode&#x20;
 
 * Roles are predefined (OOTB)
 * Roles are mapped at Line level, enabling granular access&#x20;
-
-<figure><img src="../.gitbook/assets/unknown (4).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/unknown (5).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/unknown (6).png" alt=""><figcaption></figcaption></figure>
 
 **Out-of-the-Box Roles**&#x20;
 
