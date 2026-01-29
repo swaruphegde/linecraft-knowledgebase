@@ -24,7 +24,7 @@
 * [📦 Part tracing](product-guides/part-tracing.md)
 * [📑 Reports](product-guides/reports.md)
 * [🔩 Settings](product-guides/settings.md)
-* [Application administration](product-guides/application-administration.md)
+* [🛡️ Application administration](product-guides/application-administration.md)
 
 ***
 

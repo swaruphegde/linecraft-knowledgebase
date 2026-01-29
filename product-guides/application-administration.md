@@ -1,8 +1,4 @@
----
-icon: shield-quartered
----
-
-# Application administration
+# 🛡️ Application administration
 
 
 
