@@ -1,14 +1,10 @@
 # 🛡️ Application administration
 
-
-
 **Overview**&#x20;
 
 The Application Administration Module introduces a centralized, secure way to administer Linecraft at scale. The primary objective is to enable controlled onboarding of new customers and expansion for existing customers by empowering a dedicated Application Super Admin role to create and manage Organizations, Plants, Production Lines, Users, and Roles.&#x20;
 
 This module is designed as an independent application within the Linecraft ecosystem and serves as the single source of truth for entity structure, role definitions, and user access management.&#x20;
-
-
 
 **Key Features**&#x20;
 
@@ -18,8 +14,6 @@ This module is designed as an independent application within the Linecraft ecosy
 * Entity-specific user management&#x20;
 * Static role reference documentation within product&#x20;
 
-
-
 **Line Management – Features**&#x20;
 
 * Unified view of all existing lines with Org/Plant context&#x20;
@@ -27,11 +21,13 @@ This module is designed as an independent application within the Linecraft ecosy
 * Add new Organization / Plant / Line&#x20;
 * Navigate to line-specific configuration and dashboards (based on role)&#x20;
 
-&#x20;
+<figure><img src="../.gitbook/assets/unknown.png" alt=""><figcaption></figcaption></figure>
 
-![](../.gitbook/assets/unknown.png)![](<../.gitbook/assets/unknown (1).png>)![](<../.gitbook/assets/unknown (2).png>)![](<../.gitbook/assets/unknown (3).png>)&#x20;
+<figure><img src="../.gitbook/assets/unknown (1).png" alt=""><figcaption></figcaption></figure>
 
+<figure><img src="../.gitbook/assets/unknown (2).png" alt=""><figcaption></figcaption></figure>
 
+<figure><img src="../.gitbook/assets/unknown (3).png" alt=""><figcaption></figcaption></figure>
 
 **Role Management**  \
 Role Mode&#x20;
@@ -39,12 +35,11 @@ Role Mode&#x20;
 * Roles are predefined (OOTB)
 * Roles are mapped at Line level, enabling granular access&#x20;
 
-&#x20;
+<figure><img src="../.gitbook/assets/unknown (4).png" alt=""><figcaption></figcaption></figure>
 
-![](<../.gitbook/assets/unknown (4).png>)&#x20;
+<figure><img src="../.gitbook/assets/unknown (5).png" alt=""><figcaption></figcaption></figure>
 
-![](<../.gitbook/assets/unknown (5).png>)![](<../.gitbook/assets/unknown (6).png>) \
-&#x20;
+<figure><img src="../.gitbook/assets/unknown (6).png" alt=""><figcaption></figcaption></figure>
 
 **Out-of-the-Box Roles**&#x20;
 
