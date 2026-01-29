@@ -36,8 +36,7 @@ This module is designed as an independent application within the Linecraft ecosy
 **Role Management**  \
 Role Mode&#x20;
 
-* Roles are predefined (OOTB) and enforced in backend&#x20;
-* No UI-based role creation in Phase 1&#x20;
+* Roles are predefined (OOTB)
 * Roles are mapped at Line level, enabling granular access&#x20;
 
 &#x20;
