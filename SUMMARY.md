@@ -24,6 +24,7 @@
 * [📦 Part tracing](product-guides/part-tracing.md)
 * [📑 Reports](product-guides/reports.md)
 * [🔩 Settings](product-guides/settings.md)
+* [Application administration](product-guides/application-administration.md)
 
 ***
 
@@ -37,3 +38,7 @@
 * [PSS 7.1.0](release-notes/pss-7.1.0.md)
 * [PSS 6.0.0](release-notes/pss-6.0.0.md)
 * [PSS 5.0.0](release-notes/pss-5.0.0.md)
+
+***
+
+* [Page 1](page-1.md)
