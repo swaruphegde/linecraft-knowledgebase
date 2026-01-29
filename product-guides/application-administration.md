@@ -18,8 +18,8 @@ This module is designed as an independent application within the Linecraft ecosy
 
 * Unified view of all existing lines with Org/Plant context&#x20;
 * Ability to:&#x20;
-* Add new Organization / Plant / Line&#x20;
-* Navigate to line-specific configuration and dashboards (based on role)&#x20;
+  * Add new Organization / Plant / Line&#x20;
+  * Navigate to line-specific configuration and dashboards (based on role)&#x20;
 
 <figure><img src="../.gitbook/assets/unknown.png" alt=""><figcaption></figcaption></figure>
 
