@@ -2,9 +2,9 @@
 
 **Overview**&#x20;
 
-The Application Administration Module introduces a centralized, secure way to administer Linecraft at scale. The primary objective is to enable controlled onboarding of new customers and expansion for existing customers by empowering a dedicated Application Super Admin role to create and manage Organizations, Plants, Production Lines, Users, and Roles.&#x20;
+The Application Administration Module introduces a centralized, secure way to administer Linecraft application at scale. The primary objective is to enable controlled onboarding of new customers and expansion for existing customers by empowering a dedicated Application Super Admin role to create and manage Organizations, Plants, Production Lines, Users, and Roles.&#x20;
 
-This module is designed as an independent application within the Linecraft ecosystem and serves as the single source of truth for entity structure, role definitions, and user access management.&#x20;
+This module serves as the single source of truth for entity structure, role definitions, and user access management.&#x20;
 
 **Key Features**&#x20;
 

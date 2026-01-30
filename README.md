@@ -1,10 +1,14 @@
 ---
-description: Manufacturing intelligence and insights to achieve best production, every day
+description: >-
+  Data driven Manufacturing intelligence and insights to achieve best
+  production, every day
 ---
 
 # 👋 Welcome to Linecraft AI
 
 ## Overview
+
+Linecraft AI is an Industrial AI Platform for Flow Analysis and Bottlenecks in Manufacturing Production Lines.
 
 Experience hassle-free Industry 4.0 integration and unlock hidden operational opportunities to maximize production efficiency and cost savings - trusted by manufacturing leaders across three continents.
 
