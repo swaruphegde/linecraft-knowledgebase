@@ -15,6 +15,7 @@
   * [IOT Quality Dashboard](product-guides/dashboards/iot-quality-dashboard.md)
   * [KPI Dashboard](product-guides/dashboards/kpi-dashboard.md)
 * [🚥 Machine monitoring](product-guides/machine-monitoring/README.md)
+  * [Cycle insights](product-guides/machine-monitoring/cycle-insights.md)
   * [Heatmap drilldowns](product-guides/machine-monitoring/heatmap-drilldowns.md)
 * [🗓️ Production overview](product-guides/production-overview.md)
 * [❗ Bottlenecks](product-guides/bottlenecks.md)
