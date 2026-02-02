@@ -279,6 +279,8 @@ o   Default signals cannot be edited, deleted, or uploaded via UI
 
 ·       You can upload **custom signals** using Excel
 
+<figure><img src="../.gitbook/assets/Format-8.png" alt=""><figcaption></figcaption></figure>
+
 o   Download the existing signal template from the UI
 
 o   Header and column names must remain unchanged
