@@ -1,6 +1,10 @@
-# ⚙️ Config automation (Deployment Master)
+---
+description: (Config Automation)
+---
 
-&#x20;   \
+# ⚙️ Deployment Master
+
+\
 **Overview**
 
 This module helps configurators deploy tags on **data loggers**, which are used to collect data from **PLCs** on the production line. It simplifies the configuration process that previously required expert-level knowledge, multiple tools, and frequent back-and-forth across screens. That older flow worked, but it was slow, fragile, and easy to get wrong.
@@ -17,6 +21,8 @@ This module replaces that approach with a **guided, sequential workflow** that:
 
 Users just have to now define what physically exists (PLCs and Data Loggers).\
 The system derives everything else and guides users step by step.
+
+<figure><img src="../.gitbook/assets/Format (3).png" alt=""><figcaption></figcaption></figure>
 
 In a nutshell
 
@@ -82,8 +88,6 @@ o   PLC types, drivers, IPs, ports
 
 ·       Automatically creates required internal mappings
 
-<figure><img src="../.gitbook/assets/Format (3).png" alt=""><figcaption></figcaption></figure>
-
 <figure><img src="../.gitbook/assets/Format-1 (3).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/Format-2 (3).png" alt=""><figcaption></figcaption></figure>
@@ -100,7 +104,7 @@ While configuring the structure, ensure the following:
 ![](<../.gitbook/assets/unknown (5).png>)
 
 * All data entered in the Excel sheet must follow the defined rules  &#x20;
-* These rules are documented in [Appendix A](config-automation-deployment-master.md#appendix-a-data-logger-structure-validation-rules)
+* These rules are documented in [Appendix A](deployment-master.md#appendix-a-data-logger-structure-validation-rules)
 
 If the upload is successful, the system creates the required mappings automatically.
 
@@ -226,8 +230,8 @@ The following validations apply:
 
 ·       Tags for incompatible drivers will result in an error
 
-Field-level CSV rules are documented in [Appendix B](config-automation-deployment-master.md#appendix-b-csv-tag-sheet-validation-rules)\
-CSV template is provided in [Appendix C](config-automation-deployment-master.md#appendix-c-csv-tag-sheet-template)
+Field-level CSV rules are documented in [Appendix B](deployment-master.md#appendix-b-csv-tag-sheet-validation-rules)\
+CSV template is provided in [Appendix C](deployment-master.md#appendix-c-csv-tag-sheet-template)
 
 #### Versioning constraints
 
