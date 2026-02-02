@@ -21,19 +21,19 @@ This module serves as the single source of truth for entity structure, role defi
   * Add new Organization / Plant / Line&#x20;
   * Navigate to line-specific configuration and dashboards (based on role)&#x20;
 
-<figure><img src="../.gitbook/assets/1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Format (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Format-1 (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Format-2 (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Format-3 (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/No PLC Mapped.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Format-4 (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/No PLC Mapped-1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Format-5 (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/No PLC Mapped-2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Format-6 (2).png" alt=""><figcaption></figcaption></figure>
 
 **Role Management**  \
 Role Mode&#x20;
