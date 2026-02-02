@@ -52,7 +52,7 @@ Added capabilities to configure line visibility, update project status, adjust a
 
 Now recipients can view the configurator who set up a report, ensuring better visibility into configurations and preventing duplicates or mismatches
 
-<figure><img src="../.gitbook/assets/image (159).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Configurator Name.png" alt=""><figcaption></figcaption></figure>
 
 #### Machine monitoring enhancements
 
