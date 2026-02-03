@@ -46,7 +46,7 @@ This enhancement empowers teams to move from reactive monitoring to proactive op
 
 Added capabilities to configure line visibility, update project status, adjust activation dates, customize landing page logos, modify full-line name display and rearrange project rankings for improved control and usability
 
-<figure><img src="../.gitbook/assets/image (157).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Andon.png" alt=""><figcaption></figcaption></figure>
 
 #### Configurator visibility in reports
 
@@ -72,7 +72,7 @@ Default addition of dummy quality nodes is provisioned for the projects where qu
 
 The **Linecraft Administration Application** provides a centralized platform for administrators to manage user access, create and control production lines and oversee user management with enhanced security and flexibility
 
-<figure><img src="../.gitbook/assets/1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Format (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/Format-2 (1).png" alt=""><figcaption></figcaption></figure>
 
