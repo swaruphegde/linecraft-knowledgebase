@@ -76,7 +76,7 @@ The **Linecraft Administration Application** provides a centralized platform for
 
 <figure><img src="../.gitbook/assets/Format-2 (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (163).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/users.png" alt=""><figcaption></figcaption></figure>
 
 #### Auto run DP from node states to update critical machines' data
 
