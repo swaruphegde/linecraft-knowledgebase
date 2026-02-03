@@ -28,7 +28,7 @@ Launching a more interactive and insights-driven production report to support be
 2. **Production breakdown:** On-shift, by-shift and by part type
 3. **Top 5 critical machines** based on part loss
 
-<figure><img src="../.gitbook/assets/image (155).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Production Report Template __ Weekly (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Machine monitoring: Cycle insights**
 
