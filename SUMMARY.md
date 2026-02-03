@@ -26,7 +26,7 @@
 * [📑 Reports](product-guides/reports.md)
 * [🔩 Settings](product-guides/settings.md)
 * [🛡️ Application administration](product-guides/application-administration.md)
-* [⚙️ Deployment Master](product-guides/deployment-master.md)
+* [⚙️ Deployment master](product-guides/deployment-master.md)
 
 ***
 

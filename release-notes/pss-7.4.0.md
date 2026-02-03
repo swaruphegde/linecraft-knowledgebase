@@ -72,9 +72,9 @@ Default addition of dummy quality nodes is provisioned for the projects where qu
 
 The **Linecraft Administration Application** provides a centralized platform for administrators to manage user access, create and control production lines and oversee user management with enhanced security and flexibility
 
-<figure><img src="../.gitbook/assets/image (161).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/1.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (162).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Format-2 (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (163).png" alt=""><figcaption></figcaption></figure>
 
