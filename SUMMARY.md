@@ -40,7 +40,3 @@
 * [PSS 7.1.0](release-notes/pss-7.1.0.md)
 * [PSS 6.0.0](release-notes/pss-6.0.0.md)
 * [PSS 5.0.0](release-notes/pss-5.0.0.md)
-
-***
-
-* [Page 1](page-1.md)
