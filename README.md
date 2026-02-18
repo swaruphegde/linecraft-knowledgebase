@@ -1,7 +1,7 @@
 ---
 description: >-
   Data driven Manufacturing intelligence and insights to achieve best
-  production, every day
+  production, every day.
 ---
 
 # 👋 Welcome to Linecraft AI
