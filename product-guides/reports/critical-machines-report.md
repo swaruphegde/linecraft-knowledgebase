@@ -14,6 +14,8 @@ This report systematically identifies those high-impact machines and delivers ac
 
 Instead of responding after performance declines, the report enables proactive, data-driven intervention.
 
+<figure><img src="../../.gitbook/assets/Critical Machines.png" alt=""><figcaption></figcaption></figure>
+
 **What the Report Delivers**
 
 **1. Executive KPI Snapshot**
