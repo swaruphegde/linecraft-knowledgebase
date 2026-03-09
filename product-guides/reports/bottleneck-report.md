@@ -117,5 +117,5 @@ By analyzing cycle behaviour at both shift and part-type levels, teams can stabi
 If no performance opportunities are detected, this section remains blank.\
 <br>
 
-<figure><img src="../../.gitbook/assets/Bottleneck Report (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Bottleneck Report (2).png" alt=""><figcaption></figcaption></figure>
 
