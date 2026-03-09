@@ -114,5 +114,8 @@ They help uncover:
 
 By analyzing cycle behaviour at both shift and part-type levels, teams can stabilize line speed, reduce variability, and eliminate hidden performance inefficiencies.
 
-If no performance opportunities are detected, this section remains blank.
+If no performance opportunities are detected, this section remains blank.\
+<br>
+
+<figure><img src="../../.gitbook/assets/Bottleneck Report (1).png" alt=""><figcaption></figcaption></figure>
 
