@@ -25,6 +25,7 @@
 * [📦 Part tracing](product-guides/part-tracing.md)
 * [📑 Reports](product-guides/reports/README.md)
   * [Bottleneck Report](product-guides/reports/bottleneck-report.md)
+  * [Critical Machines Report](product-guides/reports/critical-machines-report.md)
 * [🔩 Settings](product-guides/settings.md)
 * [🛡️ Application administration](product-guides/application-administration.md)
 * [⚙️ Deployment master](product-guides/deployment-master.md)
