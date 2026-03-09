@@ -4,7 +4,10 @@
 
 The Bottleneck Report provides a comprehensive week-over-week analysis of production bottlenecks, along with detailed cycle-level and state-level insights. It helps users understand the underlying causes of bottlenecks and delivers actionable recommendations to improve production performance by addressing identified issues.
 
-The primary objective is to enable data-driven decision-making that enhances throughput and operational efficiency.
+The primary objective is to enable data-driven decision-making that enhances throughput and operational efficiency.\
+<br>
+
+<figure><img src="../../.gitbook/assets/Bottleneck Report (2).png" alt=""><figcaption></figcaption></figure>
 
 **What the Report Delivers**
 
@@ -12,8 +15,6 @@ The primary objective is to enable data-driven decision-making that enhances thr
 
 The report presents a consolidated summary of overall production performance, including:
 
-* Total Bottleneck Impact
-* Top Bottlenecks Impact
 * Overall Equipment Effectiveness (OEE)
 * Availability
 * Performance
@@ -116,6 +117,4 @@ By analyzing cycle behaviour at both shift and part-type levels, teams can stabi
 
 If no performance opportunities are detected, this section remains blank.\
 <br>
-
-<figure><img src="../../.gitbook/assets/Bottleneck Report (2).png" alt=""><figcaption></figcaption></figure>
 
