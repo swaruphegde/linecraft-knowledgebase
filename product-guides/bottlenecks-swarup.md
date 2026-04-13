@@ -79,6 +79,8 @@ Bottleneck cells and their assets can be viewed in the summary section of the bo
 
 What is impact? It is the severity of the bottleneck entity in terms of availability, performance and stability. This is measured in %, taking into consideration the time the bottleneck makes adjacent cells or assets wait.
 
+To view bottleneck cells:
+
 {% stepper %}
 {% step %}
 #### Module selection
@@ -102,6 +104,34 @@ Each bottleneck cells displays:
    3. Stability impact
 {% endstep %}
 {% endstepper %}
+
+Each bottleneck cell may have one or more bottleneck assets. To view bottleneck assets:
+
+{% stepper %}
+{% step %}
+#### Click on 'View Bottleneck Assets'
+
+View the bottleneck assets of a bottleneck cell by clicking the 'View bottleneck assets' button
+{% endstep %}
+
+{% step %}
+#### List of bottleneck assets
+
+You will then be displayed a list of top bottleneck assets of the cell, ranked by decreasing order of impact
+
+Each bottleneck asset displays:
+
+1. Name of the asset
+2. JPH loss
+3. Bottleneck hours
+4. Total impact, which is further bifurcated in
+   1. Availability impact
+   2. Performance impact
+   3. Stability impact
+{% endstep %}
+{% endstepper %}
+
+
 
 
 
