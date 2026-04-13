@@ -21,6 +21,10 @@ layout:
 
 # Bottlenecks - Swarup
 
+<details>
+
+<summary>What are bottlenecks?</summary>
+
 ### Introduction to Bottlenecks in PSS
 
 Imagine you are managing a Cylinder Head Subassembly Line. You walk the factory floor, and everything seems to be running smoothly - the machines are moving, the lights are green and parts are rolling off the conveyor. But when you check the daily reports, your total throughput isn't hitting the expected target.
@@ -31,7 +35,9 @@ In Linecraft's Productivity Synthesis System (PSS), a bottleneck isn't just a br
 
 #### What is a bottleneck?
 
-In the context of PSS, a bottleneck is any asset that limits your overall throughput. While the physical line might seem to be running smoothly, microscopic delays, mismatched timings and wait states cascade through the system, ultimately dictating the maximum speed of your entire production.
+In the context of PSS, a bottleneck is any asset, cell, process, cycle or state that limits your overall throughput. While the physical line might seem to be running smoothly, microscopic delays, mismatched timings and wait states cascade through the system, ultimately dictating the maximum speed of your entire production.
+
+_Example of a bottleneck: An asset becomes a bottleneck when it makes both its upstream and downstream assets wait for it_
 
 #### Why managing bottlenecks matters
 
@@ -47,7 +53,57 @@ The PSS does not just look for broken machines; it analyzes the temporal behavio
 * Outlier Nodes: The PSS flags nodes that consistently perform outside of defined conditions. A node is considered an outlier if it takes the most time to perform its states without interactions, or if it is constantly unavailable due to being dependent on another asset.
 * Wait States and Synchronization Loss: Bottlenecks frequently occur when assets fall out of rhythm. The system actively identifies "wait states" (when an asset is delayed while waiting for another asset) and detects losses of synchronization between interlinked machines.
 
+Our bottlenecks algorithm abstracts away internal asset efficiency and wait times and aggregates serial and parallel paths within a cell
+
 Once the PSS identifies these critical cycles and outlier nodes, it doesn't leave you guessing. The system provides opportunities designed to synchronize operations between assets.
 
-### The bottleneck module
+</details>
+
+## Overview
+
+The bottlenecks module of Linecraft PSS enables you to understand the bottlenecks of your line, specifically, identify and analyze top bottleneck assets and why they are a bottleneck so that you can bring back your intended throughput without chasing invisible information.
+
+It can be found from the main menu by choosing the 'Bottlenecks' option. Once you're inside the module, you can:
+
+1. View top bottleneck cells and assets
+2. View how these bottlenecks are impacting availability, performance and stability
+3. Visualize how these bottlenecks are making other cells and assets wait
+4. Verify the bottleneck - drilldown to view granular details of the bottleneck machine from the visualization
+5. View opportunities to resolve the bottleneck's impact on availability, performance and stability
+
+## Module walkthrough
+
+### Bottleneck cells and assets
+
+Bottleneck cells and their assets can be viewed in the summary section of the bottlenecks module. This section includes a list of all cells and their assets that are bottlenecks of your line, ranked based on their impact (most to least).
+
+What is impact? It is the severity of the bottleneck entity in terms of availability, performance and stability. This is measured in %, taking into consideration the time the bottleneck makes adjacent cells or assets wait.
+
+{% stepper %}
+{% step %}
+#### Module selection
+
+Select the 'Bottlenecks' module from the main menu
+{% endstep %}
+
+{% step %}
+#### List of bottleneck cells
+
+You will be displayed a list of top bottleneck cells, ranked by decreasing order of impact
+
+Each bottleneck cells displays:
+
+1. Name of the cell
+2. JPH loss
+3. Bottleneck hours
+4. Total impact, which is further bifurcated in
+   1. Availability impact
+   2. Performance impact
+   3. Stability impact
+{% endstep %}
+{% endstepper %}
+
+
+
+
 
