@@ -77,6 +77,8 @@ It can be found from the main menu by choosing the 'Bottlenecks' option. Once yo
 
 ### Bottleneck cells and assets
 
+<figure><img src="../.gitbook/assets/Bottleneck cell list.gif" alt=""><figcaption></figcaption></figure>
+
 Bottleneck cells and their assets can be viewed in the summary section of the bottlenecks module. This section includes a list of all cells and their assets that are bottlenecks of your line, ranked based on their impact (most to least).
 
 What is impact? It is the severity of the bottleneck entity in terms of availability, performance and stability. This is measured in %, taking into consideration the time the bottleneck makes adjacent cells or assets wait.
