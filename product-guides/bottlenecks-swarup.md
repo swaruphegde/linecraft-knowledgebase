@@ -135,9 +135,55 @@ Each bottleneck asset displays:
 {% endstep %}
 {% endstepper %}
 
+### Bottleneck visualization
 
+You can visualize how long bottlenecks are making cells or assets wait. The cells across the line show the direction of waits and their relative excess wait times. Cells that are bottlenecks will be highlighted red. There can be multiple bottlenecks in an interval.
 
+### Bottleneck timeline
 
+{% stepper %}
+{% step %}
+#### Causes timeline
 
+The bottleneck causes timeline indicates all the intervals in which the selected cell is a bottleneck. The colors correspond to the cause of the cell being a bottleneck.
+{% endstep %}
 
+{% step %}
+#### Timeline legend
+
+View availability, performance and stability impacts on the timeline, differentiated by colors. You can always refer to the legend to identify which areas are being impacted on the bottleneck timeline
+{% endstep %}
+{% endstepper %}
+
+### Bottleneck verification
+
+Verifying a bottleneck helps in pointing out which assets are the problem in a specific interval and why
+
+{% stepper %}
+{% step %}
+#### Click on the verify button
+
+Clicking on verify from the timeline for a cell or an interval will show an asset diagram with the self-performance and availability of each asset as well as the adjacent waits for the selected cell and interval
+{% endstep %}
+
+{% step %}
+#### View key KPIs and wait time of
+
+Hover on an asset to view its availability, self performance and totals waits in the selected timeline
+{% endstep %}
+
+{% step %}
+#### Drilldown to view further details
+
+If you select 1 asset from the total waits diagram, you will see drilldowns for cycles and downtime details. This will take you to the cycles and downtime details for the selected asset in the selected interval.
+{% endstep %}
+
+{% step %}
+#### Interaction drilldowns
+
+If you select 2 or more assets from the total waits diagram, you will see a drilldown for interactions. This will take you to the interactions for the selected assets in the selected interval.
+{% endstep %}
+{% endstepper %}
+
+## Bottleneck opportunities
 
