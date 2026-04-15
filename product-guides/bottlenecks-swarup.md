@@ -121,6 +121,8 @@ Each bottleneck cells displays:
 {% endstep %}
 {% endstepper %}
 
+<figure><img src="../.gitbook/assets/Bottleneck list of critical machines.gif" alt=""><figcaption></figcaption></figure>
+
 Each bottleneck cell may have one or more bottleneck assets. To view bottleneck assets:
 
 {% stepper %}
@@ -149,17 +151,25 @@ Each bottleneck asset displays:
 
 ### Bottleneck visualization
 
+<figure><img src="../.gitbook/assets/Bottleneck visualization.gif" alt=""><figcaption></figcaption></figure>
+
 You can visualize how long bottlenecks are making cells or assets wait. The cells across the line show the direction of waits and their relative excess wait times. Cells that are bottlenecks will be highlighted red. There can be multiple bottlenecks in an interval.
 
 > _By visualizing bottlenecks, you will be able to understand the exact wait times of a selected bottleneck. This step acts as the next step in drilling further into understanding your bottleneck entities._
 
 ### Bottleneck timeline
 
+<figure><img src="../.gitbook/assets/Bottleneck visualization (1).gif" alt=""><figcaption></figcaption></figure>
+
+
+
+Machines are not always a bottleneck. Leverage the bottleneck timeline to identify instances where the machine was a bottleneck and impacted the availability, performance or stability of your production line.
+
 {% stepper %}
 {% step %}
 #### Causes timeline
 
-The bottleneck causes timeline indicates all the intervals in which the selected cell is a bottleneck. The colors correspond to the cause of the cell being a bottleneck.
+The bottleneck causes timeline indicates all the intervals in which the bottleneck machine impacts availability, performance or stability.
 {% endstep %}
 
 {% step %}
@@ -170,6 +180,8 @@ View availability, performance and stability impacts on the timeline, differenti
 {% endstepper %}
 
 ### Bottleneck verification
+
+<figure><img src="../.gitbook/assets/Bottleneck visualization (2).gif" alt=""><figcaption></figcaption></figure>
 
 Verifying a bottleneck helps in pointing out which assets are the problem in a specific interval and why
 
@@ -204,8 +216,6 @@ Analyzing the cycles and downtime details will help you identify which faults or
 If you select 2 or more assets from the total waits diagram, you will see a drilldown for interactions. This will take you to the interactions for the selected assets in the selected interval.
 {% endstep %}
 {% endstepper %}
-
-## Bottleneck opportunities
 
 
 
