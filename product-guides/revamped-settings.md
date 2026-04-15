@@ -33,7 +33,7 @@ From the Settings module, users can:
 
 ***
 
-### `Profile`
+## `Profile`
 
 The **Profile** tab allows users to manage personal account information. The **Profile** tab is the default landing page when a user accesses the Settings module.
 
@@ -63,11 +63,9 @@ Password changes take effect immediately and apply across all sessions.
 
 ***
 
-### `Preferences`
+## `Preferences`
 
-The **Preferences** tab allows users to customize system behavior for their account.
-
-Preferences are **user‑specific** and do not affect other users.
+The **Preferences** tab allows users to customize system behavior for their account. Preferences are **user‑specific** and do not affect other users.
 
 #### Time Preferences
 
@@ -84,7 +82,7 @@ Changes are applied immediately.
 
 ***
 
-### `Shifts`
+## `Shifts`
 
 The **Shifts** tab is used to define operational shift structures for production tracking and reporting.
 
@@ -121,23 +119,24 @@ Click **Add Shift Group** to create a new shift group.
 
 * Click **Add Shift** or **Add Another Shift**
 * Multiple shifts can be added
+* Shift timings cannot overlap
 * Delete icon appears once more than one shift exists
 
 #### Adding Breaks
 
 * Click **Add Break** within a shift
+* Break timings cannot overlap
 * Multiple breaks can be added per shift
 
 #### Viewing and Editing Shifts
 
-* Shifts are displayed in a table
-* Hovering over a shift row shows **Edit** and **Delete** actions
-* Clicking a shift row expands it to show breaks
-* Shifts and breaks can be edited inline
+* Shifts are displayed in individual expandable containers
+* Expanding a shift container shows **Edit Fields** and **Delete** actions
+* Expanding a shift container show also shows breaks
 
 ***
 
-### `Targets`
+## `Targets`
 
 The **Targets** tab allows users to configure production targets for each part type.
 
@@ -146,20 +145,7 @@ The **Targets** tab allows users to configure production targets for each part t
 * Targets are configured part‑type wise
 * Unit of measurement: **JPH (Jobs Per Hour)**
 
-#### Target List View
-
-Each target row displays:
-
-* Part Type
-* Target value (JPH)
-* Last Updated timestamp
-
-#### Managing Targets
-
-* Hover over a target row to edit or delete
-* Click **Add Targets** to define a new target
-
-#### Add / Edit Target
+#### Edit Target
 
 **Fields:**
 
@@ -170,7 +156,7 @@ If a target already exists for a part type, the new value overwrites the existin
 
 ***
 
-### `Fault Code Mapping`
+## `Fault Code Mapping`
 
 The **Fault Code Mapping** tab standardizes fault codes at an asset level.
 
@@ -233,7 +219,7 @@ Validation errors are displayed in an error popup.
 
 ***
 
-### `Loss Types`
+## `Loss Types`
 
 The **Loss Types** tab allows users to configure production loss classifications.
 
@@ -260,7 +246,7 @@ The **Create** button remains disabled until both fields are filled.
 
 ***
 
-### `Process Parameters`
+## `Process Parameters`
 
 The **Process Parameters** tab allows users with the **Configurator role** to view and edit IoT and Quality parameters.
 
@@ -294,6 +280,6 @@ Click the **Edit** icon to modify parameter values.
   * Mandatory
   * Must be floating‑point numeric
 * Unit and Aggregator:
-  * Cannot be set to `none`
+  * Cannot be set to none
 * Errors are shown for invalid or missing data
 * Valid updates are saved and reflected immediately
