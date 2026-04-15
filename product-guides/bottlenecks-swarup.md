@@ -73,6 +73,8 @@ Once the PSS identifies these critical cycles and outlier nodes, it doesn't leav
 
 The bottlenecks module of Linecraft PSS enables you to understand the bottlenecks of your line, specifically, identify and analyze top bottleneck assets and why they are a bottleneck so that you can bring back your intended throughput without chasing invisible information.
 
+<figure><img src="../.gitbook/assets/Bottleneck main menu (2) (1).gif" alt=""><figcaption></figcaption></figure>
+
 It can be found from the main menu by choosing the 'Bottlenecks' option. Once you're inside the module, you can:
 
 1. View top bottleneck cells and assets
@@ -90,6 +92,8 @@ Bottleneck cells and their assets can be viewed in the summary section of the bo
 What is impact? It is the severity of the bottleneck entity in terms of availability, performance and stability. This is measured in %, taking into consideration the time the bottleneck makes adjacent cells or assets wait.
 
 > _This view helps you identify which cells and machines are the top bottlenecks of your production line and what is their impact on availability, performance and stability. This acts as the first step in your journey to identify and resolve bottlenecks._
+
+<figure><img src="../.gitbook/assets/Bottleneck list of critical cells.gif" alt=""><figcaption></figcaption></figure>
 
 To view bottleneck cells:
 
