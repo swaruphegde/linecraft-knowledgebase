@@ -4,6 +4,8 @@ hidden: true
 
 # Revamped Settings
 
+
+
 {% hint style="info" %}
 **Navigation Path:**\
 \
@@ -28,8 +30,6 @@ From the Settings module, users can:
 * Sign out of the application
 
 </details>
-
-
 
 ***
 
@@ -177,9 +177,6 @@ The **Fault Code Mapping** tab standardizes fault codes at an asset level.
 #### Download Mapping Template
 
 Users can download a standardized fault code mapping template.
-
-**Template Link:**\
-https://docs.google.com/spreadsheets/d/1ZSAUnQZDNtR\_dwNjZ9q1uBJGnv6g9PF6vHZwVXqHtuI/edit
 
 #### Mapped Assets
 
