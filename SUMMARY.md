@@ -31,6 +31,7 @@
 * [⚙️ Deployment master](product-guides/deployment-master.md)
 * [Bottlenecks - Swarup](product-guides/bottlenecks-swarup.md)
 * [Revamped Settings](product-guides/revamped-settings.md)
+* [Settings Doc md](product-guides/settings-doc-md.md)
 * [Page 1](product-guides/page-1.md)
 
 ***
