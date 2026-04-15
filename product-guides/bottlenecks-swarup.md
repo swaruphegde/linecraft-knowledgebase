@@ -33,17 +33,25 @@ Where is the lost time going?
 
 In Linecraft's Productivity Synthesis System (PSS), a bottleneck isn't just a broken machine with a blaring siren. It is often an invisible mismatch in timing - any asset or cycle that secretly limits your overall line throughput. To find it, PSS acts as a detective, analyzing the temporal behavior of your entire line to find hidden inefficiencies and opportunities to resolve them.&#x20;
 
+***
+
 #### What is a bottleneck?
+
+<figure><img src="../.gitbook/assets/image (167).png" alt=""><figcaption></figcaption></figure>
 
 In the context of PSS, a bottleneck is any asset, cell, process, cycle or state that limits your overall throughput. While the physical line might seem to be running smoothly, microscopic delays, mismatched timings and wait states cascade through the system, ultimately dictating the maximum speed of your entire production.
 
 _Example of a bottleneck: An asset becomes a bottleneck when it makes both its upstream and downstream assets wait for it_
+
+***
 
 #### Why managing bottlenecks matters
 
 An unmanaged bottleneck does more than just slow down a single machine. It causes upstream machines to become blocked (unable to pass parts forward) and downstream machines to become starved (idling while waiting for parts).&#x20;
 
 By identifying and resolving these hidden constraints, you can synchronize the entire line, unlocking hidden capacity without needing to add new hardware.
+
+***
 
 #### How PSS identifies bottlenecks
 
@@ -61,9 +69,9 @@ Once the PSS identifies these critical cycles and outlier nodes, it doesn't leav
 
 ## Overview
 
-The bottlenecks module of Linecraft PSS enables you to understand the bottlenecks of your line, specifically, identify and analyze top bottleneck assets and why they are a bottleneck so that you can bring back your intended throughput without chasing invisible information.
+<figure><img src="../.gitbook/assets/image (172).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/Bottleneck main menu (2).gif" alt=""><figcaption></figcaption></figure>
+The bottlenecks module of Linecraft PSS enables you to understand the bottlenecks of your line, specifically, identify and analyze top bottleneck assets and why they are a bottleneck so that you can bring back your intended throughput without chasing invisible information.
 
 It can be found from the main menu by choosing the 'Bottlenecks' option. Once you're inside the module, you can:
 
@@ -77,11 +85,11 @@ It can be found from the main menu by choosing the 'Bottlenecks' option. Once yo
 
 ### Bottleneck cells and assets
 
-<figure><img src="../.gitbook/assets/Bottleneck cell list.gif" alt=""><figcaption></figcaption></figure>
-
 Bottleneck cells and their assets can be viewed in the summary section of the bottlenecks module. This section includes a list of all cells and their assets that are bottlenecks of your line, ranked based on their impact (most to least).
 
 What is impact? It is the severity of the bottleneck entity in terms of availability, performance and stability. This is measured in %, taking into consideration the time the bottleneck makes adjacent cells or assets wait.
+
+> _This view helps you identify which cells and machines are the top bottlenecks of your production line and what is their impact on availability, performance and stability. This acts as the first step in your journey to identify and resolve bottlenecks._
 
 To view bottleneck cells:
 
@@ -139,6 +147,8 @@ Each bottleneck asset displays:
 
 You can visualize how long bottlenecks are making cells or assets wait. The cells across the line show the direction of waits and their relative excess wait times. Cells that are bottlenecks will be highlighted red. There can be multiple bottlenecks in an interval.
 
+> _By visualizing bottlenecks, you will be able to understand the exact wait times of a selected bottleneck. This step acts as the next step in drilling further into understanding your bottleneck entities._
+
 ### Bottleneck timeline
 
 {% stepper %}
@@ -159,6 +169,10 @@ View availability, performance and stability impacts on the timeline, differenti
 
 Verifying a bottleneck helps in pointing out which assets are the problem in a specific interval and why
 
+> _The bottleneck causes timeline helps you navigate different time zones during production and the bottlenecks that occurred during the timelines._
+>
+> _Verifying a bottleneck essentially allows you to view the cycles, interactions and downtime details of a machine while it was a bottleneck._
+
 {% stepper %}
 {% step %}
 #### Click on the verify button
@@ -175,7 +189,9 @@ Hover on an asset to view its availability, self performance and totals waits in
 {% step %}
 #### Drilldown to view further details
 
-If you select 1 asset from the total waits diagram, you will see drilldowns for cycles and downtime details. This will take you to the cycles and downtime details for the selected asset in the selected interval.
+If you select 1 asset from the total waits diagram, you will see drilldowns for cycles and downtime details. This will take you to the cycles and downtime details for the selected asset in the selected interval.&#x20;
+
+Analyzing the cycles and downtime details will help you identify which faults or cycle issues were the cause behind an entity becoming a bottleneck
 {% endstep %}
 
 {% step %}
@@ -186,4 +202,8 @@ If you select 2 or more assets from the total waits diagram, you will see a dril
 {% endstepper %}
 
 ## Bottleneck opportunities
+
+
+
+
 
