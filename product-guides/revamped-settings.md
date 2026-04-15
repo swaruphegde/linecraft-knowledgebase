@@ -4,8 +4,6 @@ hidden: true
 
 # Revamped Settings
 
-
-
 {% hint style="info" %}
 **Navigation Path:**\
 \
@@ -37,8 +35,6 @@ From the Settings module, users can:
 
 The **Profile** tab allows users to manage personal account information. The **Profile** tab is the default landing page when a user accesses the Settings module.
 
-<figure><img src="../.gitbook/assets/Knowledgebase Settings (1).gif" alt=""><figcaption></figcaption></figure>
-
 #### Capabilities
 
 * View personal details
@@ -46,6 +42,8 @@ The **Profile** tab allows users to manage personal account information. The **P
 * Change account password
 
 #### Edit Personal Information
+
+<figure><img src="../.gitbook/assets/2026-04-15, 07_48_38 a.m.-Settings___Google_Chrome_Demo.gif" alt=""><figcaption></figcaption></figure>
 
 Click **Edit** in the Personal Information section to open a popup.
 
@@ -163,11 +161,11 @@ The **Fault Code Mapping** tab standardizes fault codes at an asset level.
 #### Asset List Behavior
 
 * Assets are listed alphabetically
+* Tooltip at top shows the number of remaining unmapped assets
+* Ignored assets will have “Ignored Asset” text below the asset name.
 * **Non‑mapped assets**:
   * Always appear at the top
-  * Display an information (`i`) icon
-  * Show a tooltip indicating unmapped status
-* Tooltip shows the number of remaining unmapped assets
+  * Display an information (`i`) icon which indicating unmapped status on hover
 
 #### Mapping Rules
 
@@ -191,7 +189,7 @@ Once an asset is mapped:
 Downloaded file name format:\
 `<Asset_Name> Fault Codes`
 
-#### Uploading New Mappings
+#### Uploading New Mappings and Bulk Uploads
 
 **Upload options:**
 
@@ -223,7 +221,8 @@ The **Loss Types** tab allows users to configure production loss classifications
 #### Default Loss Types
 
 * The product includes **16 preconfigured loss types**
-* Default loss types can be edited or deleted
+* Default loss types (loss type name and description) can be edited
+* Each loss type name and description needs to be unique.
 
 #### Creating a Loss Type
 
@@ -239,7 +238,7 @@ The **Create** button remains disabled until both fields are filled.
 #### System Behavior
 
 * Loss type changes are reflected across analytics and reports
-* Used for loss attribution and OEE calculations
+* Used for loss attribution
 
 ***
 
@@ -252,13 +251,14 @@ The **Process Parameters** tab allows users with the **Configurator role** to vi
 Parameters are displayed in descending order of **Updated At** with:
 
 * Parameter Name
-* Associated Part Type
-* Associated Asset
-* Parameter Type (IoT / Quality)
+* Machine
+* Part Type
 * Min Value
 * Max Value
 * Target Value
 * Unit
+* Aggregator
+* Parameter Type (IoT / Quality)
 
 #### Editing Parameters
 
@@ -270,6 +270,7 @@ Click the **Edit** icon to modify parameter values.
 * Max Value
 * Target Value
 * Unit
+* Aggregator
 
 #### Validation Rules
 
