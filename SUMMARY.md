@@ -30,6 +30,7 @@
 * [🛡️ Application administration](product-guides/application-administration.md)
 * [⚙️ Deployment master](product-guides/deployment-master.md)
 * [Bottlenecks - Swarup](product-guides/bottlenecks-swarup.md)
+* [Revamped Settings](product-guides/revamped-settings.md)
 
 ***
 
