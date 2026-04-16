@@ -4,11 +4,11 @@ description: >-
   various parameters
 ---
 
-# ✴️ Critical machines
+# ✴️ Critical Machines
 
 ## Overview
 
-The critical assets feature ranks assets and the cells it belongs to by various parameters in terms of the worst performing cell first. You can access the critical assets module by clicking on the "Critical assets" card from the main menu.
+The critical machines feature ranks machine and the cells it belongs to by various parameters in terms of the worst performing cell first. You can access the critical assets module by clicking on the "Critical assets" card from the main menu.
 
 <figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 

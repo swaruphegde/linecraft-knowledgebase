@@ -19,7 +19,7 @@
   * [Heatmap drilldowns](product-guides/machine-monitoring/heatmap-drilldowns.md)
 * [🗓️ Production overview](product-guides/production-overview.md)
 * [❗ Bottlenecks](product-guides/bottlenecks.md)
-* [✴️ Critical machines](product-guides/critical-machines.md)
+* [✴️ Critical Machines](product-guides/critical-machines.md)
 * [📉 Loss management](product-guides/loss-management.md)
 * [🔔 Condition monitoring](product-guides/condition-monitoring.md)
 * [📦 Part tracing](product-guides/part-tracing.md)
@@ -32,7 +32,7 @@
 * [Bottlenecks - Swarup](product-guides/bottlenecks-swarup.md)
 * [Revamped Settings](product-guides/revamped-settings.md)
 * [Settings Doc md](product-guides/settings-doc-md.md)
-* [Page 1](product-guides/page-1.md)
+* [Critical Machines](product-guides/critical-machines-1.md)
 * [Part Tracing V1](product-guides/part-tracing-v1.md)
 
 ***
