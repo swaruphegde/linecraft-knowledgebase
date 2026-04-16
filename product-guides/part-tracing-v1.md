@@ -14,7 +14,7 @@ Open the Linecraft AI application. On the Main Menu screen, select Company Name,
 
 Under Module Selection, locate the Part Tracing tile in the bottom right and select it. The tile is described as: _"Trace the lifecycle of your part throughout the line, along with tracking all quality parameters."_
 
-<p align="center"><img src="../.gitbook/assets/1.jpg" alt="" data-size="original"></p>
+<figure><img src="../.gitbook/assets/demo.linecraft.ai_Menu.png" alt=""><figcaption></figcaption></figure>
 
 <p align="center">Main Menu with Part Tracing module highlighted, showing company, plant, and line selection dropdowns, and all module tiles with descriptions and lock icons</p>
 
