@@ -16,7 +16,7 @@ Under Module Selection, locate the Part Tracing tile in the bottom right and sel
 
 <figure><img src="../.gitbook/assets/demo.linecraft.ai_Menu.png" alt=""><figcaption></figcaption></figure>
 
-<p align="center">Main Menu with Part Tracing module highlighted, showing company, plant, and line selection dropdowns, and all module tiles with descriptions and lock icons</p>
+<p align="center">Main Menu with Part Tracing module highlighted, showing company, plant, and line selection dropdowns, and all module tiles with descriptions</p>
 
 ## Exploring the Part Tracing screen
 
@@ -36,7 +36,7 @@ Once the module opens, you'll see an Enter Part Serial Number input field at the
 
 ·        Avg. Time in Line in Planned Production: 09:39:20
 
-<p align="center"><img src="../.gitbook/assets/unknown (1).jpeg" alt=""></p>
+<figure><img src="../.gitbook/assets/demo.linecraft.ai_PartTracing.png" alt=""><figcaption></figcaption></figure>
 
 <p align="center">Part Tracing module initial screen with serial number input, date range, and summary statistics</p>
 
@@ -44,7 +44,7 @@ Once the module opens, you'll see an Enter Part Serial Number input field at the
 
 To analyze a specific production period, click the date range selector to open the calendar dialog. Use the left and right arrows to navigate between months, then select your start and end dates. You can also adjust the time values if needed. Click Apply to confirm your selection.
 
-<p align="center"><img src="../.gitbook/assets/unknown (2).jpeg" alt=""></p>
+<figure><img src="../.gitbook/assets/demo.linecraft.ai_PartTracing (2).png" alt=""><figcaption></figcaption></figure>
 
 <p align="center">Calendar popup for selecting custom date range, showing March 2024 selected</p>
 
@@ -64,7 +64,7 @@ After applying the new date range, the summary statistics tiles update automatic
 
 ·        Avg. Time in Line in Planned Production: 13:31:04
 
-<p align="center"><img src="../.gitbook/assets/unknown (3).jpeg" alt=""></p>
+<figure><img src="../.gitbook/assets/demo.linecraft.ai_PartTracing (3).png" alt=""><figcaption></figcaption></figure>
 
 <p align="center">Updated statistics after date range selection, showing new values for all summary tiles</p>
 
@@ -72,15 +72,15 @@ After applying the new date range, the summary statistics tiles update automatic
 
 Each summary tile supports quick filtering. Hover over any tile — such as Part Rejects, Parts with Reworks, or Parts in Progress — to reveal a View button. Clicking View filters the data table to show only the parts in that category.
 
-<p align="center"><img src="../.gitbook/assets/unknown (4).jpeg" alt=""></p>
+<figure><img src="../.gitbook/assets/demo.linecraft.ai_PartTracing (4).png" alt=""><figcaption></figcaption></figure>
 
-<p align="center">Hovering over summary tiles reveals "View" button, example on Part Rejects</p>
+<p align="center">Hovering over summary tiles reveals "View" button, example on Part OK</p>
 
 ## Searching by part serial number
 
-To look up a specific part, click the Enter Part Serial Number field and type a serial number or partial serial (for example, _123_). Click the blue Search button to the right of the input field to run the search.
+To look up a specific part, click the Enter Part Serial Number field and type a serial number or partial serial. Click the blue Search button to the right of the input field to run the search.
 
-<p align="center"><img src="../.gitbook/assets/unknown (5).jpeg" alt=""></p>
+<figure><img src="../.gitbook/assets/Serial number.png" alt=""><figcaption></figcaption></figure>
 
 <p align="center">Entering a serial number and clicking Search, with loading indicator</p>
 
@@ -104,13 +104,13 @@ After a search, a data table appears on the right side of the screen listing all
 
 ·        Time in Line in Planned Production
 
-<p align="center"><img src="../.gitbook/assets/unknown (6).jpeg" alt=""></p>
+<figure><img src="../.gitbook/assets/demo.linecraft.ai_PartTracing (5).png" alt=""><figcaption></figcaption></figure>
 
 <p align="center">Part data table with columns for serial number, type, reworks, acceptance, compliance, and time metrics</p>
 
 You can use the Filters button above the table to further refine the displayed results, or click Export As... in the top right to download the data. Use the Back button to return to the previous view.
 
-<p align="center"><img src="../.gitbook/assets/unknown (7).jpeg" alt=""></p>
+<figure><img src="../.gitbook/assets/demo.linecraft.ai_PartTracing (7).png" alt=""><figcaption></figcaption></figure>
 
 <p align="center">Filtered table showing only "Parts in Progress" with corresponding details</p>
 
