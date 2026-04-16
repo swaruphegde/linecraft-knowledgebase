@@ -20,21 +20,15 @@ Under Module Selection, locate the Part Tracing tile in the bottom right and sel
 
 ## Exploring the Part Tracing screen
 
-Once the module opens, you'll see an Enter Part Serial Number input field at the top. Below it, a default date range is displayed (for example, _03 Dec 2024 00:00 – 10 Dec 2024 00:00_), along with a set of summary statistics tiles for that period:
+Once the module opens, you'll see an Enter Part Serial Number input field at the top. Below it, a default date range is displayed (for example, _03 Dec 2024 00:00 – 10 Dec 2024 00:00_), along with a set of quality KPI's:
 
-·        Total Parts Handled: 32
-
-·        Parts OK: 28
-
-·        Part Rejects: 0
-
-·        Parts in Progress: 4
-
-·        Parts with Reworks: 1
-
-·        Avg. Time on Line: 09:39:20
-
-·        Avg. Time in Line in Planned Production: 09:39:20
+* **Total Parts Handled**
+* **Parts OK**
+* **Part Rejects**
+* **Parts in Progress**
+* **Parts with Reworks**
+* **Avg. Time on Line**
+* **Avg. Time in Line in Planned Production**
 
 <figure><img src="../.gitbook/assets/demo.linecraft.ai_PartTracing.png" alt=""><figcaption></figcaption></figure>
 
@@ -48,21 +42,7 @@ To analyze a specific production period, click the date range selector to open t
 
 <p align="center">Calendar popup for selecting custom date range, showing March 2024 selected</p>
 
-After applying the new date range, the summary statistics tiles update automatically. For example, selecting 4 Mar 2024 – 25 Mar 2024 produces the following updated values:
-
-·        Total Parts Handled: 131
-
-·        Parts OK: 123
-
-·        Part Rejects: 0
-
-·        Parts in Progress: 8
-
-·        Parts with Reworks: 6
-
-·        Avg. Time on Line: 13:31:04
-
-·        Avg. Time in Line in Planned Production: 13:31:04
+After applying the new date range, the quality KPI's tiles update automatically.&#x20;
 
 <figure><img src="../.gitbook/assets/demo.linecraft.ai_PartTracing (3).png" alt=""><figcaption></figcaption></figure>
 
@@ -88,21 +68,14 @@ To look up a specific part, click the Enter Part Serial Number field and type a 
 
 After a search, a data table appears on the right side of the screen listing all parts handled within the selected date range. The left panel continues to display the summary statistics. The table includes the following columns:
 
-·        First entered the line
-
-·        Part Serial Number
-
-·        Part Type
-
-·        No. of Reworks
-
-·        Part Acceptance (for example, _Part OK_, _In progress_)
-
-·        Non-compliant Parameters (%)
-
-·        Total Time on Line
-
-·        Time in Line in Planned Production
+* **First entered the line**
+* **Part Serial Number**
+* **Part Type**
+* **No. of Reworks**
+* **Part Acceptance (for example,&#x20;**_**Part OK**_**,&#x20;**_**In progress**_**)**
+* **Non-compliant Parameters (%)**
+* **Total Time on Line**
+* **Time in Line in Planned Production**
 
 <figure><img src="../.gitbook/assets/demo.linecraft.ai_PartTracing (5).png" alt=""><figcaption></figcaption></figure>
 
@@ -120,21 +93,15 @@ Opening the part detail view
 
 Click on a specific part serial number in the data table to open its detailed view. The left panel displays key metadata for that part, for example:
 
-·        Serial Number: 3320241502
+* **Serial Number**
+* **Part Type**
+* **First entered line**
+* **Total time on line**
+* **Time in Line in Planned Production**
+* **No. of Reworks**
+* **Part Acceptance**
 
-·        Part Type: 27.00R49 BKT EARTHMAX SR45 PLUS E-4 CR
-
-·        First entered line: 03-Mar-2024 15:07:02.638
-
-·        Total time on line: 11h 48m 54s
-
-·        Time in Line in Planned Production: 11h 48m 54s
-
-·        No. of Reworks: 0
-
-·        Part Acceptance: Accepted
-
-The main panel shows a Gantt Chart area, which initially appears empty.
+The main panel shows a Gantt Chart area.
 
 <p align="center"><img src="../.gitbook/assets/unknown (8).jpeg" alt=""></p>
 
@@ -150,11 +117,7 @@ The Gantt Chart visualizes the part's journey through each asset and process on 
 
 A time bar at the bottom allows you to navigate through the process timeline.
 
-<p align="center"><img src="../.gitbook/assets/unknown (9).jpeg" alt=""></p>
-
-<p align="center">Gantt Chart with asset process bars and timeline navigation</p>
-
-Switching to part process parameters
+**Switching to part process parameters**
 
 Click the Part Process Parameters button to switch from the Gantt Chart view to the process parameters table. The table includes the following columns:
 
