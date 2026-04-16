@@ -33,6 +33,7 @@
 * [Revamped Settings](product-guides/revamped-settings.md)
 * [Settings Doc md](product-guides/settings-doc-md.md)
 * [Page 1](product-guides/page-1.md)
+* [Part Tracing V1](product-guides/part-tracing-v1.md)
 
 ***
 
