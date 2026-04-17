@@ -56,6 +56,8 @@ Changes are applied immediately after saving.
 
 #### Password Management
 
+<figure><img src="../.gitbook/assets/image (174).png" alt=""><figcaption></figcaption></figure>
+
 Users can update their password from this tab.\
 Password changes take effect immediately and apply across all sessions.
 
@@ -68,6 +70,8 @@ The **Preferences** tab allows users to customize system behavior for their acco
 #### Time Preferences
 
 Users can configure how time values are displayed across the product.
+
+<figure><img src="../.gitbook/assets/image (176).png" alt=""><figcaption></figcaption></figure>
 
 **Available options:**
 
@@ -84,6 +88,8 @@ Changes are applied immediately.
 
 The **Shifts** tab is used to define operational shift structures for production tracking and reporting.
 
+<figure><img src="../.gitbook/assets/image (177).png" alt=""><figcaption></figcaption></figure>
+
 #### Default Shift Group
 
 * A default shift group exists when users first visit this page
@@ -93,6 +99,8 @@ The **Shifts** tab is used to define operational shift structures for production
   * It cannot be unset as default
 
 #### Shift Group Actions
+
+<figure><img src="../.gitbook/assets/image (178).png" alt=""><figcaption></figcaption></figure>
 
 Each shift group supports:
 
@@ -104,6 +112,8 @@ Each shift group supports:
 #### Creating a Shift Group
 
 Click **Add Shift Group** to create a new shift group.
+
+<figure><img src="../.gitbook/assets/image (179).png" alt=""><figcaption></figcaption></figure>
 
 **Rules and behavior:**
 
@@ -138,12 +148,16 @@ Click **Add Shift Group** to create a new shift group.
 
 The **Targets** tab allows users to configure production targets for each part type.
 
+<figure><img src="../.gitbook/assets/image (180).png" alt=""><figcaption></figcaption></figure>
+
 #### Overview
 
 * Targets are configured part‑type wise
 * Unit of measurement: **JPH (Jobs Per Hour)**
 
 #### Edit Target
+
+<figure><img src="../.gitbook/assets/image (181).png" alt=""><figcaption></figcaption></figure>
 
 **Fields:**
 
@@ -157,6 +171,8 @@ If a target already exists for a part type, the new value overwrites the existin
 ## `Fault Code Mapping`
 
 The **Fault Code Mapping** tab standardizes fault codes at an asset level.
+
+<figure><img src="../.gitbook/assets/image (182).png" alt=""><figcaption></figcaption></figure>
 
 #### Asset List Behavior
 
@@ -212,6 +228,10 @@ Uploaded sheets are validated for:
 
 Validation errors are displayed in an error popup.
 
+<figure><img src="../.gitbook/assets/image (183).png" alt=""><figcaption></figcaption></figure>
+
+Same applies for the Zone Mappings.&#x20;
+
 ***
 
 ## `Loss Types`
@@ -220,13 +240,19 @@ The **Loss Types** tab allows users to configure production loss classifications
 
 #### Default Loss Types
 
+<figure><img src="../.gitbook/assets/image (184).png" alt=""><figcaption></figcaption></figure>
+
 * The product includes **16 preconfigured loss types**
 * Default loss types (loss type name and description) can be edited
 * Each loss type name and description needs to be unique.
 
+<figure><img src="../.gitbook/assets/image (187).png" alt=""><figcaption></figcaption></figure>
+
 #### Creating a Loss Type
 
 Click **Create Loss Type** to open the creation popup.
+
+<figure><img src="../.gitbook/assets/image (186).png" alt=""><figcaption></figcaption></figure>
 
 **Required fields:**
 
@@ -246,6 +272,8 @@ The **Create** button remains disabled until both fields are filled.
 
 The **Process Parameters** tab allows users with the **Configurator role** to view and edit IoT and Quality parameters.
 
+<figure><img src="../.gitbook/assets/No PLC Mapped.jpg" alt=""><figcaption></figcaption></figure>
+
 #### Parameter List View
 
 Parameters are displayed in descending order of **Updated At** with:
@@ -261,6 +289,8 @@ Parameters are displayed in descending order of **Updated At** with:
 * Parameter Type (IoT / Quality)
 
 #### Editing Parameters
+
+<figure><img src="../.gitbook/assets/No PLC Mapped (1).jpg" alt=""><figcaption></figcaption></figure>
 
 Click the **Edit** icon to modify parameter values.
 
