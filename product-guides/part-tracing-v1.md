@@ -154,7 +154,7 @@ Once loaded, the table displays process parameter readings for each asset.&#x20;
 
 <p align="center"><strong>Process Parameters table with filled data, showing assets, parameters, and values</strong></p>
 
-Filtering process parameters by asset
+**Filtering process parameters by asset**
 
 Use the All Assets dropdown above the process parameters table to filter by a specific asset. You can select or deselect assets such as Machine 1, Machine 2 or Machine 3 to narrow the displayed parameters.
 
