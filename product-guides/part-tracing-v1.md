@@ -10,9 +10,9 @@ This guide walks you through opening the module, filtering by date range, search
 
 ## Accessing the Part Tracing module
 
-Open the Linecraft AI application. On the Main Menu screen, select Company Name, Plant Name: DemoPlant and Line Name to view all modules offered as per selected subscription plan.
+Open the Linecraft AI application. On the Main Menu screen, select Company Name, Plant Name and Line Name to view all modules offered as per selected subscription plan.
 
-Under Module Selection, locate the Part Tracing tile in the bottom right and select it. The tile is described as: _"Trace the lifecycle of your part throughout the line, along with tracking all quality parameters."_
+Under Module Selection, locate the Part Tracing tile in the bottom right and select it.&#x20;
 
 <figure><img src="../.gitbook/assets/demo.linecraft.ai_Menu.png" alt=""><figcaption></figcaption></figure>
 
@@ -119,6 +119,10 @@ Click on a specific part serial number in the data table to open its detailed vi
 
 The main panel shows a Gantt Chart area.
 
+<figure><img src="../.gitbook/assets/demo.linecraft.ai_PartTracing (14).png" alt=""><figcaption></figcaption></figure>
+
+<p align="center"><strong>Part details panel with Gantt Chart area, showing part metadata</strong></p>
+
 **Viewing the Gantt chart**
 
 The Gantt Chart visualizes the part's journey through each asset and process on the line. Assets such as Machine 1, Machine 2 and Machine 3 are listed along the vertical axis. Colored bars represent:
@@ -128,10 +132,6 @@ The Gantt Chart visualizes the part's journey through each asset and process on 
 ·        Target Cycle Time — indicated by green, red, and black dashed lines
 
 A time bar at the bottom allows you to navigate through the process timeline.
-
-<figure><img src="../.gitbook/assets/demo.linecraft.ai_PartTracing (14).png" alt=""><figcaption></figcaption></figure>
-
-<p align="center"><strong>Part details panel with Gantt Chart area, showing part metadata</strong></p>
 
 **Switching to part process parameters**
 
