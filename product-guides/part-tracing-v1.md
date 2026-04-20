@@ -16,7 +16,7 @@ Under Module Selection, locate the Part Tracing tile in the bottom right and sel
 
 <figure><img src="../.gitbook/assets/demo.linecraft.ai_Menu.png" alt=""><figcaption></figcaption></figure>
 
-<p align="center"><strong>Main Menu with Part Tracing module highlighted, showing company, plant, and line selection dropdowns, and all module tiles with descriptions</strong></p>
+<p align="center">Main Menu with Part Tracing module highlighted, showing company, plant, and line selection dropdowns, and all module tiles with descriptions</p>
 
 ## Exploring the Part Tracing screen
 
@@ -32,7 +32,7 @@ Once the module opens, you'll see an Enter Part Serial Number input field at the
 
 <figure><img src="../.gitbook/assets/demo.linecraft.ai_PartTracing.png" alt=""><figcaption></figcaption></figure>
 
-<p align="center"><strong>Part Tracing module initial screen with serial number input, date range, and summary statistics</strong></p>
+<p align="center">Part Tracing module initial screen with serial number input, date range, and summary statistics</p>
 
 ## Selecting a custom date range
 
@@ -40,13 +40,13 @@ To analyze a specific production period, click the date range selector to open t
 
 <figure><img src="../.gitbook/assets/demo.linecraft.ai_PartTracing (2).png" alt=""><figcaption></figcaption></figure>
 
-<p align="center"><strong>Calendar popup for selecting custom date range, showing March 2024 selected</strong></p>
+<p align="center">Calendar popup for selecting custom date range, showing March 2024 selected</p>
 
 After applying the new date range, the quality KPI's tiles update automatically.&#x20;
 
 <figure><img src="../.gitbook/assets/demo.linecraft.ai_PartTracing (3).png" alt=""><figcaption></figcaption></figure>
 
-<p align="center"><strong>Updated statistics after date range selection, showing new values for all summary tiles</strong></p>
+<p align="center">Updated statistics after date range selection, showing new values for all summary tiles</p>
 
 ## Viewing part details from summary tiles
 
@@ -54,7 +54,7 @@ Each summary tile supports quick filtering. Hover over any tile — such as Part
 
 <figure><img src="../.gitbook/assets/demo.linecraft.ai_PartTracing (4).png" alt=""><figcaption></figcaption></figure>
 
-<p align="center"><strong>Hovering over summary tiles reveals "View" button, example on Part OK</strong></p>
+<p align="center">Hovering over summary tiles reveals "View" button, example on Part OK</p>
 
 ## Searching by part serial number
 
@@ -62,7 +62,7 @@ To look up a specific part, click the Enter Part Serial Number field and type a 
 
 <figure><img src="../.gitbook/assets/Serial number.png" alt=""><figcaption></figcaption></figure>
 
-<p align="center"><strong>Entering a serial number and clicking Search, with loading indicator</strong></p>
+<p align="center">Entering a serial number and clicking Search, with loading indicator</p>
 
 ## Reviewing the part data table
 
@@ -79,13 +79,13 @@ After a search, a data table appears on the right side of the screen listing all
 
 <figure><img src="../.gitbook/assets/demo.linecraft.ai_PartTracing (11).png" alt=""><figcaption></figcaption></figure>
 
-<p align="center"><strong>Part data table with columns for serial number, type, reworks, acceptance, compliance, and time metrics</strong></p>
+<p align="center">Part data table with columns for serial number, type, reworks, acceptance, compliance, and time metrics</p>
 
 You can use the Filters button above the table to further refine the displayed results, or click Export As... in the top right to download the data. Use the Back button to return to the previous view.
 
 <figure><img src="../.gitbook/assets/demo.linecraft.ai_PartTracing (13).png" alt=""><figcaption></figcaption></figure>
 
-<p align="center"><strong>Filtered table showing only "Parts in Progress" with corresponding details</strong></p>
+<p align="center">Filtered table showing only "Parts in Progress" with corresponding details</p>
 
 ## Exporting parameters across multiple parts
 
@@ -101,7 +101,7 @@ Click Export to download the selected data.
 
 <figure><img src="../.gitbook/assets/demo.linecraft.ai_PartTracing (21) (1).png" alt=""><figcaption></figcaption></figure>
 
-<p align="center"><strong>Download Part Tracing Process Parameters dialog with part name selection dropdown</strong></p>
+<p align="center">Download Part Tracing Process Parameters dialog with part name selection dropdown</p>
 
 ## Analyzing an individual part in detail
 
@@ -121,15 +121,14 @@ The main panel shows a Gantt Chart area.
 
 <figure><img src="../.gitbook/assets/demo.linecraft.ai_PartTracing (14).png" alt=""><figcaption></figcaption></figure>
 
-<p align="center"><strong>Part details panel with Gantt Chart area, showing part metadata</strong></p>
+<p align="center">Part details panel with Gantt Chart area, showing part metadata</p>
 
 **Viewing the Gantt chart**
 
 The Gantt Chart visualizes the part's journey through each asset and process on the line. Assets such as Machine 1, Machine 2 and Machine 3 are listed along the vertical axis. Colored bars represent:
 
-·        Part in Machine Time — shown in blue
-
-·        Target Cycle Time — indicated by green, red, and black dashed lines
+* Part in Machine Time — shown in blue
+* Target Cycle Time — indicated by green, red, and black dashed lines
 
 A time bar at the bottom allows you to navigate through the process timeline.
 
@@ -152,7 +151,7 @@ Once loaded, the table displays process parameter readings for each asset.&#x20;
 
 <figure><img src="../.gitbook/assets/demo.linecraft.ai_PartTracing (17).png" alt=""><figcaption></figcaption></figure>
 
-<p align="center"><strong>Process Parameters table with filled data, showing assets, parameters, and values</strong></p>
+<p align="center">Process Parameters table with filled data, showing assets, parameters, and values</p>
 
 **Filtering process parameters by asset**
 
@@ -160,7 +159,7 @@ Use the All Assets dropdown above the process parameters table to filter by a sp
 
 <figure><img src="../.gitbook/assets/demo.linecraft.ai_PartTracing (18).png" alt=""><figcaption></figcaption></figure>
 
-<p align="center"><strong>Asset filter dropdown in Process Parameters table</strong></p>
+<p align="center">Asset filter dropdown in Process Parameters table</p>
 
 ## Exporting process parameters
 
@@ -168,12 +167,11 @@ Exporting parameters for a single part
 
 Click the download icon or Export As... button to open the export dialog. In the Download Process Parameters (Part) dialog, configure the following options before exporting:
 
-·        **Parameter**: Select _All parameters_ or a specific parameter
-
-·        **Entity**: Select _All Assets_ or a specific asset
+* **Parameter**: Select _All parameters_ or a specific parameter
+* **Entity**: Select _All Assets_ or a specific asset
 
 Click Export to download the data.
 
 <figure><img src="../.gitbook/assets/demo.linecraft.ai_PartTracing (20).png" alt=""><figcaption></figcaption></figure>
 
-<p align="center"><strong>Download Process Parameters dialog with parameter and entity selection</strong></p>
+<p align="center">Download Process Parameters dialog with parameter and entity selection</p>
