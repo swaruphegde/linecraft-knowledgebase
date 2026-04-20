@@ -1,4 +1,5 @@
 ---
+description: Track a part’s journey through production for quality and progress insights.
 hidden: true
 ---
 
@@ -22,13 +23,13 @@ Under Module Selection, locate the Part Tracing tile in the bottom right and sel
 
 Once the module opens, you'll see an Enter Part Serial Number input field at the top. Below it, a default date range is displayed (for example, _03 Dec 2024 00:00 – 10 Dec 2024 00:00_), along with a set of quality KPI's:
 
-* **Total Parts Handled**
-* **Parts OK**
-* **Part Rejects**
-* **Parts in Progress**
-* **Parts with Reworks**
-* **Avg. Time on Line**
-* **Avg. Time in Line in Planned Production**
+* Total Parts Handled
+* Parts OK
+* Part Rejects
+* Parts in Progress
+* Parts with Reworks
+* Avg. Time on Line
+* Avg. Time in Line in Planned Production
 
 <figure><img src="../.gitbook/assets/demo.linecraft.ai_PartTracing.png" alt=""><figcaption></figcaption></figure>
 
@@ -68,14 +69,14 @@ To look up a specific part, click the Enter Part Serial Number field and type a 
 
 After a search, a data table appears on the right side of the screen listing all parts handled within the selected date range. The left panel continues to display the summary statistics. The table includes the following columns:
 
-* **First entered the line**
-* **Part Serial Number**
-* **Part Type**
-* **No. of Reworks**
-* **Part Acceptance (for example,&#x20;**_**Part OK**_**,&#x20;**_**In progress**_**)**
-* **Non-compliant Parameters (%)**
-* **Total Time on Line**
-* **Time in Line in Planned Production**
+* First entered the line
+* Part Serial Number
+* Part Type
+* No. of Reworks
+* Part Acceptance (for example, _Part OK_, _In progress_)
+* Non-compliant Parameters (%)
+* Total Time on Line
+* Time in Line in Planned Production
 
 <figure><img src="../.gitbook/assets/demo.linecraft.ai_PartTracing (11).png" alt=""><figcaption></figcaption></figure>
 
@@ -91,11 +92,9 @@ You can use the Filters button above the table to further refine the displayed r
 
 For broader exports, the Download Part Tracing Process Parameters dialog provides an additional option:
 
-·      **Parameter**: Choose _All parameters_ or a specific parameter
-
-·        **Entity**: Select from available entities
-
-·        **Part Names:** Select individual part serial numbers from a searchable list, or choose _All Parts_
+* Parameter: Choose _All parameters_ or a specific parameter
+* Entity: Select from available entities
+* Part Names: Select individual part serial numbers from a searchable list, or choose _All Parts_
 
 Click Export to download the selected data.
 
@@ -109,13 +108,13 @@ Opening the part detail view
 
 Click on a specific part serial number in the data table to open its detailed view. The left panel displays key metadata for that part, for example:
 
-* **Serial Number**
-* **Part Type**
-* **First entered line**
-* **Total time on line**
-* **Time in Line in Planned Production**
-* **No. of Reworks**
-* **Part Acceptance**
+* Serial Number
+* Part Type
+* First entered line
+* Total time on line
+* Time in Line in Planned Production
+* No. of Reworks
+* Part Acceptance
 
 The main panel shows a Gantt Chart area.
 
@@ -136,13 +135,13 @@ A time bar at the bottom allows you to navigate through the process timeline.
 
 Click the Part Process Parameters button to switch from the Gantt Chart view to the process parameters table. The table includes the following columns:
 
-* **Asset**
-* **Quality Parameters**
-* **Min**
-* **Max**
-* **Time Stamp**
-* **Value**
-* **Aggregator**
+* Asset
+* Quality Parameters
+* Min
+* Max
+* Time Stamp
+* Value
+* Aggregator
 
 Once loaded, the table displays process parameter readings for each asset.&#x20;
 
@@ -167,8 +166,8 @@ Exporting parameters for a single part
 
 Click the download icon or Export As... button to open the export dialog. In the Download Process Parameters (Part) dialog, configure the following options before exporting:
 
-* **Parameter**: Select _All parameters_ or a specific parameter
-* **Entity**: Select _All Assets_ or a specific asset
+* Parameter: Select _All parameters_ or a specific parameter
+* Entity: Select _All Assets_ or a specific asset
 
 Click Export to download the data.
 
