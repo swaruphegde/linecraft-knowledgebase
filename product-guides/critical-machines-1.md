@@ -7,7 +7,7 @@ hidden: true
 
 # Critical Machines
 
-## Overview
+## What are Critical Machines?
 
 The Critical Machines module ranks machines and production cells by performance, highlighting the most problematic areas first. This allows you to focus your attention where it matters most. You can access this feature by selecting the "Critical Machines" card from the main menu.
 
