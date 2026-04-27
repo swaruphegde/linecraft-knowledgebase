@@ -22,7 +22,7 @@
 * [✴️ Critical Machines](product-guides/critical-machines.md)
 * [📉 Loss management](product-guides/loss-management.md)
 * [🔔 Condition monitoring](product-guides/condition-monitoring.md)
-* [📦 Part tracing old](product-guides/part-tracing-old.md)
+* [📦 Part tracing old](product-guides/part-tracing.md)
 * [📑 Reports](product-guides/reports/README.md)
   * [Bottleneck Report](product-guides/reports/bottleneck-report.md)
   * [Critical Machines Report](product-guides/reports/critical-machines-report.md)
@@ -33,7 +33,7 @@
 * [Revamped Settings](product-guides/revamped-settings.md)
 * [Settings Doc md](product-guides/settings-doc-md.md)
 * [Critical Machines](product-guides/critical-machines-1.md)
-* [Part Tracing V1](product-guides/part-tracing-v1.md)
+* [📦 Part Tracing](<product-guides/part-tracing (1).md>)
 
 ***
 

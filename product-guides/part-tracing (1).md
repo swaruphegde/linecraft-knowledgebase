@@ -1,9 +1,8 @@
 ---
 description: Track a part’s journey through production for quality and progress insights.
-hidden: true
 ---
 
-# Part Tracing V1
+# 📦 Part Tracing
 
 The Part Tracing module in Linecraft AI lets you trace the complete lifecycle of a part as it moves through your production line, while tracking all associated quality parameters. This is useful when you need to investigate part acceptance outcomes, review rework history, monitor in-progress parts, or export process data for quality reporting.
 
