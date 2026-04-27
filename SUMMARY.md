@@ -30,7 +30,7 @@
 * [🔩 Settings](product-guides/settings.md)
 * [🛡️ Application administration](product-guides/application-administration.md)
 * [⚙️ Deployment master](product-guides/deployment-master.md)
-* [Bottlenecks - Swarup](product-guides/bottlenecks-swarup.md)
+* [Bottlenecks](product-guides/bottlenecks-1.md)
 * [Revamped Settings](product-guides/revamped-settings.md)
 * [Settings Doc md](product-guides/settings-doc-md.md)
 * [Critical Machines](product-guides/critical-machines-1.md)
