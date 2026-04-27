@@ -22,7 +22,7 @@
 * [✴️ Critical Machines](product-guides/critical-machines.md)
 * [📉 Loss management](product-guides/loss-management.md)
 * [🔔 Condition monitoring](product-guides/condition-monitoring.md)
-* [📦 Part tracing](product-guides/part-tracing.md)
+* [📦 Part tracing old](product-guides/part-tracing-old.md)
 * [📑 Reports](product-guides/reports/README.md)
   * [Bottleneck Report](product-guides/reports/bottleneck-report.md)
   * [Critical Machines Report](product-guides/reports/critical-machines-report.md)

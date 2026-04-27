@@ -2,9 +2,10 @@
 description: >-
   Walkthrough of how the part moved from the start of the line and a tabulation
   of its process parameters throughout its journey
+hidden: true
 ---
 
-# 📦 Part tracing
+# 📦 Part tracing old
 
 ## Overview
 
