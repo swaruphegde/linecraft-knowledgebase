@@ -37,7 +37,7 @@ The **Profile** tab allows users to manage personal account information. The **P
 * Edit profile information
 * Change account password
 
-#### Edit Personal Information
+### Edit Personal Information
 
 <figure><img src="../.gitbook/assets/2026-04-15, 07_48_38 a.m.-Settings___Google_Chrome_Demo.gif" alt=""><figcaption></figcaption></figure>
 
