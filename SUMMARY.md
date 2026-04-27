@@ -31,7 +31,7 @@
 * [Revamped Settings](product-guides/revamped-settings.md)
 * [🛡️ Application administration](product-guides/application-administration.md)
 * [⚙️ Deployment master](product-guides/deployment-master.md)
-* [Bottlenecks](product-guides/bottlenecks-1.md)
+* [🛑 Bottlenecks](product-guides/bottlenecks-1.md)
 * [Settings Doc md](product-guides/settings-doc-md.md)
 * [Critical Machines](product-guides/critical-machines-1.md)
 

@@ -19,7 +19,7 @@ layout:
     visible: true
 ---
 
-# Bottlenecks - Swarup
+# 🛑 Bottlenecks
 
 <details>
 
