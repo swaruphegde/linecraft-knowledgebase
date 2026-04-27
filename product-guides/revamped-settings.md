@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Revamped Settings
 
 {% hint style="info" %}
