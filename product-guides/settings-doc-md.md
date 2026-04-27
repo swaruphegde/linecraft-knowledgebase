@@ -10,13 +10,6 @@ LineCraft.ai provides a centralized **Settings** area where you can manage your 
 
 ***
 
-### Prerequisites
-
-* You must have an active LineCraft.ai account with sufficient permissions to edit settings.
-* Access the **Settings** area from the top menu before following any steps in this guide.
-
-***
-
 ### Managing your user profile
 
 #### Viewing and editing personal information
