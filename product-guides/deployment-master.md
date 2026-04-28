@@ -2,7 +2,7 @@
 description: (Config Automation)
 ---
 
-# ⚙️ Deployment Master
+# ⚙️ Deployment master
 
 \
 **Overview**
@@ -19,8 +19,8 @@ This module replaces that approach with a **guided, sequential workflow** that:
 
 ·       Produces consistent, deployment-ready outputs
 
-Users just have to now define what physically exists (PLCs and Data Loggers).\
-The system derives everything else and guides users step by step.
+You just have to now define what physically exists (PLCs and Data Loggers).\
+The system derives everything else and guides you step by step.
 
 <figure><img src="../.gitbook/assets/Format (3).png" alt=""><figcaption></figcaption></figure>
 
