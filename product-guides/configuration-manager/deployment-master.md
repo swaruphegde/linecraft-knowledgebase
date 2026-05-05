@@ -1,8 +1,9 @@
 ---
 description: (Config Automation)
+icon: cube
 ---
 
-# ⚙️ Deployment master
+# Deployment master
 
 \
 **Overview**
@@ -22,7 +23,7 @@ This module replaces that approach with a **guided, sequential workflow** that:
 You just have to now define what physically exists (PLCs and Data Loggers).\
 The system derives everything else and guides you step by step.
 
-<figure><img src="../.gitbook/assets/Format (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Format (3).png" alt=""><figcaption></figcaption></figure>
 
 In a nutshell
 
@@ -52,7 +53,7 @@ This design is deliberate. It removes the need for users to understand internal 
 
 End to End Flow:
 
-&#x20;![](<../.gitbook/assets/unknown (4).png>)
+&#x20;![](<../../.gitbook/assets/unknown (4).png>)
 
 
 
@@ -88,11 +89,11 @@ o   PLC types, drivers, IPs, ports
 
 ·       Automatically creates required internal mappings
 
-<figure><img src="../.gitbook/assets/Format-1 (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Format-1 (3).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/Format-2 (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Format-2 (3).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/Format-3 (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Format-3 (3).png" alt=""><figcaption></figcaption></figure>
 
 #### Important validations
 
@@ -101,7 +102,7 @@ While configuring the structure, ensure the following:
 * &#x20; You are using a **valid combination of PLC type and associated driver names**
 * Supported combinations are listed in the below table
 
-![](<../.gitbook/assets/unknown (5).png>)
+![](<../../.gitbook/assets/unknown (5).png>)
 
 * All data entered in the Excel sheet must follow the defined rules  &#x20;
 * These rules are documented in [Appendix A](deployment-master.md#appendix-a-data-logger-structure-validation-rules)
@@ -136,13 +137,13 @@ Parent Folder \
 &#x20;     └── Supporting folders/files\
 <br>
 
-<figure><img src="../.gitbook/assets/Format-9.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Format-9.png" alt=""><figcaption></figcaption></figure>
 
 Folder structure example:
 
-<figure><img src="../.gitbook/assets/unknown (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/unknown (6).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/unknown (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/unknown (7).png" alt=""><figcaption></figcaption></figure>
 
 After uploading the parent folder:
 
@@ -203,13 +204,13 @@ Currently, automated processing supports:<br>
 * &#x20;For only Siemens CNC Sinumerik driver is applicable
 * &#x20;Siemens PLC can have Linecraft driver but it won't work with parser
 
-<figure><img src="../.gitbook/assets/Format-4 (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Format-4 (3).png" alt=""><figcaption></figcaption></figure>
 
 ### Option B: CSV Tag Upload (When PLC Backups Are Not Available)
 
 If PLC backups are not available for the supported manufacturers, you can upload tags manually using a **CSV file**.
 
-<figure><img src="../.gitbook/assets/Format-10.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Format-10.png" alt=""><figcaption></figcaption></figure>
 
 #### CSV upload – folder structure
 
@@ -265,7 +266,7 @@ How tags are organized
 
 Tags are logically organized into main groups and sub-groups. To assist selection, the page provides three key tools:
 
-<figure><img src="../.gitbook/assets/Format-5 (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Format-5 (3).png" alt=""><figcaption></figcaption></figure>
 
 #### 1. Signal-based selection (Left Pane)
 
@@ -279,7 +280,7 @@ o   Default signals cannot be edited, deleted, or uploaded via UI
 
 ·       You can upload **custom signals** using Excel
 
-<figure><img src="../.gitbook/assets/Format-8.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Format-8.png" alt=""><figcaption></figcaption></figure>
 
 o   Download the existing signal template from the UI
 
@@ -317,7 +318,7 @@ o   Matching tag name / FU / TU
 
 \- Tag distribution across Data Loggers and PLCs<br>
 
-<figure><img src="../.gitbook/assets/Format-6 (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Format-6 (3).png" alt=""><figcaption></figcaption></figure>
 
 * If the summary looks correct, click **Save**
 * You can modify tag selections later if needed
@@ -344,7 +345,7 @@ o   Developer Parameter.xml
 
 o   System Parameter.xml
 
-<figure><img src="../.gitbook/assets/Format-7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Format-7.png" alt=""><figcaption></figcaption></figure>
 
 ### Important Note on Process Flow
 
