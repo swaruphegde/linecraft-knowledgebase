@@ -7,6 +7,57 @@ icon: briefcase
 
 # Basic Configuration
 
+<details>
+
+<summary><strong>Why We Built Configuration Manager</strong></summary>
+
+Every production line has its own story.
+
+Some lines stay stable for years. Others evolve every week - especially during commissioning, pilot runs, ramp-ups, or customer-specific deployments.
+
+For a long time, configuring these changes meant working through multiple UI screens, manually entering mappings, and carefully rebuilding structures one step at a time.
+
+While this worked for stable environments, it created real challenges when lines changed frequently:
+
+* Configuration took longer than expected
+* Small manual mistakes could lead to rework
+* Rebuilding existing structures for small changes felt unnecessary
+* Engineers often preferred working offline before applying changes
+
+We heard this feedback repeatedly from configurators, system integrators, and commissioning teams working on live shop floors.
+
+That led to an important question:
+
+> **What if configuring a production line felt as natural as editing a structured engineering file?**
+
+That question became the foundation of Configuration Manager.
+
+***
+
+### What Changed
+
+Instead of forcing every change through rigid UI workflows, Configuration Manager introduces an Excel-based approach that allows you to:
+
+* Build line structures faster
+* Make targeted updates without rebuilding everything
+* Validate changes before anything goes live
+* Work offline and upload when ready
+* Keep existing production lines safe while making changes
+
+***
+
+### What We’re Trying to Improve
+
+At its core, this module is designed to solve one thing:
+
+> **Help configurators make changes with confidence - even in fast-changing production environments.**
+
+Whether you're setting up a new line, updating PLC mappings, or making last-minute ramp-up changes, the goal is simple:
+
+**Less manual effort. Fewer errors. Faster configuration.**
+
+</details>
+
 The Basic Configuration under Configuration Manager lets you build your line structure, map PLC tags, and apply updates using a simple Excel file
 
 {% hint style="info" icon="user" %}
@@ -29,6 +80,7 @@ All users at the below role levels:
 #### Creating a Configuration
 
 * [Build Your Line Structure](https://app.gitbook.com/o/pDAf3FQPWhPdFwj4FuIf/s/y2Me4Kn6229fD3kXS68B/~/edit/~/changes/144/product-guides/configuration-manager/basic-configuration#tab-1-build-your-line-structure)
+* [Validation Rules - Line Builder](basic-configuration.md#validation-rules-line-builder)
 * [Configure PLC Mapping](https://app.gitbook.com/o/pDAf3FQPWhPdFwj4FuIf/s/y2Me4Kn6229fD3kXS68B/~/edit/~/changes/144/product-guides/configuration-manager/basic-configuration#tab-2-configure-plc-mapping)
 * [Upload Your File](https://app.gitbook.com/o/pDAf3FQPWhPdFwj4FuIf/s/y2Me4Kn6229fD3kXS68B/~/edit/~/changes/144/product-guides/configuration-manager/basic-configuration#step-3-upload-your-file)
 
@@ -93,30 +145,38 @@ You’ll configure:
 | -------- | ------- | ----------- | ----------- |
 | Assembly | Cell\_1 | Robot\_01   | MACHINE     |
 
-### Validation Rules
+### Validation Rules - Line Builder
 
 Before upload, make sure:
 
-#### Asset Name
-
-* Cannot be blank
-* Must be unique
-* Maximum 100 characters
-* Use only:
-  * Letters
-  * Numbers
-  * `_`
-  * `-`
-
-#### Asset Type
-
-Must match one of the supported system values.
-
-Examples include:
-
-* MACHINE
-* TRANSFER\_CONVEYOR
-* BUFFER\_CONVEYOR
+* None of the two tabs is empty
+* Column headers are precisely as per the downloaded template / configuration excel file
+* **Zone & Cell**
+  * Maximum 100 characters
+  * Use only:
+    * Letters
+    * Numbers
+    * `_`
+    * `-`
+* **Asset Name**
+  * Cannot be blank
+  * Must be unique
+  * Maximum 100 characters
+  * Use only:
+    * Letters
+      * Numbers
+      * `_`
+      * `-`
+* **Asset Type**
+  * Must match one of the supported system values:
+    * MACHINE
+    * TRANSFER\_CONVEYOR
+    * BUFFER\_CONVEYOR
+    * H\_GANTRY
+    * I\_GANTRY
+    * BUFFER\_TROLLEY
+    * MARKING\_MACHINE
+    * PICK\_UP\_CONVEYOR
 
 {% hint style="danger" %}
 If Asset Type is invalid, the upload will fail and your line structure will not be created.
