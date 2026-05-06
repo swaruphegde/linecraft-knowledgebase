@@ -66,6 +66,10 @@ Start by downloading the correct Excel file.
 | Create a new line       | **Mapping Template**       |
 | Update an existing line | **Existing Configuration** |
 
+{% hint style="info" icon="lightbulb-exclamation-on" %}
+We recommend using the existing configuration when making changes to a live line.
+{% endhint %}
+
 ## Step 2: Fill in Your Excel File
 
 Your file contains **2 tabs**.
@@ -89,6 +93,35 @@ You’ll configure:
 | -------- | ------- | ----------- | ----------- |
 | Assembly | Cell\_1 | Robot\_01   | MACHINE     |
 
+### Validation Rules
+
+Before upload, make sure:
+
+#### Asset Name
+
+* Cannot be blank
+* Must be unique
+* Maximum 100 characters
+* Use only:
+  * Letters
+  * Numbers
+  * `_`
+  * `-`
+
+#### Asset Type
+
+Must match one of the supported system values.
+
+Examples include:
+
+* MACHINE
+* TRANSFER\_CONVEYOR
+* BUFFER\_CONVEYOR
+
+{% hint style="danger" %}
+If Asset Type is invalid, the upload will fail and your line structure will not be created.
+{% endhint %}
+
 ## Tab 2 - Configure PLC Mapping
 
 This tab connects your line structure to PLC data.
@@ -101,6 +134,42 @@ You’ll define:
 * Tag addresses
 * Artifacts
 * Data types
+
+### Required System Fields
+
+These values must already exist in the system:
+
+* DataLogger\_Name
+* OPC\_Name
+* OPC\_IP\_Address
+* PLC\_Name
+* PLC\_IP\_Address
+
+> These values are validated exactly as entered.
+
+{% hint style="danger" %}
+If even one value does not match, the upload will fail.
+{% endhint %}
+
+### Tag Validation
+
+Each Tag is verified against your PLC mapping data.
+
+The following must match:
+
+* Tag
+* Tag\_Address
+* PLC\_Name
+
+{% hint style="danger" %}
+If the tag does not exist in your PLC mapping data, the system will reject the upload.
+{% endhint %}
+
+### Asset Validation
+
+The Asset\_Name and Asset\_Type must match the values used in the Line Builder tab.
+
+> This ensures your structure and PLC mappings stay aligned.
 
 ## Step 3: Upload Your File
 
@@ -118,6 +187,8 @@ We automatically validate:
 * Missing values
 * Duplicate rows
 * PLC mappings
+
+> No changes are applied until all validations pass.
 
 ## Step 4: Fix Errors (If Needed)
 
@@ -143,6 +214,8 @@ Example:
 | ----------- | -------------------- |
 | Robot\_01   | Duplicate Asset Name |
 
+> Fix only the highlighted rows and upload again.
+
 ## Step 5: Apply Configuration
 
 When validation succeeds:
@@ -154,6 +227,8 @@ Your configuration is saved safely.
 * All changes are applied together
 * No partial updates
 * Existing live lines stay protected
+
+> If validation fails, nothing is changed.
 
 This prevents broken or incomplete configurations.
 
@@ -201,21 +276,15 @@ To avoid upload issues:
 
 Start with a blank template.
 
-***
-
 #### For Existing Lines
 
 Always download the current configuration first.
-
-***
 
 #### During Testing
 
 Make smaller changes first.
 
 Validate often.
-
-***
 
 #### Naming
 
