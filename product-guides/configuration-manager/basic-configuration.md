@@ -315,7 +315,7 @@ The system automatically creates it.
 
 ## Common Upload Errors
 
-👎Avoid these mistakes:
+⚠️Avoid these mistakes:
 
 * Empty tabs
 * Missing column headers
