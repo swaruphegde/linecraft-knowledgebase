@@ -9,7 +9,7 @@ icon: briefcase
 
 <details>
 
-<summary><strong>Why We Built Configuration Manager</strong></summary>
+<summary>🧭 <strong>Why We Built Excel based Configuration Manager</strong></summary>
 
 Every production line has its own story.
 
@@ -32,8 +32,6 @@ That led to an important question:
 
 That question became the foundation of Configuration Manager.
 
-***
-
 ### What Changed
 
 Instead of forcing every change through rigid UI workflows, Configuration Manager introduces an Excel-based approach that allows you to:
@@ -43,8 +41,6 @@ Instead of forcing every change through rigid UI workflows, Configuration Manage
 * Validate changes before anything goes live
 * Work offline and upload when ready
 * Keep existing production lines safe while making changes
-
-***
 
 ### What We’re Trying to Improve
 
