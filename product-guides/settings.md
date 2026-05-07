@@ -28,8 +28,6 @@ The Profile section is where you keep your account information up to date. It op
 
 ### Edit Personal Information
 
-
-
 <figure><img src="../.gitbook/assets/wks1103_8069_Settings_ (6).png" alt=""><figcaption></figcaption></figure>
 
 Need to make a quick change? Just click Edit under Personal Information. You’ll be able to update your name and phone number, and your changes will reflect instantly once saved.
@@ -51,10 +49,6 @@ Preferences let you tailor how the system behaves for you. These settings are pe
 Choose how time is displayed across the platform. You can switch between formats like standard view, seconds, or HH:MM:SS.\
 \
 Simply select your preferred option from the dropdown, and it will apply right away across the product.
-
-
-
-<figure><img src="../.gitbook/assets/wks1103_8069_Settings_ (3).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (176).png" alt=""><figcaption></figcaption></figure>
 
