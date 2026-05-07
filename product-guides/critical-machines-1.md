@@ -7,20 +7,36 @@ hidden: true
 
 # Critical Machines
 
-## What are Critical Machines?
+### What is the Critical Machines Module?
 
-The Critical Machines module ranks machines and production cells by performance, highlighting the most problematic areas first. This allows you to focus your attention where it matters most. You can access this feature by selecting the "Critical Machines" card from the main menu.
+The Critical Machines module helps you identify the machines and production cells that are impacting production performance the most.
+
+Assets are ranked based on production impact, allowing you to focus on the most critical issues first instead of manually reviewing every machine.
+
+**Use this module to:**
+
+* Identify production bottlenecks
+* Analyze downtime patterns
+* Investigate performance losses
+* Track quality-related issues
+* Discover optimization opportunities
+* Prioritize operational improvements
+
+To access this feature, select the **Critical Machines** card from the main menu.
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-04-15 160402.png" alt=""><figcaption></figcaption></figure>
 
-#### Navigating the Module
+#### Understanding the Layout
 
-Inside the module, the interface is divided into two primary areas:
+<table><thead><tr><th width="230" valign="middle">Section</th><th>Purpose</th></tr></thead><tbody><tr><td valign="middle">Left Panel</td><td>Displays critical cells, assets, and opportunities</td></tr><tr><td valign="middle">Right Panel</td><td>Displays graphs related to the selected metric</td></tr></tbody></table>
 
-1. A list of critical cells, their component assets, and identified improvement opportunities.&#x20;
-2. Self performance, Total performance, Downtime Frequencies, Downtime durations and Bad parts at a cell and asset level&#x20;
+The graph updates automatically based on:
 
-**Recommended View:** While you can adjust the timeframe, a 2-week time range (the system default) is recommended to capture meaningful performance trends.
+* Selected asset or cell
+* Selected sorting parameter
+* Selected timeframe
+
+**Recommended View:** The default 2-week timeframe is recommended because it typically captures meaningful production trends while reducing short-term noise.
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-04-16 160831.png" alt=""><figcaption></figcaption></figure>
 
@@ -28,54 +44,70 @@ Inside the module, the interface is divided into two primary areas:
 
 You can rank critical assets based on the following parameters to pinpoint specific issues:
 
-* **Parts Lost (Default)**: The total volume of missed production.
-* **Self Performance**: The efficiency of the asset in isolation.
-* **Total Performance**: The asset's performance within the context of the entire line.
-* **Downtime Frequency**: How often the asset stops.
-* **Downtime Duration**: Total time the asset remained inactive.
-* **Bad Parts**: The volume of non-conforming parts produced.
+<table><thead><tr><th width="231.59991455078125"></th><th></th></tr></thead><tbody><tr><td><strong>Parts Lost (Default)</strong></td><td>The total volume of missed production.</td></tr><tr><td><strong>Self Performance</strong></td><td>The efficiency of the asset in isolation.</td></tr><tr><td><strong>Total Performance</strong></td><td>The asset's performance within the context of the entire line.</td></tr><tr><td><strong>Downtime Frequency</strong></td><td>How often the asset stops.</td></tr><tr><td><strong>Downtime Duration</strong></td><td>Total time the asset remained inactive.</td></tr><tr><td><strong>Bad Parts</strong></td><td>The volume of non-conforming parts produced</td></tr></tbody></table>
 
-Cell Insights: Each cell entry displays its name, parts lost, availability, quality, and self-performance. Click "View Critical Assets" to see individual machines within a cell (the number in parentheses indicates how many assets require attention). Use the "View Opportunities" button to see specific recommendations for improvement.
+#### Understanding Cell Insights
+
+Each cell entry includes:
+
+* Cell name
+* Parts lost
+* Availability
+* Quality metrics
+* Self performance
+
+Available Actions
+
+* **View Critical Assets** — Open machines within a selected cell
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-04-16 160831.png" alt=""><figcaption></figcaption></figure>
 
-\
-You can view the same information against a critical asset as well. You can click on the "View opportunities" button to view improvement opportunities for critical assets.
+* **View Opportunities** — Investigate optimization opportunities for the selected asset
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-04-16 161519.png" alt=""><figcaption></figcaption></figure>
 
 \
 To the right of the page, you can see graphs that correspond to the selected options on the left hand side. When a particular sort by is selected, the corresponding graph will open up on the right side. However, you can toggle between the various graphs available.
 
-Currently, we provide the following graphs:
+#### Understanding the Graphs
 
 #### Self performance
 
-This graph displays a **Self-Cycle Histogram** for the selected cell across your chosen timeframe. It provides critical insights into **"over-cycling"** events, specifically highlighting how many cycles exceeded their targets and the total production time lost as a result. This graph is the default view when sorting by **APQ or Self Performance.**
+You can analyze cycle efficiency for the selected cell using the Self-Cycle Histogram. Identify over-cycling events, cycles exceeding targets, and the resulting production time loss.
+
+_Default graph when sorting by APQ or Self Performance._
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-04-16 161519 (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Total performance
 
-This view provides a **Total Cycle Histogram** for the selected cell. Like the Self Performance graph, it tracks over-cycling trends and time loss, but within the context of the entire line's performance. This is the default view when sorting by **Total Performance**.
+View line-wide cycle efficiency using the Total Cycle Histogram. Track over-cycling trends, production time loss, and performance impact across the entire production line.
+
+_Default graph when sorting by Total Performance._
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-04-16 161737.png" alt=""><figcaption></figcaption></figure>
 
 #### Downtime frequency
 
-The **downtime frequency graph** will show you a count of downtimes by causes for the selected cell across the selected time range. Selecting a bar on the graph will show you the corresponding cause description and you can move into aggregate downtime details from here. This graph will open by default when Downtime Frequency is used to sort the left side list.
+Track how often downtime events occur for the selected cell across the chosen timeframe. Select a bar to view the associated downtime cause and drill into Aggregate Downtime Details for deeper analysis.
+
+_Default graph when sorting by Downtime Frequency._
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-04-16 161837.png" alt=""><figcaption></figcaption></figure>
 
 #### Downtime duration
 
-This graph categorizes the duration of downtime by specific causes for the selected cell. By clicking on a bar within the graph, you can view the corresponding cause description and navigate directly into **Aggregate Downtime Details**. This is the default view when sorting by **Downtime Duration**.
+Analyze total downtime duration by cause for the selected cell. Select a bar to view the associated cause and navigate directly to Aggregate Downtime Details for further investigation.
+
+_Default graph when sorting by Downtime Duration._
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-04-16 161915.png" alt=""><figcaption></figcaption></figure>
 
 #### Bad parts
 
-This graph tracks the count of non-conforming parts produced per day for the selected cell. This is the default view when sorting by **Bad Parts.**
+Monitor the daily count of non-conforming parts for the selected cell to identify quality trends and recurring production issues.
+
+_Default graph when sorting by Bad Parts._
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-04-27 110109.png" alt=""><figcaption></figcaption></figure>
 
@@ -83,15 +115,17 @@ This graph tracks the count of non-conforming parts produced per day for the sel
 
 ## Critical Machine Opportunities
 
-**Opportunities** identify the root causes behind underperforming assets and provide targeted suggestions to improve overall line efficiency. These opportunity cards describe the specific issue, the asset involved, and the potential impact of addressing the problem. By default, when a cell is selected, the system displays opportunities for the first asset in that cell.
+Opportunities help identify the root causes behind underperforming assets and highlight areas for improving overall line efficiency. Each opportunity card provides insight into the issue, the affected asset, and its production impact.
 
-There are three primary categories of opportunity cards:
+By default, selecting a cell displays opportunities for the first asset within that cell.
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-04-16 180013.png" alt=""><figcaption></figcaption></figure>
 
 #### Availability opportunities
 
-These represent significant downtime events where assets within a cell were completely unavailable for production. While these explain the primary reasons for a cell’s "critical" status, they are often used for root-cause analysis rather than immediate real-time adjustments.
+Represents periods where assets were completely unavailable for production.
+
+**Best for:** Root-cause analysis and major production interruptions.
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-04-27 155713.png" alt=""><figcaption></figcaption></figure>
 
@@ -102,7 +136,9 @@ These represent significant downtime events where assets within a cell were comp
 
 #### Stability opportunities
 
-**Stability issues** focus on events that disrupt the consistency of the production flow.&#x20;
+Highlights issues affecting production consistency.
+
+**Best for:** Investigating recurring operational interruptions.
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-04-27 154221.png" alt=""><figcaption></figcaption></figure>
 
@@ -122,7 +158,11 @@ This will open the downtimes page for the selected hour, with the stoppage/s hig
 
 #### Performance opportunities
 
-These opportunities focus on optimizing active machine time and reducing hidden inefficiencies:
+Focuses on hidden inefficiencies during active production.
+
+**Best for:** Throughput optimization and cycle-time improvements.
+
+Includes:
 
 * **Static Delays**: These are conditions where an asset waits between operations, often due to programmed delays in the PLC that can be eliminated.
 
@@ -139,18 +179,43 @@ These opportunities focus on optimizing active machine time and reducing hidden 
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-04-27 114727.png" alt=""><figcaption></figcaption></figure>
 
-*   #### Interface delays
+#### Interface delays
 
-    When assets are exchanging signals there are often delays and interlocks programmed into the system. These delays can be removed to improve the cycle time of both interfacing assets. To drilldown into an Interface delays opportunity, click on the card pertaining to this opportunity for the selected asset. This will open a section that shows you all the hour intervals in which the selected asset faced an Interface delay along with the start time and end time for the interval.
-* **Cyclical Waits (Walls)**: This occurs when assets are waiting on one another, either directly or through a chain of dependencies, often due to suboptimal priority logic or automation wait positions.
-  * **Drilldown**: Click the Cyclical Waits card to see the hourly intervals where these waits occurred, including start and end times.
-  * **Action**: Select an interval and click the button below to view the Interaction Graph, which visualizes the relationship between the selected asset and the asset causing the wait.
+Identify delays caused during signal exchange between connected assets. These programmed waits and interlocks can impact the cycle time of multiple assets across the line.
+
+To investigate:
+
+* Open the **Interface Delays** card
+* Review affected hourly intervals
+* Analyze the interval start and end times
+* Investigate synchronization delays between interfacing assets
+
+**Cyclical Waits (Walls)**:&#x20;
+
+Analyze dependency-related waits where assets are blocked by one another directly or through chained dependencies. These waits are often caused by inefficient automation logic or priority sequencing.
+
+To investigate:
+
+* Open the **Cyclical Waits** card
+* Review affected hourly intervals
+* Select an interval
+* Open the **Interaction Graph** to identify the blocking asset and dependency chain
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-04-27 153133.png" alt=""><figcaption></figcaption></figure>
 
 #### Interaction wait delays
 
-These are programmed delays that occur during the interface between assets. Even after an asset receives the **"go-ahead"** to process or release a part, it waits for a set duration. Removing these delays can significantly improve overall cycle time.
+Identify programmed delays that occur between interfacing assets, even after a process or release signal is received. Reducing these waits can help improve overall cycle time and production flow.
+
+Best used for:
+
+* Identifying hidden interface delays
+* Improving asset synchronization
+* Optimizing overall throughput
+
+
+
+> The Critical Machines module is designed to help teams move from identifying issues to understanding root causes and prioritizing operational improvements efficiently.
 
 
 
