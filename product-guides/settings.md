@@ -1,12 +1,5 @@
 # 🔩 Settings
 
-{% hint style="info" %}
-**Navigation Path:**\
-\
-Main Menu → Settings\
-Top Nav Bar → Settings
-{% endhint %}
-
 <details>
 
 <summary>About <strong>Settings Module</strong> </summary>
@@ -29,114 +22,91 @@ From the Settings module, users can:
 
 ## `Profile`
 
-The **Profile** tab allows users to manage personal account information. The **Profile** tab is the default landing page when a user accesses the Settings module.
-
-#### Capabilities
-
-* View personal details
-* Edit profile information
-* Change account password
+The Profile section is where you keep your account information up to date. It opens by default whenever you land on Settings. Here, you can review your details, update your personal information, and change your password anytime.
 
 ### Edit Personal Information
 
 <figure><img src="../.gitbook/assets/2026-04-15, 07_48_38 a.m.-Settings___Google_Chrome_Demo.gif" alt=""><figcaption></figcaption></figure>
 
-Click **Edit** in the Personal Information section to open a popup.
+Need to make a quick change? Just click Edit under Personal Information. You’ll be able to update your name and phone number, and your changes will reflect instantly once saved.
 
-**Editable fields:**
-
-* Name
-* Phone number
-
-Changes are applied immediately after saving.
-
-#### Password Management
+### Change Password
 
 <figure><img src="../.gitbook/assets/image (174).png" alt=""><figcaption></figcaption></figure>
 
-Users can update their password from this tab.\
-Password changes take effect immediately and apply across all sessions.
+You can update your password directly from this tab. Once changed, it takes effect immediately across all your active sessions.
 
 ***
 
 ## `Preferences`
 
-The **Preferences** tab allows users to customize system behavior for their account. Preferences are **user‑specific** and do not affect other users.
+Preferences let you tailor how the system behaves for you. These settings are personal and  won’t affect anyone else.
 
-#### Time Preferences
+### Time Preferences
 
-Users can configure how time values are displayed across the product.
+Choose how time is displayed across the platform. You can switch between formats like standard view, seconds, or HH:MM:SS.\
+\
+Simply select your preferred option from the dropdown, and it will apply right away across the product.
 
 <figure><img src="../.gitbook/assets/image (176).png" alt=""><figcaption></figcaption></figure>
-
-**Available options:**
-
-* Default
-* Seconds
-* HH:MM:SS
-
-Clicking the field opens a dropdown with the available options.\
-Changes are applied immediately.
 
 ***
 
 ## `Shifts`
 
-The **Shifts** tab is used to define operational shift structures for production tracking and reporting.
+The Shifts section helps you define how shift work hours are structured for production tracking and reporting.
+
+### Default Shift Group
 
 <figure><img src="../.gitbook/assets/image (177).png" alt=""><figcaption></figcaption></figure>
 
-#### Default Shift Group
+When you first visit, you’ll see a default shift group already set up during system configuration. If it’s the only one, it can’t be removed or changed as the default.
 
-* A default shift group exists when users first visit this page
-* Created during initial system configuration
-* If only one shift group exists:
-  * It cannot be deleted
-  * It cannot be unset as default
-
-#### Shift Group Actions
+### Managing Shift Groups
 
 <figure><img src="../.gitbook/assets/image (178).png" alt=""><figcaption></figcaption></figure>
 
-Each shift group supports:
+You can:
 
-1. Mark as Default Shift Group
-2. Edit Shift Group Name
-3. Delete Shift Group\
-   &#xNAN;_(Available only when more than one shift group exists)_
+* Rename a shift group
+* Set a different one as default shift group
+* Delete a shift group (only if more than one exists)
 
-#### Creating a Shift Group
+### Creating a Shift Group
 
 Click **Add Shift Group** to create a new shift group.
 
 <figure><img src="../.gitbook/assets/image (179).png" alt=""><figcaption></figcaption></figure>
 
-**Rules and behavior:**
+You’ll be guided to:
 
-* Shift Group Name is mandatory
-* Breadcrumbs display the navigation path
-* One shift is added by default
-* Start Time and End Time default to `00:00`
-* **Create Shift Group** button remains disabled until all required fields are filled
+* Enter a required name
+* Add shifts (one is added by default)
+* Define timings (starting and ending at 00:00 by default)
 
-#### Adding Shifts
+The Create button becomes active once all required details are filled.
 
-* Click **Add Shift** or **Add Another Shift**
-* Multiple shifts can be added
-* Shift timings cannot overlap
-* Delete icon appears once more than one shift exists
+### Adding Shifts and Breaks
 
-#### Adding Breaks
+You can easily build out your schedule by adding as many shifts as you need. Just click **Add Another Shift** to include more.
 
-* Click **Add Break** within a shift
-* Break timings cannot overlap
-* Multiple breaks can be added per shift
+* While setting up shifts, make sure their timings don’t overlap. Once you have more than one shift, you’ll also see the option to remove any extra ones.
+* Within each shift, you can add breaks to reflect downtime. Simply click **Add Break** inside a shift. Like shifts, break timings should not overlap, and you can add multiple breaks if needed.
 
-#### Viewing and Editing Shifts
+### Viewing and Editing Shifts
 
-* Shifts are displayed in individual expandable containers
-* Expanding a shift container shows **Edit Fields** and **Delete** actions
-* Expanding a shift container show also shows breaks
+<figure><img src="../.gitbook/assets/image (178).png" alt=""><figcaption></figcaption></figure>
+
+Each shift is shown as an expandable section, so you can keep things organized.
+
+Click on a shift to expand it and see more details. From there, you can:
+
+* Update shift timings or details
+* Delete the shift if needed
+* Mark shift as off
+* View and manage all associated breaks
+
+This makes it easy to review and adjust your setup in one place without clutter.
 
 ***
 
