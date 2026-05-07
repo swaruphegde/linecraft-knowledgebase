@@ -24,17 +24,19 @@ From the Settings module, users can:
 
 The Profile section is where you keep your account information up to date. It opens by default whenever you land on Settings. Here, you can review your details, update your personal information, and change your password anytime.
 
-<figure><img src="../.gitbook/assets/wks1103_8069_Settings_.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/wks1103_8069_Settings_ (4).png" alt=""><figcaption></figcaption></figure>
 
 ### Edit Personal Information
 
-<figure><img src="../.gitbook/assets/wks1103_8069_Settings_ (2).png" alt=""><figcaption></figcaption></figure>
+
+
+<figure><img src="../.gitbook/assets/wks1103_8069_Settings_ (6).png" alt=""><figcaption></figcaption></figure>
 
 Need to make a quick change? Just click Edit under Personal Information. You’ll be able to update your name and phone number, and your changes will reflect instantly once saved.
 
 ### Change Password
 
-<figure><img src="../.gitbook/assets/wks1103_8069_Settings_ (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/wks1103_8069_Settings_ (5).png" alt=""><figcaption></figcaption></figure>
 
 You can update your password directly from this tab. Once changed, it takes effect immediately across all your active sessions.
 
