@@ -112,137 +112,109 @@ This makes it easy to review and adjust your setup in one place without clutter.
 
 ## `Targets`
 
-The **Targets** tab allows users to configure production targets for each part type.
+Targets allow you to define production expectations for different part types.
 
 <figure><img src="../.gitbook/assets/image (180).png" alt=""><figcaption></figcaption></figure>
-
-#### Overview
 
 * Targets are configured part‑type wise
 * Unit of measurement: **JPH (Jobs Per Hour)**
 
-#### Edit Target
+### Edit Target
 
 <figure><img src="../.gitbook/assets/image (181).png" alt=""><figcaption></figcaption></figure>
 
-**Fields:**
-
-1. Part Type
-2. Target (JPH)
-
-If a target already exists for a part type, the new value overwrites the existing one.
+You can set targets in Jobs Per Hour (JPH). If you update a target for a part type, the new value simply replaces the previous one effective immediately across the product.&#x20;
 
 ***
 
 ## `Fault Code Mapping`
 
-The **Fault Code Mapping** tab standardizes fault codes at an asset level.
+This section helps you organize and standardize fault codes for each asset. **Fault codes** are standardized labels used to identify specific issues or failures in an asset.
 
 <figure><img src="../.gitbook/assets/image (182).png" alt=""><figcaption></figcaption></figure>
 
-#### Asset List Behavior
+### How Assets are Displayed under Asset Mapping
 
 * Assets are listed alphabetically
-* Tooltip at top shows the number of remaining unmapped assets
-* Ignored assets will have “Ignored Asset” text below the asset name.
 * **Non‑mapped assets**:
   * Always appear at the top
   * Display an information (`i`) icon which indicating unmapped status on hover
+* Tooltip at top shows the number of remaining unmapped assets
+* Ignored assets will have “Ignored Asset” text below the asset name.
 
-#### Mapping Rules
+### Manage Asset Mapping&#x20;
 
-* Fault code mapping is asset‑specific
-* Each asset maintains its own mapping sheet
+Each asset has its own mapping sheet. Once mapped:
 
-#### Download Mapping Template
+* A “Last Updated” timestamp is shown
+* The asset moves below the unmapped list
 
-Users can download a standardized fault code mapping template.
+You can:
 
-#### Mapped Assets
+* Download the current mapping or a standardized fault code mapping template.
+* Upload updated mappings
 
-Once an asset is mapped:
+### U**ploading Mappings**
 
-* **Last Updated On** timestamp is displayed
-* Asset moves below non‑mapped assets
-* Available actions:
-  * Download Existing Mapping
-  * Upload New Mappings
+You can upload mappings for:
 
-Downloaded file name format:\
-`<Asset_Name> Fault Codes`
+* A single asset
+* Multiple assets at once
 
-#### Uploading New Mappings and Bulk Uploads
+Just make sure at least one asset is selected before uploading.
 
-**Upload options:**
+The system automatically checks your file for:
 
-* Single asset upload
-* Bulk upload for multiple assets
+* Duplicates
+* Missing values/ Empty fields
+* Incorrect formats&#x20;
 
-**Rules:**
+If something’s off, you’ll see clear error messages to help fix it.
 
-* At least one asset must be selected
-* Upload without selection triggers an error
-* Bulk upload is allowed even with one selected asset
-
-#### Validation Checks
-
-Uploaded sheets are validated for:
-
-* Duplicate rows
-* Numeric fault code values
-* Empty or blank fields
-
-Validation errors are displayed in an error popup.
+### Zone Mapping
 
 <figure><img src="../.gitbook/assets/image (183).png" alt=""><figcaption></figcaption></figure>
 
-Same applies for the Zone Mappings.&#x20;
+(The same experience applies to Zone Mappings.)
 
 ***
 
 ## `Loss Types`
 
-The **Loss Types** tab allows users to configure production loss classifications.
-
-#### Default Loss Types
+Loss Types help categorize production losses consistently across the system.
 
 <figure><img src="../.gitbook/assets/image (184).png" alt=""><figcaption></figcaption></figure>
 
-* The product includes **16 preconfigured loss types**
-* Default loss types (loss type name and description) can be edited
-* Each loss type name and description needs to be unique.
+### Default Loss Types
+
+* You’ll find 16 preconfigured loss types to start with. You can update their names or descriptions, as long as each one remains unique.
 
 <figure><img src="../.gitbook/assets/image (187).png" alt=""><figcaption></figcaption></figure>
 
-#### Creating a Loss Type
-
-Click **Create Loss Type** to open the creation popup.
+### Creating a Loss Type
 
 <figure><img src="../.gitbook/assets/image (186).png" alt=""><figcaption></figcaption></figure>
 
-**Required fields:**
+Click **Create Loss Type**, then add:
 
-* Loss Type Name
-* Description
+* A name
+* A description
 
-The **Create** button remains disabled until both fields are filled.
+Once both are filled in, you can create the loss type right away.
 
-#### System Behavior
-
-* Loss type changes are reflected across analytics and reports
-* Used for loss attribution
+Any changes you make will reflect across loss management analytics and reports, helping maintain consistent tracking and insights.
 
 ***
 
 ## `Process Parameters`
 
-The **Process Parameters** tab allows users with the **Configurator role** to view and edit IoT and Quality parameters.
+This section is available to users with the Configurator role and above and is used to manage IoT and Quality parameters.
 
 <figure><img src="../.gitbook/assets/No PLC Mapped.jpg" alt=""><figcaption></figcaption></figure>
 
-#### Parameter List View
+### Viewing Parameter List&#x20;
 
-Parameters are displayed in descending order of **Updated At** with:
+Parameters are listed with the most recently updated ones at the top. Each entry shows key details like:
 
 * Parameter Name
 * Machine
@@ -254,26 +226,14 @@ Parameters are displayed in descending order of **Updated At** with:
 * Aggregator
 * Parameter Type (IoT / Quality)
 
-#### Editing Parameters
+### Editing Parameters
 
 <figure><img src="../.gitbook/assets/No PLC Mapped (1).jpg" alt=""><figcaption></figcaption></figure>
 
-Click the **Edit** icon to modify parameter values.
+Click the **Edit** icon to modify parameter values. You can update values such as.&#x20;
 
-**Editable fields:**
+* Minimum, maximum, and target values (must be floating point numeric)
+* Unit and aggregator (cannot be set to none)
 
-* Min Value
-* Max Value
-* Target Value
-* Unit
-* Aggregator
+All values must be valid and properly filled, errors are shown for invalid or missing data. Once saved, updates are applied immediately and reflected across the system.
 
-#### Validation Rules
-
-* Min, Max, and Target:
-  * Mandatory
-  * Must be floating‑point numeric
-* Unit and Aggregator:
-  * Cannot be set to none
-* Errors are shown for invalid or missing data
-* Valid updates are saved and reflected immediately
