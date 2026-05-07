@@ -114,11 +114,11 @@ Start by downloading the correct Excel file.
 | Create a new line       | **Mapping Template**       |
 | Update an existing line | **Existing Configuration** |
 
+<figure><img src="../../.gitbook/assets/Screenshot 2026-05-07 112312.jpg" alt="Update an existing line - Click Download Existing button"><figcaption><p>Update an existing line - Click Download Existing button</p></figcaption></figure>
+
 {% hint style="info" icon="lightbulb-exclamation-on" %}
 We recommend using the existing configuration when making changes to a live line.
 {% endhint %}
-
-<figure><img src="../../.gitbook/assets/app.linecraft.ai_v2_ConfigurationManager (1).jpg" alt=""><figcaption></figcaption></figure>
 
 ## Step 2: Fill in Your Excel File
 
@@ -236,6 +236,8 @@ Once your Excel file is ready:
 1. Open Configuration Manager
 2. Click **Upload File**
 3. Select your Excel file
+
+<div><figure><img src="../../.gitbook/assets/Screenshot 2026-05-07 113342.jpg" alt=""><figcaption><p>First click on Upload Structure button</p></figcaption></figure> <figure><img src="../../.gitbook/assets/Screenshot 2026-05-07 113449.jpg" alt=""><figcaption><p>On the pop up, scroll down to again click on Upload Structure button</p></figcaption></figure></div>
 
 We automatically validate:
 
