@@ -50,6 +50,10 @@ Choose how time is displayed across the platform. You can switch between formats
 \
 Simply select your preferred option from the dropdown, and it will apply right away across the product.
 
+
+
+<figure><img src="../.gitbook/assets/wks1103_8069_Settings_ (3).png" alt=""><figcaption></figcaption></figure>
+
 <figure><img src="../.gitbook/assets/image (176).png" alt=""><figcaption></figcaption></figure>
 
 ***
