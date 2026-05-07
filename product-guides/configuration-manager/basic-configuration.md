@@ -118,6 +118,8 @@ Start by downloading the correct Excel file.
 We recommend using the existing configuration when making changes to a live line.
 {% endhint %}
 
+<figure><img src="../../.gitbook/assets/app.linecraft.ai_v2_ConfigurationManager (1).jpg" alt=""><figcaption></figcaption></figure>
+
 ## Step 2: Fill in Your Excel File
 
 Your file contains **2 tabs**.
