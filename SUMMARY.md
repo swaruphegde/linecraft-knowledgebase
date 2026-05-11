@@ -43,8 +43,8 @@
 
 ## 🚀 Release notes
 
-* [PSS 7.4.1](release-notes/pss-7.4.1.md)
 * [PSS 7.4.2](release-notes/pss-7.4.2.md)
+* [PSS 7.4.1](release-notes/pss-7.4.1.md)
 * [PSS 7.4.0](release-notes/pss-7.4.0.md)
 * [PSS 7.3.0](release-notes/pss-7.3.0.md)
 * [PSS 7.2.0](release-notes/pss-7.2.0.md)
