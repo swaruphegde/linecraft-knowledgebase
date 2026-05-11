@@ -25,6 +25,7 @@
 * [📑 Reports](product-guides/reports/README.md)
   * [Bottleneck Report](product-guides/reports/bottleneck-report.md)
   * [Critical Machines Report](product-guides/reports/critical-machines-report.md)
+  * [Production Report](product-guides/reports/production-report.md)
 * [📦 Part Tracing](<product-guides/part-tracing (1).md>)
 * [🔩 Settings](product-guides/settings.md)
 * [🛡️ Application administration](product-guides/application-administration.md)
