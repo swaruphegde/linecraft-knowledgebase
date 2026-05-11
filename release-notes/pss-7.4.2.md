@@ -14,7 +14,7 @@ The goal of these updates is to reduce configuration errors, improve data consis
 
 ## Key Configuration Improvements
 
-### Ensuring Accurate Part Type Assignment with Standard & Non-Standard Asset Classification
+## Ensuring Accurate Part Type Assignment with Standard & Non-Standard Asset Classification
 
 These enhancements give configurators better control over how part types are assigned, improving accuracy and preventing incorrect mappings.
 
@@ -95,7 +95,7 @@ These enhancements give configurators better control over how part types are ass
 
 <figure><img src="../.gitbook/assets/Combined Machine Case.png" alt=""><figcaption></figcaption></figure>
 
-### Configuration Manager – Excel Template Enhancements
+## Configuration Manager – Excel Template Enhancements
 
 These updates improve configuration accuracy, simplify usage, and support new business requirements:
 
