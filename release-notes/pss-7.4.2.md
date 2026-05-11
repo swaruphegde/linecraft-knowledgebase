@@ -160,7 +160,7 @@ These updates improve configuration accuracy, simplify usage, and support new bu
 {% step %}
 ### **Data Model Changes**
 
-* Removed **Zone-to-Cell mapping** from database (`TCellMaster`).
+* Removed **Zone-to-Cell mapping** from database.
 * Introduced **Zone-to-Asset mapping** in the Assets table.
 {% endstep %}
 {% endstepper %}
