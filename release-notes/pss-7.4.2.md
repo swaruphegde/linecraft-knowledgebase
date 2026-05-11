@@ -87,11 +87,11 @@ These enhancements give configurators better control over how part types are ass
 {% endstep %}
 {% endstepper %}
 
-### **Use case showcasing all standard machine configurations:**
+### **Use case showcasing all standard machine configurations**
 
 <figure><img src="../.gitbook/assets/Standard Machine Case.png" alt=""><figcaption></figcaption></figure>
 
-### **Use case showcasing both standard and non-standard machine configurations:**
+### **Use case showcasing both standard and non-standard machine configurations**
 
 <figure><img src="../.gitbook/assets/Combined Machine Case.png" alt=""><figcaption></figcaption></figure>
 
