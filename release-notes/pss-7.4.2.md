@@ -23,7 +23,7 @@ These enhancements give configurators better control over how part types are ass
 ### **Standard Asset as Default**
 
 * All assets are treated as _Standard_ by default.
-* The system will continue to use existing mappings to assign part types wherever available.
+* The system will continue to use existing mappings to assign part types wherever available. [Refer detailed logic.](pss-7.4.2.md#use-case-showcasing-all-standard-machine-configurations)
 * This ensures consistency with current configurations and avoids unnecessary changes.
 {% endstep %}
 
@@ -31,7 +31,7 @@ These enhancements give configurators better control over how part types are ass
 ### **Support for Non-Standard Assets**
 
 * Users can now mark specific assets as _Non-Standard_ directly in Excel.
-* For such assets, the system will always create a new part type instead of using existing mappings.
+* For such assets, the system will always follow a non-standard part type instead of using existing mappings. [Refer detailed logic.](pss-7.4.2.md#use-case-showcasing-both-standard-and-non-standard-machine-configurations)
 * This helps handle special cases where standard logic does not apply.
 {% endstep %}
 
@@ -74,7 +74,7 @@ These enhancements give configurators better control over how part types are ass
 {% step %}
 ### **Excel Template Enhancements**
 
-* A new column “Is Standard Asset?” has been added.
+* A new column “Is Non-Standard?” has been added. Default will be No.
 * Only valid inputs (Yes/No) are accepted to maintain data accuracy.
 * Invalid or missing entries will be flagged during upload.
 {% endstep %}
