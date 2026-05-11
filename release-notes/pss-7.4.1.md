@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # PSS 7.4.1
 
 {% hint style="info" %}
