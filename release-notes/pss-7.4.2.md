@@ -38,6 +38,14 @@ These enhancements give configurators better control over how part types are ass
    * Existing configurations remain unaffected.
    * All current assets will continue to behave as standard unless explicitly updated.
 
+### **Use case showcasing all standard machine configurations:**
+
+<figure><img src="../.gitbook/assets/Standard Machine Case.png" alt=""><figcaption></figcaption></figure>
+
+### **Use case showcasing both standard and non-standard machine configurations:**
+
+<figure><img src="../.gitbook/assets/Combined Machine Case.png" alt=""><figcaption></figcaption></figure>
+
 ### Configuration Manager – Excel Template Enhancements
 
 These updates improve configuration accuracy, simplify usage, and support new business requirements:
