@@ -23,6 +23,7 @@
 * [📉 Loss management](product-guides/loss-management.md)
 * [🔔 Condition monitoring](product-guides/condition-monitoring.md)
 * [📑 Reports](product-guides/reports/README.md)
+  * [Asset-wise Production Summary Report](product-guides/reports/asset-wise-production-summary-report.md)
   * [Bottleneck Report](product-guides/reports/bottleneck-report.md)
   * [Critical Machines Report](product-guides/reports/critical-machines-report.md)
   * [Production Report](product-guides/reports/production-report.md)
