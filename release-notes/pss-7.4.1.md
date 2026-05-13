@@ -12,6 +12,8 @@ The goal of these updates is to reduce ambiguity during production investigation
 
 ## Cycle insights enhancements
 
+<figure><img src="../.gitbook/assets/7.4.1 kb image 1.png" alt=""><figcaption></figcaption></figure>
+
 Cycle insights are often used to investigate production instability, interrupted cycles and recurring throughput loss patterns. Previously, the distinction between self-cycle and total-cycle based insights was not always visually explicit, which could lead to interpretation inconsistencies during operational analysis.
 
 This update improves clarity and context within the Cycle Insights experience
