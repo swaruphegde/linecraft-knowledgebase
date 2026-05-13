@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Production Report
 
 ## Overview
