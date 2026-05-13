@@ -136,7 +136,7 @@ The report provides detailed production segmentation across multiple operational
 {% step %}
 ### Production by shift
 
-<figure><img src="../../.gitbook/assets/Frame 37952.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Frame 37953.png" alt=""><figcaption></figcaption></figure>
 
 Enables comparative analysis between shifts to identify:
 
@@ -166,7 +166,7 @@ Breaks down production performance by manufactured part category.
 {% step %}
 ### On-shift production trends
 
-<figure><img src="../../.gitbook/assets/Frame 37953.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Frame 37952.png" alt=""><figcaption></figcaption></figure>
 
 Provides visibility into production behavior during planned manufacturing windows.
 
@@ -190,7 +190,7 @@ This analysis helps production teams:
 
 > _Machine-level visibility is essential for understanding where production degradation originates rather than only observing downstream effects._
 
-<figure><img src="../../.gitbook/assets/Frame 37956.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Frame 37956 (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Notifications
 
