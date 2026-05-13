@@ -12,7 +12,7 @@ The goal of these updates is to reduce ambiguity during production investigation
 
 ## Cycle insights enhancements
 
-<figure><img src="../.gitbook/assets/7.4.1 kb image 1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Frame 37953 (1).png" alt=""><figcaption></figcaption></figure>
 
 Cycle insights are often used to investigate production instability, interrupted cycles and recurring throughput loss patterns. Previously, the distinction between self-cycle and total-cycle based insights was not always visually explicit, which could lead to interpretation inconsistencies during operational analysis.
 
@@ -93,7 +93,7 @@ This new export allows users to generate a consolidated Excel report containing:
 
 The objective is to provide a unified operational timeline that improves visibility into production-impacting conditions without requiring manual backend analysis.
 
-<figure><img src="../.gitbook/assets/Excel export report video.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Excel export report video (1).gif" alt=""><figcaption></figcaption></figure>
 
 ### Export workflow
 
