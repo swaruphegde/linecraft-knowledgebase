@@ -12,6 +12,8 @@ The Asset-wise Production Summary Report provides a detailed view of production 
 
 This report focuses on **machine-level visibility**, breaking down production and performance metrics for each asset involved in the process.
 
+<figure><img src="../../.gitbook/assets/Frame 37957.png" alt=""><figcaption></figcaption></figure>
+
 ## Key Components
 
 {% stepper %}
@@ -89,6 +91,8 @@ The report may include charts or visual summaries to represent:
 These visual elements make it easier to quickly interpret operational insights.
 {% endstep %}
 {% endstepper %}
+
+<figure><img src="../../.gitbook/assets/Frame 37958.png" alt=""><figcaption></figcaption></figure>
 
 ## How to Use This Report
 
