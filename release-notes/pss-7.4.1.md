@@ -82,7 +82,7 @@ This makes them significantly harder to investigate using standard fault workflo
 
 Release 7.4.1 introduces a new export report type - L1 and L2 Faults. This report is available under the new "Excel Export" report type while creating a new report
 
-This new export allows users to generated a consolidated Excel report containing:
+This new export allows users to generate a consolidated Excel report containing:
 
 * hard faults (L1)
 * latent operational issues (L2)
@@ -92,6 +92,8 @@ This new export allows users to generated a consolidated Excel report containing
 * event duration timelines
 
 The objective is to provide a unified operational timeline that improves visibility into production-impacting conditions without requiring manual backend analysis.
+
+<figure><img src="../.gitbook/assets/Excel export report video.gif" alt=""><figcaption></figcaption></figure>
 
 ### Export workflow
 
