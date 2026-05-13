@@ -4,102 +4,199 @@ hidden: true
 
 # Production Report
 
-
-
 ## Overview
 
-This production report provides a structured view of operational performance for the Battery Pack Assembly line over a defined reporting period. It is designed to help stakeholders monitor manufacturing efficiency, identify losses, and prioritize improvement areas across equipment and processes.
+The Production Report provides a consolidated operational view of line output, quality, rejection trends and throughput performances across shifts and part types. It is designed to help production managers quickly evaluate production health, identify instability patterns and prioritize corrective actions with minimal interpretation overhead.
 
-The report consolidates key manufacturing metrics such as Overall Equipment Effectiveness (OEE), availability, performance, and quality, along with production output and loss analysis.
+The Production Report aligns operational metrics with real manufacturing decision-making by emphasizing:
 
-### Key Sections of the Report
+* production quality alongside quantity
+* visibility into planned vs unplanned production
+* rejection impact at both EOL and line-level
+* througput consistency through JPH monitoring
+* machine-level contribution to part loss
+
+> _This report is intended for production leaders operating under live manufacturing conditions, where rapid interpreation and operation clarity are critical_
+
+## Operational purpose
+
+The Production Report helps teams:
+
+* evaluate whether production targets are being achieved sustainably
+* identify hidden production losses during unplanned runs
+* compare performance across shifts and part categories
+* isolate quality degradation through rejection tracking
+* understand which machines are contributing most to production loss
+* monitor throughput consistency using JPH metrics
+
+## Report walkthrough
+
+### Report availability
+
+The Production Report is available under the **Reports** module as a dedicated report template. Users can generate the report in two ways:
 
 {% stepper %}
 {% step %}
-### **Performance Metrics**
+### Schedule report generation
 
-The report highlights standard industry KPIs used to evaluate production efficiency:
-
-* **OEE (Overall Equipment Effectiveness):**\
-  A composite metric representing how effectively the production line is utilized.
-* **Availability:**\
-  Measures uptime and reflects how often the equipment is operational when scheduled.
-* **Performance:**\
-  Indicates how efficiently the system is running compared to its designed speed.
-* **Quality:**\
-  Tracks the proportion of good units produced versus total output.
-
-These metrics collectively provide a high-level understanding of line efficiency and operational health.
+The report can be configured to generate automatically at predefined intervals for recurring operational reviews and production monitoring workflows.
 {% endstep %}
 
 {% step %}
-### **Production Summary**
+### On-demand report generation
 
-This section outlines production expectations versus actual outcomes:
-
-* Target production levels
-* Actual output recorded
-* Good parts vs rejected parts
-* Breakdown across different production categories (overall, on-shift, and unplanned)
-
-This helps in identifying gaps between planned and actual production and assessing output reliability.
-{% endstep %}
-
-{% step %}
-### **Shift-wise Production Breakdown**
-
-The report includes a shift-level view of production performance, enabling:
-
-* Comparison of efficiency across shifts
-* Identification of shift-specific issues or inconsistencies
-* Better workforce and operational planning
-{% endstep %}
-
-{% step %}
-### **Part-wise Production Analysis**
-
-Production data is further segmented by part types, allowing:
-
-* Visibility into performance variation across different products
-* Identification of part-specific bottlenecks or inefficiencies
-* Support for targeted process improvements
-{% endstep %}
-
-{% step %}
-### **Critical Machine Loss Analysis**
-
-A key component of the report is the identification of machines contributing most to production losses.
-
-* Machines are ranked based on **JPH (Jobs Per Hour) loss**
-* Losses are categorized into:
-  * Availability losses
-  * Performance losses
-  * Quality losses
-
-This section helps prioritize maintenance and operational interventions by focusing on high-impact assets.
-{% endstep %}
-
-{% step %}
-### **Trend Analysis (Cell-wise OEE Trend)**
-
-The report includes trend visualizations showing how performance metrics evolve over time.
-
-* Helps detect patterns or recurring issues
-* Supports proactive decision-making
-* Enables continuous improvement tracking
+Users can generate the report instantly whenever production validation or shift-level investigation is required.
 {% endstep %}
 {% endstepper %}
 
-### How to Use This Report
+### Report KPIs
 
-This production report is intended for:
+The report surfaces production-critical KPIs that help teams evaluate both throughput and quality performance.
 
-* **Operations Teams:** Monitor daily efficiency and identify production gaps
-* **Maintenance Teams:** Prioritize equipment based on impact to production loss
-* **Management:** Track overall plant performance and improvement initiatives
-* **Continuous Improvement Teams:** Identify root causes and drive optimization projects
+<details>
 
+<summary>Understand report KPIs</summary>
 
+#### Overall production
 
-The production report serves as a comprehensive tool for monitoring manufacturing performance. By combining efficiency metrics, production data, and machine-level loss analysis, it enables data-driven decision-making and continuous improvement across the production line.
+Represents the total number of parts produced during the selected reporting duration.
 
+> _This metric establishes the primary production baseline and helps validate whether the line is operating at expected capacity._
+
+#### EOL on-shift good parts
+
+Indicates the number of successfully completed parts at the End-of-Line stage during active shift production.
+
+> _A stable value typically reflects healthy production continuity and acceptable process stability._
+
+#### EOL on-shift bad parts
+
+Represents the number of rejected or failed parts identified at the End-of-Line stage during planned shift production.
+
+> _Higher values may indicate:_
+>
+> * _process instability_
+> * _quality degradation_
+> * _upstream machine inconsistencies_
+> * _operator-related variation_
+> * _calibration drift_
+
+#### Total unplanned production (EOL)
+
+Tracks all production occurring outside planned production schedules at the End-of-Line stage.
+
+> _Frequent unplanned production may indicate persistent throughput instability or target recovery dependence._
+
+#### Unplanned good parts (EOL)
+
+Represents successfully produced parts during unplanned production periods.
+
+> _This helps evaluate whether recovery production maintains acceptable quality standards._
+
+#### Unplanned bad parts (EOL)
+
+Represents rejected or failed parts generated during unplanned production periods.
+
+> _Elevated values may suggest that reactive production conditions are introducing additional instability or quality risk._
+
+#### Total line-level rejections
+
+Displays the total rejected parts identified across the entire production line.
+
+> _This metric helps quantify cumulative quality loss and production inefficiency._
+
+#### On-shift line-level rejections
+
+Represents rejection counts specifically during planned shift operations.
+
+> _This helps teams correlate rejection behavior with:_
+>
+> * _operator shifts_
+> * _production schedules_
+> * _machine loading conditions_
+> * _process transitions_
+
+#### Unplanned line-level rejections
+
+Tracks rejection counts occurring during unplanned production windows.
+
+> _This metric is particularly useful for evaluating the operational effectiveness of recovery production activities._
+
+#### On-shift JPH
+
+Displays the line’s Jobs Per Hour performance during active shift production.
+
+> _Unexpected throughput drops may indicate bottlenecks, micro-stoppages, or production imbalance conditions._
+
+</details>
+
+### Production data analysis
+
+The report provides detailed production segmentation across multiple operational dimensions.
+
+{% stepper %}
+{% step %}
+### Production by shift
+
+Enables comparative analysis between shifts to identify:
+
+* throughput variation
+* quality inconsistencies
+* operational inefficiencies
+* recurring shift-specific instability
+
+> _This view is particularly useful during escalation reviews and continuous improvement analysis._
+{% endstep %}
+
+{% step %}
+### Production by part type
+
+Breaks down production performance by manufactured part category.
+
+> _This helps teams understand:_
+>
+> * _part-specific production behavior_
+> * _quality sensitivity across SKUs_
+> * _throughput impact of complex part variants_
+> * _rejection concentration by product type_
+{% endstep %}
+
+{% step %}
+### On-shift production trends
+
+Provides visibility into production behavior during planned manufacturing windows.
+
+> _This helps validate whether production targets are being achieved under standard operating conditions._
+{% endstep %}
+{% endstepper %}
+
+### Critical machine analysis
+
+The report identifies the five machines contributing most significantly to part loss.
+
+This analysis helps production teams:
+
+* prioritize maintenance intervention
+* isolate recurring bottlenecks
+* identify unstable assets
+* reduce hidden throughput loss
+* focus continuous improvement efforts
+
+> _Machine-level visibility is essential for understanding where production degradation originates rather than only observing downstream effects._
+
+### Notifications
+
+Users receive notifications whenever:
+
+* a scheduled production report is generated
+* an on-demand production report completes generation
+
+This ensures production stakeholders can immediately review updated operational insights without manually monitoring report execution status.
+
+### Operational interpretation guidelines
+
+When analyzing the Production Report, focus on:
+
+<table><thead><tr><th width="352">Operational signal</th><th>What it may indicate</th></tr></thead><tbody><tr><td>Rising bad parts with stable throughput</td><td>Hidden quality degradation</td></tr><tr><td>High unplanned production</td><td>Reactive target recovery behavior</td></tr><tr><td>Increasing line-level rejections</td><td>Process instability or machine drift</td></tr><tr><td>Declining JPH</td><td>Emerging bottlenecks or micro-stoppages</td></tr><tr><td>Machine concentration in part loss</td><td>Localized asset instability</td></tr><tr><td>Shift-to-shift production variance</td><td>Operational inconsistency</td></tr></tbody></table>
+
+The Production Report is most effective when reviewed alongside downtime, bottleneck, and rejection analysis workflows to establish broader operational context.
