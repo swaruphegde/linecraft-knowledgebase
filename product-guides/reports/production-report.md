@@ -53,6 +53,8 @@ Users can generate the report instantly whenever production validation or shift-
 
 The report surfaces production-critical KPIs that help teams evaluate both throughput and quality performance.
 
+<figure><img src="../../.gitbook/assets/Frame 37947.png" alt=""><figcaption></figcaption></figure>
+
 <details>
 
 <summary>Understand report KPIs</summary>
@@ -138,6 +140,8 @@ The report provides detailed production segmentation across multiple operational
 {% step %}
 ### Production by shift
 
+<figure><img src="../../.gitbook/assets/Frame 37952.png" alt=""><figcaption></figcaption></figure>
+
 Enables comparative analysis between shifts to identify:
 
 * throughput variation
@@ -150,6 +154,8 @@ Enables comparative analysis between shifts to identify:
 
 {% step %}
 ### Production by part type
+
+<figure><img src="../../.gitbook/assets/Frame 37954.png" alt=""><figcaption></figcaption></figure>
 
 Breaks down production performance by manufactured part category.
 
@@ -164,6 +170,8 @@ Breaks down production performance by manufactured part category.
 {% step %}
 ### On-shift production trends
 
+<figure><img src="../../.gitbook/assets/Frame 37953.png" alt=""><figcaption></figcaption></figure>
+
 Provides visibility into production behavior during planned manufacturing windows.
 
 > _This helps validate whether production targets are being achieved under standard operating conditions._
@@ -171,6 +179,8 @@ Provides visibility into production behavior during planned manufacturing window
 {% endstepper %}
 
 ### Critical machine analysis
+
+<figure><img src="../../.gitbook/assets/Frame 37955.png" alt=""><figcaption></figcaption></figure>
 
 The report identifies the five machines contributing most significantly to part loss.
 
@@ -183,6 +193,8 @@ This analysis helps production teams:
 * focus continuous improvement efforts
 
 > _Machine-level visibility is essential for understanding where production degradation originates rather than only observing downstream effects._
+
+<figure><img src="../../.gitbook/assets/Frame 37956.png" alt=""><figcaption></figcaption></figure>
 
 ### Notifications
 
