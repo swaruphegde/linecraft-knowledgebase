@@ -190,7 +190,7 @@ This helps identify:
 {% step %}
 ### Average time on line by part type
 
-<figure><img src="../../.gitbook/assets/image (192).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (195).png" alt=""><figcaption></figcaption></figure>
 
 Breaks down average manufacturing duration across different part categories.
 
@@ -207,7 +207,7 @@ This helps teams understand:
 {% step %}
 ### Non-compliant parts summary
 
-<figure><img src="../../.gitbook/assets/image (193).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (196).png" alt=""><figcaption></figcaption></figure>
 
 Provides a consolidated operational summary of all non-compliant production identified during the reporting duration.
 
@@ -225,7 +225,7 @@ This includes visibility into:
 {% step %}
 ### Non-compliant part details
 
-<figure><img src="../../.gitbook/assets/image (194).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (197).png" alt=""><figcaption></figcaption></figure>
 
 Provides detailed traceability visibility for each non-compliant part identified in the report.
 
