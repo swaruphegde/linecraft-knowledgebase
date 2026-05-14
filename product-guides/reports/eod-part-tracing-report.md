@@ -29,6 +29,8 @@ The EOD Part Tracing Report helps teams:
 
 ## Report walkthrough
 
+<figure><img src="../../.gitbook/assets/EOD Part Tracing Report.gif" alt=""><figcaption></figcaption></figure>
+
 ### Report availability
 
 The EOD Part Tracing Report is available under the **Reports** module as a dedicated report template. Users can generate the report in two ways:
