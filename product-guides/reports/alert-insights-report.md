@@ -41,6 +41,8 @@ Users can generate the report instantly whenever operational validation or alert
 
 ### Report KPIs
 
+<figure><img src="../../.gitbook/assets/image (201).png" alt=""><figcaption></figcaption></figure>
+
 The report surfaces operational and alert-critical KPIs that help teams evaluate alert concentration, operational instability and issue prioritization.
 
 <details>
@@ -101,6 +103,8 @@ This KPI helps teams identify:
 {% step %}
 ### Machines with most triggered alerts
 
+<figure><img src="../../.gitbook/assets/image (202).png" alt=""><figcaption></figcaption></figure>
+
 Provides a ranked view of machines generating the highest number of alerts during the reporting period.
 
 This section includes:
@@ -121,6 +125,8 @@ This analysis helps teams:
 {% step %}
 ### Parameters with most triggered alerts
 
+<figure><img src="../../.gitbook/assets/image (203).png" alt=""><figcaption></figcaption></figure>
+
 Displays the parameters responsible for the highest alert frequency across the selected reporting duration.
 
 This section includes:
@@ -140,6 +146,8 @@ This helps teams identify:
 
 {% step %}
 ### Top triggered non-priority alerts
+
+<figure><img src="../../.gitbook/assets/image (204).png" alt=""><figcaption></figcaption></figure>
 
 Provides visibility into the most frequently triggered non-priority alerts across the manufacturing environment.
 
@@ -165,6 +173,8 @@ This analysis helps teams:
 {% step %}
 ### Top triggered priority alerts
 
+<figure><img src="../../.gitbook/assets/image (205).png" alt=""><figcaption></figcaption></figure>
+
 Highlights the most frequently triggered priority alerts requiring elevated operational attention.
 
 This section includes:
@@ -188,6 +198,8 @@ This helps teams:
 
 {% step %}
 ### All triggered alerts
+
+<figure><img src="../../.gitbook/assets/image (206).png" alt=""><figcaption></figcaption></figure>
 
 Provides a consolidated operational view of all alerts triggered during the selected reporting duration.
 
