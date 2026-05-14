@@ -49,6 +49,8 @@ Users can generate the report instantly whenever parameter deviation validation,
 
 ### Report KPIs
 
+<figure><img src="../../.gitbook/assets/image (189).png" alt=""><figcaption></figcaption></figure>
+
 The report surfaces operational and traceability-critical KPIs that help teams evaluate production quality, parameter stability and non-compliant production impact.
 
 <details>
@@ -152,6 +154,8 @@ This helps teams evaluate:
 {% step %}
 ### Bad parts pareto
 
+<figure><img src="../../.gitbook/assets/image (190).png" alt=""><figcaption></figcaption></figure>
+
 Provides a ranked breakdown of non-compliant parts contributing most significantly to production quality loss.
 
 This analysis helps teams:
@@ -166,6 +170,8 @@ This analysis helps teams:
 
 {% step %}
 ### Average time on line by shift
+
+<figure><img src="../../.gitbook/assets/image (191).png" alt=""><figcaption></figcaption></figure>
 
 Displays the average time parts spend on the line across different production shifts.
 
@@ -182,6 +188,8 @@ This helps identify:
 {% step %}
 ### Average time on line by part type
 
+<figure><img src="../../.gitbook/assets/image (192).png" alt=""><figcaption></figcaption></figure>
+
 Breaks down average manufacturing duration across different part categories.
 
 This helps teams understand:
@@ -196,6 +204,8 @@ This helps teams understand:
 
 {% step %}
 ### Non-compliant parts summary
+
+<figure><img src="../../.gitbook/assets/image (193).png" alt=""><figcaption></figcaption></figure>
 
 Provides a consolidated operational summary of all non-compliant production identified during the reporting duration.
 
@@ -212,6 +222,8 @@ This includes visibility into:
 
 {% step %}
 ### Non-compliant part details
+
+<figure><img src="../../.gitbook/assets/image (194).png" alt=""><figcaption></figcaption></figure>
 
 Provides detailed traceability visibility for each non-compliant part identified in the report.
 
