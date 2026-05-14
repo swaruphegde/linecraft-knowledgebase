@@ -147,7 +147,7 @@ This helps teams identify:
 {% step %}
 ### Top triggered non-priority alerts
 
-<figure><img src="../../.gitbook/assets/image (204).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (207).png" alt=""><figcaption></figcaption></figure>
 
 Provides visibility into the most frequently triggered non-priority alerts across the manufacturing environment.
 
