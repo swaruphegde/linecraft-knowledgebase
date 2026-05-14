@@ -130,8 +130,6 @@ This creates operational blind spots where production inefficiencies exist witho
 
 ## Report walkthrough
 
-<figure><img src="../../.gitbook/assets/Excel export report video.gif" alt=""><figcaption></figcaption></figure>
-
 ### Accessing the report
 
 The report is available as an Excel export template under the `Excel export`  report type
