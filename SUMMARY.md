@@ -30,6 +30,7 @@
   * [L1 and L2 Faults Report](product-guides/reports/l1-and-l2-faults-report.md)
   * [EOD Part tracing report](product-guides/reports/eod-part-tracing-report.md)
   * [Alert Insights Report](product-guides/reports/alert-insights-report.md)
+  * [Asset-wise Availability Losses Report](product-guides/reports/asset-wise-availability-losses-report.md)
 * [📦 Part Tracing](<product-guides/part-tracing (1).md>)
 * [🔩 Settings](product-guides/settings.md)
 * [🛡️ Application administration](product-guides/application-administration.md)
