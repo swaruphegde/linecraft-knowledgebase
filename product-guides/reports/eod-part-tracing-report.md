@@ -225,7 +225,7 @@ This includes visibility into:
 {% step %}
 ### Non-compliant part details
 
-<figure><img src="../../.gitbook/assets/image (197).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (198).png" alt=""><figcaption></figcaption></figure>
 
 Provides detailed traceability visibility for each non-compliant part identified in the report.
 
