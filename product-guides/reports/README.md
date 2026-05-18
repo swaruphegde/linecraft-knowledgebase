@@ -135,9 +135,9 @@ The **Received Reports** section lists all reports delivered to you, including t
 You can:
 
 * View previously received reports
-* Access report history anytime
+* Access report history anytime<br>
 
-<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Received Reports.jpg" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -147,7 +147,7 @@ You can:
 
 The **On-demand Reports** feature allows you to generate reports instantly without scheduling them in advance. This is useful when you need quick insights or want to analyze data for a specific moment.
 
-
+<figure><img src="../../.gitbook/assets/On Demand Reports (1).jpg" alt=""><figcaption></figcaption></figure>
 
 #### Generating an On-demand Report
 
@@ -160,5 +160,5 @@ To create an on-demand report:
 Unlike scheduled reports, on-demand reports are:
 
 * Generated **immediately**
-* One-time consumption
+* Available to view for 7 days
 
