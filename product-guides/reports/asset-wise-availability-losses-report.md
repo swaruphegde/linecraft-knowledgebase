@@ -41,9 +41,7 @@ Users can generate the report instantly whenever downtime investigation or avail
 
 ## Report sections
 
-
-
-<figure><img src="../../.gitbook/assets/image (208).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (209).png" alt=""><figcaption></figcaption></figure>
 
 The report provides a detailed lists of all assets and their faults, which can be sorted by fault occurrence or fault duration. Each asset consists of
 
