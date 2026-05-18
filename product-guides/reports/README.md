@@ -4,85 +4,137 @@ description: Create and schedule reports from industry standard templates
 
 # 📑 Reports
 
-## Overview
+### Overview
 
-The reports feature allows the user to create out-of-the-box reports using set templates and schedule these reports to be sent using a desired frequency. The reports module consists of the following sections:
+The **Reports** feature enables you to create ready-to-use reports using predefined templates and schedule them to be delivered at preferred intervals.
+
+The Reports module includes the following sections:
+
+* Dashboard
+* Schedule Report
+* Scheduled Reports
+* Received Reports
+
+***
 
 ## Dashboard
 
-The reports dashboard consists of high level data for the reports module, primarily the last 5 scheduled reports, the last 5 received reports, a breakdown of the scheduled and received reports by modules and KPIs for the total reports sent, received etc.
+The **Reports Dashboard** provides a quick snapshot of reporting activity, including:
+
+* The last 5 scheduled reports
+* The last 5 received reports
+* A breakdown of reports by modules
+* Key metrics such as total reports sent and received
+
+The dashboard also allows you to **schedule a new report** directly.
 
 <figure><img src="../../.gitbook/assets/Landing Page.png" alt=""><figcaption></figcaption></figure>
 
-The reports dashboard also allows you to schedule a new report. You can select a template from the template drawer. To view all templates, click on “View all templates” in the top right corner of the drawer.
+***
+
+#### Creating a Report from the Dashboard
+
+You can:
+
+* Select a template from the template drawer
+* Click **“View all templates”** to browse the complete list
 
 <figure><img src="../../.gitbook/assets/Report Creation.png" alt=""><figcaption></figcaption></figure>
 
-## Scheduling a report
+***
 
-You can also schedule a report by clicking on the global button in the top right corner of the main page
+## Scheduling a Report
+
+You can schedule a report using either of the following methods:
+
+* From the **Dashboard**
+* Using the **global “Schedule Report” button** in the top-right corner
+
+Both options open a template selection popup
 
 <figure><img src="../../.gitbook/assets/Schedule Report.png" alt=""><figcaption></figcaption></figure>
 
-Either of these methods will take you to a pop up to select a template. These templates are organized based on the modules they correspond to.
+***
 
-<figure><img src="../../.gitbook/assets/Template Selection.png" alt=""><figcaption></figcaption></figure>
+### Template Selection
 
-Each template also has a description of the data present within the report.
+* Templates are grouped by their respective modules
+*   Each template includes:
 
-Each template also has a preview associated to it in the pop up. From here, you can select a template and click on continue.
+    * A description of the data included
+    * A preview of the report
 
-<figure><img src="../../.gitbook/assets/Template Selection.png" alt=""><figcaption></figcaption></figure>
-
-In the event that you pick a template directly from the dashboard without clicking on view all templates, you will directly move to this page with that template selected.
+    Once you select a template, click **Continue**.
 
 <figure><img src="../../.gitbook/assets/Select a Template.png" alt=""><figcaption></figcaption></figure>
 
-This will take you to the report scheduling page. The template you selected, will be pre filled under report - which is the first dropdown on this page. However, you can still edit this section or change your selected template from here.
+> **Note:** If you select a template directly from the dashboard (without clicking “View all templates”), you will be taken straight to the scheduling page with that template pre-selected.
+
+***
+
+### Report Configuration
+
+After selecting a template, you will be taken to the **Report Scheduling Page**.
 
 <figure><img src="../../.gitbook/assets/Scheduling Page.png" alt=""><figcaption></figcaption></figure>
 
-The shift section allows you to select all the shifts that you would like to receive the report for.
+#### Template Selection
 
-{% hint style="info" %}
-If multiple shifts are selected, only a single report with cumulative data will be generated
-{% endhint %}
+* The chosen template is pre-filled in the **Report** dropdown
+* You can modify or change the template if needed
 
-In this creation mode, you can schedule multiple frequencies for the report and shift selections made above.
+#### Shift Selection
 
-Every frequency selection will have:
+* Select the shifts for which you want to generate the report
 
-* Frequency of the report (Daily, weekly, monthly)
-* Day of delivery (disabled for daily, days of week for weekly and date for monthly)
-* Time range for data (day, week, month)
-* Email ID of the Recipients of the report.
+> **Note:** If multiple shifts are selected, a **single consolidated report** will be generated.
 
-Once successfully scheduled the success popup will inform the user about the scheduled reports.
+***
+
+### Scheduling Options
+
+You can configure **multiple schedules** for a single report.
+
+Each schedule includes:
+
+* **Frequency**: Daily, Weekly, or Monthly
+* **Delivery Day**:
+  * Not applicable for Daily
+  * Select days for Weekly
+  * Select date for Monthly
+* **Data Range**: Day, Week, or Month
+* **Recipients**: Email addresses of report recipients
+
+Once the report is successfully scheduled, a confirmation message will be displayed.
+
+> **Note:** If multiple frequencies are configured, each will appear as a separate entry under Scheduled Reports.
 
 <figure><img src="../../.gitbook/assets/Creation Confirmation.png" alt=""><figcaption></figcaption></figure>
 
-{% hint style="info" %}
-If multiple frequencies are selected for the reports in previous screen, they will be listed individually in the scheduled reports tab.
-{% endhint %}
+***
 
-Recipients will receive the reports on the defined dates in the defined schedule
+## Scheduled Reports
 
-## Scheduled reports
+The **Scheduled Reports** section displays all reports you have configured.
 
-Scheduled reports lists all the reports that have been scheduled by you.
+Here, you can:
 
-
+* View report details and configurations
+* Check the next scheduled delivery date
+* **Pause** report delivery temporarily
+* **Edit** or **Delete** existing schedules
 
 <figure><img src="../../.gitbook/assets/Scheduled Reports-1.png" alt=""><figcaption></figcaption></figure>
 
-Here you can check the selections made for the report that has been scheduled along with the next date on which this report will be sent.
+***
 
-You also have an option to pause the reports if you wish to stop the report delivery for some time. You can also edit & delete the reports .
+## Received Reports
 
-## Received reports
+The **Received Reports** section lists all reports delivered to you, including those scheduled by others.
 
-Received reports will list all the reports that you have received scheduled by you & other people.
+You can:
+
+* View previously received reports
+* Access report history anytime
 
 <figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
-
-You can view any report that you have received in the past.
