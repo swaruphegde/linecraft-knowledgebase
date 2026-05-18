@@ -138,3 +138,27 @@ You can:
 * Access report history anytime
 
 <figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+
+
+
+***
+
+## On-demand Reports
+
+The **On-demand Reports** feature allows you to generate reports instantly without scheduling them in advance. This is useful when you need quick insights or want to analyze data for a specific moment.
+
+
+
+#### Generating an On-demand Report
+
+To create an on-demand report:
+
+* Click **Generate On-Demand Report** to instantly create the report
+* Select a report template from the available list
+* Configure the required parameters such as shifts and data range
+
+Unlike scheduled reports, on-demand reports are:
+
+* Generated **immediately**
+* One-time consumption
+
