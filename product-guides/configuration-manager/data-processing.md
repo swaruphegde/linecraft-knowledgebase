@@ -1,12 +1,12 @@
 ---
 description: >-
-  Upload logger files, validate your configuration, run data processing, and
-  recover from failures - all from one place
+  Process production data safely - without worrying about missing steps, broken
+  dependencies, or restarting from scratch.
 ---
 
 # Data Processing
 
-The Data Processing module helps you process production data safely while ensuring critical sanity checks are never skipped.
+The Data Processing module helps you upload logger files, validate your configuration, process production data, and recover from failures - all from one place.
 
 {% hint style="info" icon="user" %}
 <mark style="color:$warning;">**Who can use this feature?**</mark>
@@ -24,28 +24,32 @@ Estimated time: **5–10 minutes**
 
 Make sure you have:
 
-* Logger files ready (`.xml`)
+* Logger files ready (`.xml`) _if new raw data needs to be added_
 * Configuration issues resolved
 * Required production data available for the selected time range
 
-## Understanding the two tabs - Logger Files & Data Processing
+{% hint style="info" icon="lightbulb-on" %}
+If the required raw data already exists in the system, you can directly start Data Processing without uploading files
+{% endhint %}
 
-The Data Processing module is designed as **one connected workflow**, split into **two tabs**, each with a specific purpose.
+## Understanding the Workflow
 
-This helps you work more efficiently while ensuring that the data processed in the system remains complete, consistent, and reliable.
+The Data Processing module is split into **two connected tabs**, each with a specific purpose.
+
+Together, they form one complete workflow.
 
 ***
 
 ### Tab 1 - Logger Files
 
-This is where you prepare your raw data.
+Use this tab when you want to add new raw production data into the system.
 
-Use the **Logger Files** tab to:
+#### What you can do here
 
-✅ Upload one or more logger files (`.xml`)\
-✅ Validate file format and file quality\
-✅ Track uploaded files and upload status\
-✅ Review file-level failures
+* Upload one or more logger files (`.xml`)
+* Validate file format and file quality
+* Track upload status
+* Review upload failures
 
 ***
 
@@ -55,165 +59,94 @@ When a file upload succeeds:
 
 1. The file is saved by the system
 2. The raw data inside the file is automatically loaded into the database
-3. That raw data becomes available for future data processing runs
+3. That raw data becomes available for future processing runs
 
-> 💡 Once the raw data is loaded successfully, you do **not** need to upload the same files again unless the source data changes.
+> 💡 Once raw data is loaded successfully, you do not need to upload the same files again unless the source data changes.
 
 ***
 
-### Why is this a separate tab?
-
-Separating file upload from processing gives you flexibility.
-
-You can:
-
-✅ Upload all required files upfront\
-✅ Start processing later, whenever needed\
-✅ Avoid re-uploading files if processing fails in later stages
-
 ### Important to know
 
-The **Logger Files** table shows:
+The **Logger Files** tab shows:
 
-* File upload history
-* File upload status
-* File validation failures
+* Upload history
+* Upload status
+* File-level failures
 
-It does **not** show the status of downstream data processing steps.
+It does **not** show downstream processing progress.
 
 That status is shown in the **Data Processing** tab.
 
 ***
 
+### Why is this separate?
+
+This gives you flexibility.
+
+You can:
+
+* Upload all files upfront
+* Start processing later
+* Avoid re-uploading files if processing fails later
+
+***
+
 ## Tab 2 - Data Processing
 
-This is where you process already available raw data.
+Use this tab to process raw data already available in the system.
 
-Use the **Data Processing** tab to:
+This raw data may come from:
 
-✅ Select the date range\
-✅ Select the machines\
-✅ Run mandatory sanity checks\
-✅ Start data processing\
-✅ Monitor live progress\
-✅ Resume failed runs
+#### Previously uploaded files
+
+Uploaded through the **Logger Files** tab.
 
 ***
 
-### Where does this data come from?
+#### Existing raw data
 
-Data Processing always runs on raw data already available in the database.
-
-That data may come from:
-
-#### Option 1: Previously uploaded files
-
-Files uploaded through the **Logger Files** tab.
+If data is already available in the database, you can start processing immediately.
 
 ***
 
-#### Option 2: Existing historical data
+### What happens when processing starts?
 
-If the required raw data is already present in the database, you can start processing immediately.
+The system automatically runs:
 
-> 💡 This means uploading files is **not always required** before running Data Processing.
+1. Pre-processing sanity checks
+2. All required processing steps
+3. Step-level validations during processing
 
-***
-
-## How processing works
-
-Once Data Processing starts:
-
-The system automatically executes all required processing steps in the correct order.
-
-You do not need to manually choose which internal steps to run.
+You do not need to manually select individual steps.
 
 This ensures:
 
-✅ Required dependencies are always processed\
-✅ No critical steps are accidentally skipped\
-✅ Analytics always run on complete and validated data
+* Required dependencies are always processed
+* Critical steps are never skipped
+* Analytics always run on complete and validated data
 
 ***
 
-## If processing fails
-
-If a processing step fails:
-
-Click:
-
-**Re-run Data Processing**
-
-You’ll see two options:
+> 💡 The system manages processing dependencies for you—so you can focus on fixing issues, not figuring out pipeline logic.
 
 ***
-
-### Resume from dependent step _(Recommended)_
-
-The system automatically identifies:
-
-* Where processing stopped
-* Which dependent steps need to run next
-
-This helps you continue safely without reprocessing everything.
-
-***
-
-### Restart from first step
-
-Use this when:
-
-* Major configuration changes were made
-* You want to run the full workflow again
-
-***
-
-> 💡 The system manages step dependencies for you, so you can focus on fixing the issue—not figuring out pipeline logic.
-
-***
-
-## Think of it this way
-
-#### Logger Files = Prepare your data
-
-```
-Upload files → Raw data saved
-```
-
-***
-
-#### Data Processing = Use your data
-
-```
-Select dates → Validate → Process → Review
-```
-
-***
-
-Together, these two tabs give you:
-
-✅ Flexibility in when you upload data\
-✅ Confidence that all required processing steps are handled correctly\
-✅ Faster recovery if processing fails
 
 ## Quick Start
 
-To run data processing:
+To run Data Processing:
 
-1. Upload your logger files
-2. Select the date range
-3. Select the machines
-4. Configuration sanity checks run automatically
-5. Data processing starts once configuration sanity checks pass
-6. Monitor progress or resume if something fails
+1. Upload logger files _(only if new raw data is needed)_
+2. Open **Data Processing**
+3. Select the date range
+4. Select the machines
+5. Review sanity check results
+6. Start processing
 
 ***
 
-## Step 1: Upload Logger Files
+## Step 1: Upload Logger Files _(Optional)_
 
-Upload one or more logger files before processing begins.
-
-Supported format:
+Supported file format:
 
 * `.xml` only
 
@@ -228,9 +161,7 @@ You can upload:
 
 ***
 
-### What happens after upload?
-
-Each file is automatically checked for:
+### Files are automatically validated for:
 
 * File format
 * File size
@@ -240,31 +171,15 @@ Each file is automatically checked for:
 
 If a file passes:
 
-> It is uploaded and the data is loaded into the system.
+> Raw data is loaded into the system automatically.
 
 If a file fails:
 
-> You’ll see exactly where the validation failed.
+> The failed step and error details are shown.
 
 ***
 
-### Example
-
-Accepted:
-
-```
-machine_01.xmllogger_2026_05.xml
-```
-
-Rejected:
-
-```
-data.csvproduction.zip
-```
-
-***
-
-## Step 2: Select Your Date Range
+## Step 2: Select Date Range
 
 Choose the time period you want to process.
 
@@ -282,25 +197,21 @@ Available presets:
 
 ### Rules
 
-Date range must:
+Your selected range must:
 
 * Be within available raw data
 * Not include future dates
 * Be **30 days or less**
 
-> ⚠️ If your selected range exceeds 30 days, processing will not start.
-
 ***
 
 ## Step 3: Select Machines
 
-Choose which machines to process.
-
-Default behavior:
+By default:
 
 > All machines are selected automatically.
 
-You can deselect individual machines if needed.
+You can deselect machines if needed.
 
 ***
 
@@ -310,17 +221,13 @@ At least:
 
 ✅ 1 machine must remain selected
 
-> ⚠️ If no machine is selected, processing cannot start.
-
 ***
 
 ## Step 4: Run Sanity Checks
 
-Before data processing begins, the system automatically validates your configuration.
+Before processing begins, the system automatically validates your configuration.
 
-These checks are now **mandatory.**
-
-No manual trigger required.
+These checks are mandatory.
 
 ***
 
@@ -328,11 +235,9 @@ No manual trigger required.
 
 #### 🔴 Error Checks
 
-These block processing.
+These block processing until fixed.
 
-You must fix them before continuing.
-
-Example:
+Examples:
 
 * Missing machine configuration
 * Invalid mapping
@@ -342,78 +247,33 @@ Example:
 
 #### 🟡 Warning Checks
 
-These are shown to you, but do not block processing.
+Shown to you, but processing continues.
 
 ***
 
 #### ℹ️ Information Checks
 
-These are logged for visibility, but do not stop processing.
-
-***
-
-> 💡 This ensures critical issues are caught before expensive processing begins.
+Logged for visibility, but do not block processing.
 
 ***
 
 ## Step 5: Start Data Processing
 
-Once all blocking checks pass:
+Once blocking checks pass:
 
 Processing starts automatically.
 
-You’ll see:
+The system:
 
-* Live status updates
-* Step-by-step progress
-* Running subprocesses
-* Failed steps (if any)
-
-***
-
-### Important
+* Runs in the background
+* Saves progress after each completed step
+* Allows safe recovery if a failure happens
 
 You can:
 
-* Navigate to other screens
-* Close the page and return later
-* Continue monitoring from history
-
-Your processing continues in the background.
-
-***
-
-## Tracking Progress
-
-Each run shows:
-
-* Trigger time
-* Date range
-* Selected machines
-* Current status
-* Number of reruns
-* Total processing duration
-* Initiator
-
-***
-
-### Status Types
-
-#### 🟡 Running
-
-Processing is active.
-
-#### 🟢 Completed
-
-Processing finished successfully.
-
-#### 🔴 Failed
-
-A step failed.
-
-#### ⛔ Terminated
-
-Processing was stopped manually or by the system.
+* Navigate to other modules
+* Close the page
+* Return later and continue monitoring
 
 ***
 
@@ -421,103 +281,57 @@ Processing was stopped manually or by the system.
 
 If a step fails:
 
-The system stops automatically.
-
-You’ll see:
-
-* Which step failed
-* Why it failed
-* Troubleshooting guidance
-
-This makes debugging faster and safer.
-
-***
-
-## Resume Processing
-
-Once you fix the issue:
-
 Click:
 
 **Re-run Data Processing**
 
-You’ll see 2 options:
+***
 
-#### Option 1: Resume from failed step _(recommended)_
+### Option 1: Resume from dependent step _(Recommended)_
 
-Use this if you fixed a process issue.
+The system automatically identifies:
+
+* Where processing stopped
+* What dependent steps need to run next
 
 ***
 
-#### Option 2: Start from first step
+### Option 2: Restart from first step
 
-Use this only if:
+Use this if:
 
-You made configuration structure changes.
-
-***
-
-### Important
-
-You cannot resume if:
-
-❌ The process was manually terminated\
-❌ More than 24 hours have passed since failure
+* Major configuration changes were made
+* You want to rerun the full workflow
 
 ***
 
-## View Processing History
+## Tracking Progress
 
-Every run is automatically logged.
+Every run shows:
 
-You can see:
-
-* When processing started
-* Who started it
-* How long it ran
-* How many reruns happened
-* Final status
-
-***
-
-### Why this matters
-
-This helps you:
-
-✅ Troubleshoot faster\
-✅ Identify repeated failures\
-✅ Audit past processing runs
-
-***
-
-## View Uploaded Files
-
-The Logger Files tab shows:
-
-* Upload date
-* File name
-* Logger details
-* Time range
-* Uploaded by
-* Upload status
+* Trigger time
+* Date range
+* Selected machines
+* Current status
+* Number of reruns
+* Total duration
+* Initiator
 
 ***
 
 ## Common Mistakes
 
-Avoid these:
+❌ Avoid these:
 
-❌ Uploading non-XML files\
-❌ Selecting future dates\
-❌ Selecting more than 30 days\
-❌ Starting overlapping processing for the same assets\
-❌ Ignoring blocking sanity checks
+* &#x20;Uploading non-XML files
+* Running overlapping processing for the same machines and dates
+* Ignoring blocking sanity checks
 
 ***
 
-## 💡 Pro Tips
+## Pro Tips
 
-#### For large factories
+#### Working with large factories?
 
 Start with fewer machines first.
 
@@ -525,17 +339,17 @@ This makes troubleshooting easier.
 
 ***
 
-#### For failures
+#### Processing failed?
 
 Always try:
 
-**Resume from failed step**
+**Resume from dependent step**
 
 before running everything again.
 
 ***
 
-#### For recurring issues
+#### Seeing repeated failures?
 
 Check your historical runs.
 
@@ -545,11 +359,11 @@ Repeated failures often point to configuration issues.
 
 ## Current Limits
 
-Current limitations:
+Current system limits:
 
-✅ Maximum file size: **30 MB**\
-✅ Maximum date range: **30 days**\
-✅ Only `.xml` files supported
+* Maximum file size: **30 MB**
+* Maximum date range: **30 days**
+* Only `.xml` files supported
 
 ***
 
@@ -559,7 +373,7 @@ If processing keeps failing:
 
 1. Open the failed step
 2. Review the error details
-3. Fix the configuration issue
+3. Fix the issue
 4. Resume processing
 
 Still stuck?
