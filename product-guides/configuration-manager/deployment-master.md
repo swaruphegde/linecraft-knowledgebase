@@ -1,93 +1,86 @@
 ---
-description: (Config Automation)
+description: >-
+  Deploy tags to your data loggers - without needing to understand OPC, drivers,
+  or internal wiring
 icon: cube
 ---
 
-# Deployment master
+# Deployment Master
 
-\
-**Overview**
+Overview
 
-This module helps configurators deploy tags on **data loggers**, which are used to collect data from **PLCs** on the production line. It simplifies the configuration process that previously required expert-level knowledge, multiple tools, and frequent back-and-forth across screens. That older flow worked, but it was slow, fragile, and easy to get wrong.
 
-This module replaces that approach with a **guided, sequential workflow** that:
+Deployment Master module guides you through a structured, four-step workflow to configure Data Loggers, map PLCs, extract tags, and generate deployment-ready files. The system enforces the sequence, validates your inputs at every stage, and handles all internal complexity - so your configuration is consistent, complete, and ready to deploy.
 
-·       Reduces configuration time significantly
+{% hint style="info" icon="user" %}
+<mark style="color:$warning;">**Who can use this feature?**</mark>
 
-·       Minimizes mistakes by enforcing rules early
+All users at the below role levels:
 
-·       Makes the process usable by non-experts
+* Application Super Admin
+* Organization Admin
+* Line Configurator
+{% endhint %}
 
-·       Produces consistent, deployment-ready outputs
+## Before you start
 
-You just have to now define what physically exists (PLCs and Data Loggers).\
-The system derives everything else and guides you step by step.
+**Estimated time:** 20-40 minutes (depending on PLC count and tag volume)
+
+Make sure you have the following ready:
+
+* [ ] Names of all Data Loggers on your line
+* [ ] PLC names, types, IP addresses, and port numbers for each Data Logger
+* [ ] PLC backup files (`.ap16`, `.ap17`, `.ap18`, or `.acd`) - or a CSV tag file if backups aren't available
+* [ ] Valid PLC type + driver combinations (refer to the `ControllerDriverConstant` table in your project database)
+
+{% hint style="warning" icon="triangle-exclamation" %}
+The workflow is strictly sequential. Each step unlocks only after the previous one is complete. You cannot skip ahead.
+{% endhint %}
 
 <figure><img src="../../.gitbook/assets/Format (3).png" alt=""><figcaption></figcaption></figure>
 
-In a nutshell
+## How the Workflow Is Designed
 
-You **Configure**
+Deploying tags to a data logger involves several interdependent technical components - OPC connections, driver compatibility, tag addressing, and deployment file structure. Getting any of this wrong at the end of the process is costly.
 
-·       Data Loggers
+Config Automation is designed to prevent that.
 
-·       PLCs connected to those Data Loggers
+Instead of requiring you to manage each component manually, the workflow asks you to define what physically exists - your Data Loggers and PLCs. The system then derives the rest: OPC creation, driver validation, tag filtering, and deployment file generation.
 
-·       Which tags/signals you want deployed
-
-And **The System Handles**
-
-·       OPC creation
-
-·       Driver compatibility
-
-·       Tag validation
-
-·       Dependency checks
-
-·       Deployment file generation
-
-&#x20;
-
-This design is deliberate. It removes the need for users to understand internal mechanics while still keeping outcomes predictable and correct. You focus on your physical setup and business needs - the system handles the technical complexity.<br>
-
-End to End Flow:
+Validation happens at every step. Errors surface where they occur - not after deployment.<br>
 
 &#x20;![](<../../.gitbook/assets/unknown (4).png>)
 
-
-
-The configuration flow is **strictly sequential**. You cannot skip steps. Unlike the old system where you could jump around, Config Automation enforces this sequence to catch problems early. This might feel restrictive at first, but it prevents deployment failures.
+> 💡**You define physical reality. The system handles technical complexity.**
 
 ### Step 1: Configure Data Logger Structure
 
-The first step is to create the **Data Logger structure.**
-
-This step defines the **physical setup** of your line.
+This step defines the physical layout of your production line - which Data Loggers exist and which PLCs are connected to each one. Everything downstream depends on this being correct.
 
 #### How to configure
 
-·       Select the module Configuration Manager -> Deployment Master -> PLC Datalogger Structure
+1. Go to **Configuration Manager → Deployment Master → PLC Datalogger Structure**
+2. Download the **Excel mapping template** from the UI
+3. Fill in the following for each PLC:
 
-·       Download the **Excel mapping template** from the UI
+| Field            | What to enter                                                       |
+| ---------------- | ------------------------------------------------------------------- |
+| Data Logger Name | Name of the data logger this PLC connects to                        |
+| Controller Name  | Name of the PLC                                                     |
+| Controller Type  | PLC manufacturer type (e.g., Siemens, Allen Bradley)                |
+| Driver           | Communication driver (must be a valid pairing with Controller Type) |
+| IP Address       | PLC network address                                                 |
+| Port Number      | Optional - leave blank if not applicable                            |
 
-·       Define:
+4. Upload the completed sheet
 
-o   Data Logger names
+#### What the system does after upload:
 
-o   PLCs connected to each Data Logger
+* Validates all entries against the rules below
+* Checks that each PLC type + driver combination is supported
+* Automatically creates required OPC connections and internal mappings
 
-o   PLC types, drivers, IPs, ports
-
-·       Upload the sheet
-
-#### What the system does:
-
-·       Validates all entries
-
-·       Verifies PLC–driver compatibility
-
-·       Automatically creates required internal mappings
+> If the upload is successful, the system creates everything it needs - you don't need to configure OPC or drivers manually.
 
 <figure><img src="../../.gitbook/assets/Format-1 (3).png" alt=""><figcaption></figcaption></figure>
 
@@ -95,47 +88,55 @@ o   PLC types, drivers, IPs, ports
 
 <figure><img src="../../.gitbook/assets/Format-3 (3).png" alt=""><figcaption></figcaption></figure>
 
+#### What happens if validation fails
+
+* **Nothing is saved** - no partial writes occur
+* You receive the same Excel file back, with an additional **Error** column appended after the Port Number column
+* Each row that failed shows the specific error
+* Fix the flagged rows and re-upload
+
+{% hint style="info" icon="lightbulb-on" %}
+**Only fix what's flagged.** You don't need to re-enter the entire sheet. Correct the rows with errors and upload again.
+{% endhint %}
+
 #### Important validations
 
-While configuring the structure, ensure the following:
+* **Controller Type + Driver must be a valid combination.** Supported pairings are defined in the below table. Using an unsupported combination will block the upload.
 
-* &#x20; You are using a **valid combination of PLC type and associated driver names**
-* Supported combinations are listed in the below table
+<figure><img src="../../.gitbook/assets/unknown (5).png" alt=""><figcaption></figcaption></figure>
 
-![](<../../.gitbook/assets/unknown (5).png>)
+* **One PLC cannot map to more than one Data Logger.** A Data Logger can have many PLCs, but each PLC belongs to only one Data Logger.
+* **The combination of Data Logger + Controller Name + Controller Type + Driver + IP + Port must be unique.** No duplicate rows.
+* **All fields are mandatory except Port Number.** Blank cells in any other column will cause a validation error.
+* **Sheet name must be exactly** `Deployment Master` - any variation will cause the upload to fail.
+* **Column headers must be present and in the correct order.** Do not reorder or rename columns.
 
-* All data entered in the Excel sheet must follow the defined rules  &#x20;
-* These rules are documented in [Appendix A](deployment-master.md#appendix-a-data-logger-structure-validation-rules)
+> Full validation rules are documented in the Validation Rules - Data Logger Structure section.
 
-If the upload is successful, the system creates the required mappings automatically.
+### Step 2: Upload PLC Data&#x20;
 
-If validation fails
+Once the Data Logger structure is confirmed, the system needs to know which tags exist on each PLC. This step performs the first level of tag filtering — narrowing down from potentially thousands of tags to only those that are actually referenced in your PLC program.
 
-·       No data is saved
+You have two options depending on whether PLC backup files are available.
 
-·       The same Excel file is returned with an Error column
+***
 
-·       Errors must be fixed before re-upload
+#### Option A - Upload PLC Backup Files
 
-### PLC Upload Data (Step 2 – Referenced Tag Filtering)
+Use this when you have backup files for your PLCs. This is the recommended path when backups are available, as the system can automatically extract only the referenced tags.
 
-Once the structure is created, the first level of tag filtering begins. The goal of this step is to reduce noise early by identifying only the tags that are actually relevant
+**Supported backup formats:** `.ap16`, `.ap17`, `.ap18`, `.acd`
 
-At this stage, you upload **PLC backups** (if available). Only **referenced tags** from these backups move forward to the next step.
+**Folder structure (mandatory)**
 
-Earlier, this process required multiple manual steps in Hyperspace. With this module, those steps are fully automated.
+Your upload must follow this exact hierarchy:
 
-You can complete this step in one of two ways.
-
-#### Option A: Backup upload – folder structure
-
-Use this when PLC backups are available. Backups must be uploaded in **unzipped format** using the following hierarchy (mandatory):
-
-Parent Folder \
-&#x20;└── PLC Backup Folder (one per PLC) \
-&#x20;     ├── Backup file \[AJ5]  (.ap16,.ap17, .ap18, acd)\
-&#x20;     └── Supporting folders/files\
-<br>
+```
+Parent Folder
+└── PLC Backup Folder (one per PLC)
+    ├── Backup file (.ap16 / .ap17 / .ap18 / .acd)
+    └── Supporting folders and files
+```
 
 <figure><img src="../../.gitbook/assets/Format-9.png" alt=""><figcaption></figcaption></figure>
 
@@ -145,454 +146,259 @@ Folder structure example:
 
 <figure><img src="../../.gitbook/assets/unknown (7).png" alt=""><figcaption></figcaption></figure>
 
-After uploading the parent folder:
+{% hint style="warning" icon="triangle-exclamation" %}
+Do not upload a ZIP file. The parent folder must be uploaded **unzipped**. ZIP files will cause a validation error.
+{% endhint %}
 
-·       Each PLC backup folder becomes available for mapping
+**How to upload**
 
-·       You can map each folder to the corresponding PLC
+1. Upload the **parent folder** (not individual PLC folders)
+2. Each PLC backup folder will appear in the UI for mapping
+3. Map each folder to its corresponding PLC
+4. Click **Upload & Process Mapped Files**
 
-·       Click Upload & Process
+**System-enforced rules**
 
-#### System-enforced rules
+* Each PLC backup folder maps to exactly one PLC (1:1 mapping)
+* The folder hierarchy must match the structure above
+* All drivers for a PLC must already be created in Step 1
+* PLCs can only be mapped to compatible backup folders
 
-The system automatically validates that:
+**Upload and processing behaviour**
 
-·       PLCs can only be mapped to **compatible backup folders**
+* You can cancel an upload mid-way
+* Once upload completes, processing cannot be stopped
+* Processing runs in the background - you can continue using the platform
+* Track processing status from the **PLC Upload Data** tab
+* If processing fails to start, the uploaded backup is retained and automatically retried when you reload the PLC Upload Data page
 
-·       Folder hierarchy is correct
+**Supported PLCs and drivers for automated processing**
 
-·       No ZIP files are present
+<table><thead><tr><th width="186.79998779296875">PLC Type</th><th>Supported Drivers</th></tr></thead><tbody><tr><td><strong>Siemens PLC</strong></td><td>Kepware_DA, Kepware_Symbolic, TAKEBISHI_DA, TAKEBISHI_SYMBOLIC, TAKEBISHI_OPCUA, KEPWARE_OPCUA, LINECRAFT</td></tr><tr><td><strong>Allen Bradley PLC</strong></td><td>KEPWARE_AB, TAKEBISHI_AB, FACTORYTALKS_AB</td></tr><tr><td><strong>Siemens CNC</strong></td><td>Sinumerik (only)</td></tr></tbody></table>
 
-·       Only one backup folder is mapped to one PLC (1:1 mapping)
-
-·       All required drivers for a PLC are already created in Step 1 -Data Logger structure
-
-Any violation of these rules results in an error.
-
-#### Upload & processing behavior
-
-·       Click **Upload & Process Mapped Files** to start
-
-·       Upload can be cancelled mid-way
-
-·       Once upload completes, processing **cannot be terminated**
-
-·       Processing runs in the background; you can continue using the product
-
-·       Status can be tracked from the **PLC Upload Data** tab
-
-·       Only referenced tags from the backup move forward.
-
-#### Supported PLC backups
-
-Currently, automated processing supports:<br>
-
-* **Siemens PLC**\
-  \
-  &#x20;Kepware\_DA\
-  Kepware\_Symbolic\
-  TAKEBISHI\_DA\
-  TAKEBISHI\_SYMBOLIC\
-  TAKEBISHI\_OPCUA\
-  KEPWARE\_OPCUA\
-  LINECRAFT<br>
-* **Allen Bradley PLC**\
-  \
-  KEPWARE\_AB\
-  TAKEBISHI\_AB\
-  FACTORYTALKS\_AB<br>
-* &#x20;For only Siemens CNC Sinumerik driver is applicable
-* &#x20;Siemens PLC can have Linecraft driver but it won't work with parser
+{% hint style="info" icon="lightbulb-on" %}
+**Note on Linecraft driver for Siemens PLC:** The Linecraft driver can be assigned to a Siemens PLC in the structure, but it is not supported by the tag parser. Tags from this driver combination will not be automatically extracted.
+{% endhint %}
 
 <figure><img src="../../.gitbook/assets/Format-4 (3).png" alt=""><figcaption></figcaption></figure>
 
-### Option B: CSV Tag Upload (When PLC Backups Are Not Available)
+### Option B: Upload a CSV Tag File (When PLC Backups Are Not Available)
 
-If PLC backups are not available for the supported manufacturers, you can upload tags manually using a **CSV file**.
+Use this when PLC backup files are not available. You manually provide the tag list for each PLC using a CSV file.
+
+**Download the CSV template** from the UI before starting. Do not create your own format.
 
 <figure><img src="../../.gitbook/assets/Format-10.png" alt=""><figcaption></figcaption></figure>
 
 #### CSV upload – folder structure
 
-Parent Folder \
-&#x20;└── Individual CSV tag files (one per PLC)
+```
+Parent Folder
+└── One CSV file per PLC
+```
 
-#### CSV validation rules
+**Key rules for CSV upload**
 
-The following validations apply:
+* If a PLC has multiple drivers, tags for **all** drivers must be present in the CSV
+* Tags must only belong to the PLC the CSV is being uploaded for
+* The driver referenced in each tag must already exist in the Data Logger structure from Step 1
+* Tags for incompatible or unrecognized drivers will result in an error
+* An empty CSV file is not accepted
 
-·       If a PLC has multiple drivers:\
-\- Tags for **all drivers must be present** in the CSV
+> Full field-level CSV validation rules are documented in the Validation Rules - CSV Tag Upload section.
 
-·       If tags exist for a driver:\
-\- That driver **must already be created** in the Data Logger structure
+**Important: Re-upload constraints**
 
-·       CSV must contain tags o**nly for the corresponding PLC**
+<table><thead><tr><th width="300.39996337890625">Scenario</th><th>What's allowed</th></tr></thead><tbody><tr><td>PLC originally used a backup file</td><td>Cannot upload another backup or a CSV for that PLC</td></tr><tr><td>PLC originally used a CSV</td><td>Can upload a new CSV to update tags</td></tr><tr><td>PLC originally used a CSV</td><td>Cannot switch to a backup file upload</td></tr></tbody></table>
 
-·       Tags for incompatible drivers will result in an error
-
-Field-level CSV rules are documented in [Appendix B](deployment-master.md#appendix-b-csv-tag-sheet-validation-rules)\
-CSV template is provided in [Appendix C](deployment-master.md#appendix-c-csv-tag-sheet-template)
-
-#### Versioning constraints
-
-·       Once a **backup is uploaded and successfully processed**, you cannot upload another backup or CSV for that PLC
-
-·       PLCs that used CSV tags earlier can upload a new CSV
-
-·       Backups cannot be uploaded for PLCs that already used CSV tags
-
-This restriction avoids versioning complexity and will be relaxed in future releases.
-
-#### Failure handling
-
-·       If parsing cannot start due to an issue:
-
-o   The uploaded backup remains available
-
-o   Parsing is automatically retried when the **PLC Upload Data** page is reloaded
-
-At the end of this step, you receive a list of **referenced tags**, ready for further filtering.
-
-### Tag Selection (Step 3 – Final Tag Shortlisting)
-
-In this step, you select the final set of tags to deploy.
-
-Why Two Stages of Filtering
-
-PLC backups can contain thousands of tags. This step filters to only the ones your PLC program actually uses, dramatically reducing the volume you need to review in Step 3.
-
-How tags are organized
-
-Tags are logically organized into main groups and sub-groups. To assist selection, the page provides three key tools:
-
-<figure><img src="../../.gitbook/assets/Format-5 (3).png" alt=""><figcaption></figcaption></figure>
-
-#### 1. Signal-based selection (Left Pane)
-
-·       Groups are associated with signals. Selecting a signal sorts relevant tags in the right pane
-
-·       Each group displays a **confidence score** generated by the ML algorithm
-
-·       Some signals are marked as **Default**
-
-o   Default signals cannot be edited, deleted, or uploaded via UI
-
-·       You can upload **custom signals** using Excel
-
-<figure><img src="../../.gitbook/assets/Format-8.png" alt=""><figcaption></figcaption></figure>
-
-o   Download the existing signal template from the UI
-
-o   Header and column names must remain unchanged
-
-#### 2. IntelliSearch (Left Pane)
-
-·       Helps quickly find a signal when the list is large
-
-·       Once selected, the same signal-based sorting applies
-
-#### 3. Literal search (Right Pane)
-
-·       Performs direct text matching
-
-·       Sorting priority:
-
-o   Matching groups
-
-o   Matching sub-groups
-
-o   Matching tag name / FU / TU
-
-#### Auto-selected tags
-
-·       Tags uploaded via CSV are auto-selected
-
-·       This assumes the CSV already contains only required tags
-
-#### Review & Save
-
-* Click **Review Tags** to see:
-
-\-  Total selected tag count
-
-\- Tag distribution across Data Loggers and PLCs<br>
-
-<figure><img src="../../.gitbook/assets/Format-6 (3).png" alt=""><figcaption></figcaption></figure>
-
-* If the summary looks correct, click **Save**
-* You can modify tag selections later if needed
-
-#### Why This Step Matters
-
-This is where you make business decisions about what data matters. The system guides you with signals and confidence scores, but the final call about what to deploy is yours.
-
-### Step 4 - Deployment Files
-
-Once tags are saved, click **Get Deployment Files** from the landing page.
-
-Deployment packages are generated **per data logger**, containing:
-
-·       Required XML configuration files
-
-o   IO.xml
-
-o   PLC.xml
-
-o   OPCUA.xml
-
-o   Developer Parameter.xml
-
-o   System Parameter.xml
-
-<figure><img src="../../.gitbook/assets/Format-7.png" alt=""><figcaption></figcaption></figure>
-
-### Important Note on Process Flow
-
-The journey to generate deployment files is **strictly sequential**.
-
-·       Each step is enabled only after the previous step is completed
-
-·       The landing page provides a clear summary of:
-
-o   Completed steps
-
-o   Pending actions
-
-This ensures consistency and avoids partial or invalid configurations.
-
-#### You're Done!
-
-At this point, you have everything needed to deploy your configuration. The files contain all the technical details - you don't need to understand OPC, drivers, or any of the internal mechanics
-
-#### Why This Flow Works
-
-Compared to the earlier approach, Config Automation:
-
-·       Eliminates tool switching
-
-·       Pushes validation upfront
-
-·       Prevents partial configurations
-
-·       Reduces dependency on individual expertise
-
-·       Errors are caught where they occur, not after deployment
-
-**The Old Way vs. New Way**
-
-·       Previously: Jump between tools → Make assumptions → Deploy → Find errors → Fix → Repeat.
-
-·       Now: Follow steps → System validates → Deploy → Works.
-
-&#x20;
-
-#### Key Takeaways
-
-·       The process is linear and enforced
-
-·       You define physical reality; the system derives everything else
-
-·       Tag filtering happens in two stages to reduce noise
-
-·       Configuration time is significantly reduced
-
-·       Outcomes are predictable and repeatable
-
-&#x20;
-
-&#x20;
-
-<br>
-
-&#x20;
-
-### Appendix A: Data Logger Structure – Validation Rules
-
-The **Data Logger Structure Excel sheet** is validated against the following rules before processing:
-
-#### Sheet-level validations
-
-1\.  Sheet name must be exactly **Deployment Master**
-
-2\.       Sheet must contain data (cannot be empty)
-
-3\.       Header row must be present, even if no data rows exist
-
-4\.       Header names must:
-
-a.       Match exactly
-
-b.       Appear in the same sequence as defined
-
-5\.       Blank cells are not allowed, **except for Port Number**
-
-#### Data consistency validations
-
-6\.       **Cardinality rule**:
-
-a.       One Data Logger can map to multiple **Controllers**
-
-b.       A Controller cannot map to multiple Data Loggers
-
-7\.       The following combination must be **unique:**
-
-DataLogger\_Name + ControllerName + ControllerType + Driver + IP Address + Port Number
-
-8\.       (ControllerType + Driver) must be a **valid combination**, as defined in the table in details under Step 1
-
-#### Error handling
-
-·       If any validation fails:
-
-o   An **Error** column is appended after the PortNumber column
-
-o   The updated sheet is returned to the UI
-
-o   **No database write** is performed
-
-&#x20;
-
-### Appendix B: CSV Tag Sheet – Validation Rules
-
-The CSV tag file is validated using the following rules:
-
-#### File & structure validations
-
-1\.       Empty CSV file is not allowed
-
-2\.       Header row must be present
-
-3\.       CSV must contain exactly 11 columns
-
-4\.       Column sequence must match the defined template
-
-5\.       Header names must be valid and exact
-
-#### Field-level validations
-
-6\.       Blank cells are not allowed, except for:
-
-a.       Comment
-
-b.       Technical Unit (TU)
-
-c.       Name
-
-d.       Frequency Parameter
-
-e.       Resolution
-
-f.         Negated
-
-7\.  Data types must be valid values from global\_enums (UNKNOWN, Real, Boolean, Byte, Int, Double, String, Word, Dint, Char, Dword, Float, Long, Chararray, Bytearray, Sint)\[AJ8]&#x20;
-
-8\.  Driver name must exist in driverName column as defined in the table in details under Step 1
-
-9\.  Duplicate rows (entire xx match) are not allowed
-
-10\.  Allowed characters for functional unit / techincal unit / tag - \`a-z\`, \`A-Z\`, \`0-9\`, \`\_\`, \`(\`, \`)\`, \`\[\`, \`]\`
-
-11\.  Allowed characters for name - \`a-z\`, \`A-Z\`, \`0-9\`, \`\_\`, \`"\`, \`'\`, \`'\`, \`'\`, \`"\`, \`"\`
-
-12\.  Allowed characters for address - \`a-z\`, \`A-Z\`, \`0-9\`, \`\_\`, space, \`.\`, \`(\`, \`)\`, \`\[\`, \`]\`, \`"\`, \`"\`, \`"\`\[DP9]&#x20;
-
-13\.  Allowed characters for Comment - \`a-z\`, \`A-Z\`, \`0-9\`, \`\_\`, space, \`,\`, \`!\`, \`?\`, \`;\`, \`:\`, \`'\`, \`"\`, \`'\`, \`'\`, \`"\`, \`"\`, \`(\`, \`)\`, \`-\`, \`/\`, \`&\`, \`\[\`, \`]\`
-
-14\.  Allowed values for Negated - Blank, \`true\`, \`false\`, \`1\`, \`0\`, \`t\`, \`f\`, \`y\`, \`n\`, \`yes\`, \`no
-
-#### Data normalization rules
-
-10\.  If Name contains double quotes, they are converted to single quotes
-
-11\.  Allowed values for Negated, FALSE, F, TRUE, T, Yes, No, 0, 1. \[AJ10] \[MS11] Default value is False\[AJ12] \[MS13]&#x20;
-
-12\.  Data types are case-sensitive
-
-#### Allowed data types for tags
-
-For Linecraft driver:
-
-UNKNOWN, Real, Boolean, Byte, Int, Double, String, Word, Dint, Char, Dword, Float, Long, Chararray, Bytearray, Sint\[AJ14] \[AJ15] \[AJ16] \[MS17] \[AJ18] \[AJ19]&#x20;
-
-&#x20;
-
-For Kepware driver:
-
-Boolean, Byte, Char, Dword, Double, Real, Long, Dint, Word, String, Short, Float, Int, Bytearray, Chararray
-
-#### Numeric field validations
-
-14\.  Frequency Parameter (This is the polling rate of tags/data from the PLC):
-
-a.  Blank or values between 0–9
-
-&#x20;  i.  What does each of the above values mean?
-
-1\.   0 – 10ms (Defaulted when left blank)
-
-2\.  1 - 50 ms
-
-3\.  2 - 470 ms
-
-4\.  3 - 990 ms
-
-5\.  4 - 1190 ms
-
-6\.  5 - 5170 ms
-
-7\.  6 - 9790 ms
-
-8\.  7 - 15270 ms
-
-9\.  8 - 29790 ms
-
-10\.  9 - 59170 ms<br>
-
-15\.  Resolution:
-
-a.  Blank or values between 0.001 and 999.999
-
-b.  Up to 3 decimal places allowed
-
-#### Cross-record validations
-
-16\.  If sAddress differs for the same combination of:
-
-FU + TU + Tag\
-<br>
-
-→ Validation error is raised
-
-17\.  During re-upload:
-
-a.       If FU + TU + Tag already exists:
-
-&#x20;         i.  Any attribute change is treated as an **update**
-
-18\.  During re-upload:
-
-a.       If sAddress matches an existing record but FU + TU + Tag changes:
-
-&#x20;         i.  Error is raised indicating the address is already referenced
-
-#### Error handling
-
-·       If any validation fails:
-
-o   A new Excel file with an appended Error column is returned via UI
-
-o  **No database write** is performed
-
-&#x20;
-
-### Appendix C: CSV Tag Sheet Template
-
-The CSV template to be used for manual tag upload is provided as an attachment and can also be downloaded from the UI.
-
-[CSV tags sheet template.csv](https://parirobotics-my.sharepoint.com/:x:/g/personal/atulk_linecraft_ai/IQA_WuLJOXMcQbt7vwLDMJ37AUDZsdjdU2Xslaqe7iQuNsc?e=axyFJD)
-
-&#x20;
+> This restriction prevents versioning conflicts. Re-upload flexibility for backup-based PLCs will be introduced in a future release.
 
 ***
 
+At the end of Step 2, you have a filtered list of referenced tags - ready for final selection.
+
+***
+
+### Step 3: Select Tags
+
+This is where you make the final decision about which tags get deployed. The system has already reduced the tag volume through extraction. Now you review and confirm the deployment set.
+
+#### Why this step exists
+
+PLC backups can contain thousands of tags. Step 2 narrows the list to tags referenced in the PLC program. Step 3 lets you further refine that list based on what your production monitoring actually needs - selecting by signal relevance, not just availability.
+
+<figure><img src="../../.gitbook/assets/Format-5 (3).png" alt=""><figcaption></figcaption></figure>
+
+#### How tags are organised
+
+Tags are grouped into **main groups** and **sub-groups** based on functional and technical units. Three tools help you navigate and select:
+
+**Signal-based selection (left pane)**
+
+* Each group is associated with a **signal** (e.g., a specific production metric or equipment behaviour)
+* Selecting a signal sorts relevant tags in the right pane
+* Each group shows a **confidence score** — generated by the ML algorithm — indicating how well the tags align with the expected signal pattern
+* Some signals are marked as **Default**. These cannot be edited, deleted, or overridden via UI upload
+
+**Adding custom signals:**
+
+* Download the signal template from the UI
+* Fill in your signal definitions — do not change header or column names
+* Upload the completed file
+
+<figure><img src="../../.gitbook/assets/Format-8.png" alt=""><figcaption></figcaption></figure>
+
+**IntelliSearch (left pane)**
+
+* Use this to quickly find a signal when the list is long
+* Once selected, the same signal-based tag sorting applies
+
+**Literal search (right pane)**
+
+* Performs direct text matching across tag names, functional units (FU), and technical units (TU)
+* Results are sorted: matching groups first, then sub-groups, then individual tags
+
+#### Auto-selected tags
+
+Tags uploaded via CSV in Step 2 are automatically selected. This reflects the assumption that a manually prepared CSV already contains only the tags you need.
+
+#### Review and save
+
+1. Click **Review Tags**
+2. Confirm:
+   * Total selected tag count
+   * Tag distribution across Data Loggers and PLCs
+
+<figure><img src="../../.gitbook/assets/Format-6 (3).png" alt=""><figcaption></figcaption></figure>
+
+3. If the summary looks correct, click **Save**
+
+> You can return and modify tag selections later if needed - this step is not final until deployment.
+
+### Step 4 - Generate Deployment Files
+
+Once tags are saved, return to the landing page and click **Get Deployment Files**.
+
+The system generates a deployment package per Data Logger. Each package contains the XML configuration files required for deployment:
+
+<table><thead><tr><th width="253.20001220703125">File</th><th>Purpose</th></tr></thead><tbody><tr><td><code>IO.xml</code></td><td>IO signal mapping</td></tr><tr><td><code>PLC.xml</code></td><td>PLC connection configuration</td></tr><tr><td><code>OPCUA.xml</code></td><td>OPC UA server configuration</td></tr><tr><td><code>Developer Parameter.xml</code></td><td>Developer-level parameters</td></tr><tr><td><code>System Parameter.xml</code></td><td>System-level parameters</td></tr></tbody></table>
+
+<figure><img src="../../.gitbook/assets/Format-7.png" alt=""><figcaption></figcaption></figure>
+
+> You do not need to understand the internal structure of these files. They are deployment-ready outputs - hand them off directly to your deployment process.
+
+### Validation Rules - Data Logger Structure
+
+Reference this section when your Step 1 upload fails.
+
+#### Sheet structure
+
+<table><thead><tr><th width="238.79998779296875">Rule</th><th>Detail</th></tr></thead><tbody><tr><td>Sheet name</td><td>Must be exactly <code>Deployment Master</code></td></tr><tr><td>Sheet content</td><td>Cannot be empty</td></tr><tr><td>Header row</td><td>Must be present, even if no data rows follow</td></tr><tr><td>Column order</td><td>Must match the defined template exactly</td></tr><tr><td>Header names</td><td>Must match exactly - no variations</td></tr></tbody></table>
+
+#### Field rules
+
+<table><thead><tr><th width="262.79998779296875">Rule</th><th>Detail</th></tr></thead><tbody><tr><td>Blank cells</td><td>Not allowed, except for Port Number</td></tr><tr><td>Controller Type + Driver</td><td>Must be a valid combination per <code>ControllerDriverConstant</code> table</td></tr><tr><td>One PLC → one Data Logger</td><td>A Controller cannot be mapped to more than one Data Logger</td></tr><tr><td>Uniqueness</td><td>The combination of DataLogger_Name + ControllerName + ControllerType + Driver + IP Address + Port Number must be unique</td></tr></tbody></table>
+
+#### What happens on failure
+
+* An `Error` column is appended to the right of the Port Number column
+* The updated file is returned to the UI
+* No data is written to the database
+* Fix flagged rows and re-upload
+
+***
+
+### Validation Rules - CSV Tag Upload
+
+Reference this section when your Step 2 CSV upload fails.
+
+#### File and structure rules
+
+* CSV cannot be empty
+* Header row must be present
+* Must contain exactly **11 columns** in the defined sequence
+* Column headers must match the template exactly
+
+#### Field rules
+
+| Field                                                       | Rule                                                    |
+| ----------------------------------------------------------- | ------------------------------------------------------- |
+| Most fields                                                 | Cannot be blank                                         |
+| Comment, TU, Name, Frequency Parameter, Resolution, Negated | May be blank                                            |
+| Data type                                                   | Must be a valid value (case-sensitive) - see list below |
+| Driver name                                                 | Must exist in `ControllerDriverConstant`                |
+| Duplicate rows                                              | Not allowed (full-row match)                            |
+
+**Allowed characters:**
+
+| Field         | Allowed characters                                                                                  |
+| ------------- | --------------------------------------------------------------------------------------------------- |
+| FU / TU / Tag | `a-z`, `A-Z`, `0-9`, `_`, `(`, `)`, `[`, `]`                                                        |
+| Name          | `a-z`, `A-Z`, `0-9`, `_`, and quote variants                                                        |
+| Address       | `a-z`, `A-Z`, `0-9`, `_`, space, `.`, `(`, `)`, `[`, `]`, quotes, `-`                               |
+| Comment       | `a-z`, `A-Z`, `0-9`, `_`, space, `,`, `!`, `?`, `;`, `:`, quotes, `(`, `)`, `-`, `/`, `&`, `[`, `]` |
+
+**Frequency Parameter** (polling rate from PLC):
+
+| Value        | Polling rate   |
+| ------------ | -------------- |
+| Blank or `0` | 10ms (default) |
+| `1`          | 50ms           |
+| `2`          | 470ms          |
+| `3`          | 990ms          |
+| `4`          | 1,190ms        |
+| `5`          | 5,170ms        |
+| `6`          | 9,790ms        |
+| `7`          | 15,270ms       |
+| `8`          | 29,790ms       |
+| `9`          | 59,170ms       |
+
+**Resolution:** Blank, or a value between 0.001 and 999.999 (up to 3 decimal places)
+
+**Negated:** Accepted values: `true`, `false`, `1`, `0`, `t`, `f`, `y`, `n`, `yes`, `no`, or blank. Defaults to `False`.
+
+#### Allowed data types by driver
+
+**Linecraft driver:** `UNKNOWN`, `Real`, `Boolean`, `Byte`, `Int`, `Double`, `String`, `Word`, `Dint`, `Char`, `Dword`, `Float`, `Long`, `Chararray`, `Bytearray`, `Sint`
+
+**Kepware driver:** `Boolean`, `Byte`, `Char`, `Dword`, `Double`, `Real`, `Long`, `Dint`, `Word`, `String`, `Short`, `Float`, `Int`, `Bytearray`, `Chararray`
+
+_Note: For Kepware drivers, `Int` is converted to `Short` and `Chararray` is converted to `Char Array` internally._
+
+#### Cross-record rules
+
+* If the same `FU + TU + Tag` combination has different addresses across rows → validation error
+* On re-upload: if `FU + TU + Tag` already exists, any attribute change is treated as an update
+* On re-upload: if an address already exists but the `FU + TU + Tag` combination changes → error (address is already referenced)
+
+#### What happens on failure
+
+* A new Excel file with an appended `Error` column is returned via the UI
+* No data is written to the database
+* Fix flagged rows and re-upload
+
+***
+
+### Error Handling
+
+| Situation                                            | What happens                                       | What to do                            |
+| ---------------------------------------------------- | -------------------------------------------------- | ------------------------------------- |
+| Step 1 upload fails validation                       | Error file returned with flagged rows              | Fix errors, re-upload                 |
+| Step 2 backup parsing fails to start                 | Backup is retained; parsing retries on page reload | Reload the PLC Upload Data page       |
+| Step 2 CSV upload fails                              | Error file returned with flagged rows              | Fix errors, re-upload                 |
+| Step 2 upload cancelled mid-way                      | Upload stops; no data is processed                 | Re-upload the complete folder         |
+| Step 2 upload completed but processing still running | Processing continues in background                 | Track status from PLC Upload Data tab |
+
+***
+
+### Common Mistakes
+
+Avoid these before uploading:
+
+* **Uploading a ZIP file** in Step 2 - unzip your parent folder before uploading
+* **Missing or renamed column headers** in the Excel or CSV — headers must match the template exactly
+* **Invalid PLC type + driver combination** - verify against the `ControllerDriverConstant` table before filling the sheet
+* **Mapping one PLC to multiple Data Loggers** - each PLC belongs to exactly one Data Logger
+* **Using an unsupported data type in a CSV** - data types are case-sensitive and driver-specific
+* **Leaving required fields blank** - only specific optional fields may be blank; all others are mandatory
+* **Trying to switch from CSV to backup upload** - once a PLC is configured via CSV, it must stay on the CSV path

@@ -2,6 +2,7 @@
 description: >-
   Process production data safely - without worrying about missing steps, broken
   dependencies, or restarting from scratch.
+icon: arrow-progress
 ---
 
 # Data Processing
