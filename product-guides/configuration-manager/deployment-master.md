@@ -396,7 +396,7 @@ _Note: For Kepware drivers, `Int` is converted to `Short` and `Chararray` is con
 Avoid these before uploading:
 
 * **Uploading a ZIP file** in Step 2 - unzip your parent folder before uploading
-* **Missing or renamed column headers** in the Excel or CSV — headers must match the template exactly
+* **Missing or renamed column headers** in the Excel or CSV - headers must match the template exactly
 * **Invalid PLC type + driver combination** - verify against the `ControllerDriverConstant` table before filling the sheet
 * **Mapping one PLC to multiple Data Loggers** - each PLC belongs to exactly one Data Logger
 * **Using an unsupported data type in a CSV** - data types are case-sensitive and driver-specific
