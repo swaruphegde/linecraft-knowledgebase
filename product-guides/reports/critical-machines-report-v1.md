@@ -109,32 +109,12 @@ Instead of responding after performance declines, the report enables proactive, 
 
 ## Benefits
 
-**1. Reduced Downtime**
 
-Helps teams identify risky machines early and take preventive action before breakdowns occur.
 
-**2. Faster Decision Making**
-
-Provides a consolidated view of machine criticality, enabling quick prioritization.
-
-**3. Improved Maintenance Planning**
-
-Supports predictive and preventive maintenance strategies instead of reactive maintenance.
-
-**4. Increased Operational Efficiency**
-
-Minimizes production disruptions and improves overall equipment effectiveness (OEE).
-
-**5. Better Resource Utilization**
-
-Maintenance teams can focus on high-impact machines first.
-
-**6. Enhanced Visibility**
-
-Gives plant managers and operators real-time insight into machine health and operational risks.
-
-**7. Data-Driven Insights**
-
-Helps identify recurring issues and long-term performance trends for continuous improvement.
+* Reduces unexpected downtime
+* Improves maintenance planning
+* Helps prioritize critical issues
+* Increases operational efficiency
+* Provides better visibility into machine health
 
 The report is especially valuable in manufacturing environments where machine reliability directly impacts productivity, quality, and operational costs.
