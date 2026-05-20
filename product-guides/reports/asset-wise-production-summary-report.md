@@ -23,7 +23,7 @@ Each entry in the report corresponds to a specific production asset, such as:
 * Conveyor systems
 * Automated units (e.g., robots, AGVs)
 
-This enables traceability and targeted analysis at the equipment level.
+> _This enables traceability and targeted analysis at the equipment level._
 {% endstep %}
 
 {% step %}
@@ -35,7 +35,7 @@ The report provides production-related insights for each asset, including:
 * Contribution to overall line output
 * Comparison against expected or target throughput
 
-This helps determine which assets are performing optimally and which are underutilized.
+> _This helps determine which assets are performing optimally and which are underutilized._
 {% endstep %}
 
 {% step %}
@@ -47,7 +47,7 @@ Each asset is evaluated using standard performance dimensions such as:
 * **Performance:** Whether it is running at expected speed/capacity
 * **Quality Contribution:** Impact on producing good vs defective parts
 
-These metrics allow for a granular understanding of operational efficiency.
+> _These metrics allow for a granular understanding of operational efficiency._
 {% endstep %}
 
 {% step %}
@@ -60,7 +60,7 @@ A critical feature of the report is identifying losses at the asset level, which
 * Minor stoppages or idling
 * Quality-related losses
 
-By associating losses with specific assets, teams can prioritize corrective actions more effectively.
+> _By associating losses with specific assets, teams can prioritize corrective actions more effectively._
 {% endstep %}
 
 {% step %}
@@ -72,7 +72,7 @@ The report enables comparison across assets, helping to:
 * Detect underperforming or problematic assets
 * Benchmark similar equipment
 
-This supports data-driven decision-making for optimization and investment.
+> _This supports data-driven decision-making for optimization and investment._
 {% endstep %}
 
 {% step %}
@@ -84,7 +84,7 @@ The report may include charts or visual summaries to represent:
 * Performance variation across machines
 * Trends over time (if applicable)
 
-These visual elements make it easier to quickly interpret operational insights.
+> _These visual elements make it easier to quickly interpret operational insights._
 {% endstep %}
 {% endstepper %}
 
