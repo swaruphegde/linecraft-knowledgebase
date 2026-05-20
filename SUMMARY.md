@@ -32,6 +32,7 @@
   * [Alert Insights Report](product-guides/reports/alert-insights-report.md)
   * [Asset-wise Availability Losses Report](product-guides/reports/asset-wise-availability-losses-report.md)
   * [Bottleneck Report V1](product-guides/reports/bottleneck-report-v1.md)
+  * [Critical Machines Report V1](product-guides/reports/critical-machines-report-v1.md)
 * [📦 Part Tracing](<product-guides/part-tracing (1).md>)
 * [🔩 Settings](product-guides/settings.md)
 * [🛡️ Application administration](product-guides/application-administration.md)
