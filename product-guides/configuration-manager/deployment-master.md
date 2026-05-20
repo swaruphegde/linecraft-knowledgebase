@@ -76,9 +76,8 @@ Define the digital layout of your physical production line, including data logge
 {% step %}
 ### What the system does after upload
 
-*
+<figure><img src="../../.gitbook/assets/Format-2 (3).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../.gitbook/assets/Format-2 (3).png" alt=""><figcaption></figcaption></figure>
 * Validates all entries against the rules below
 * Checks that each PLC type + driver combination is supported
 * Automatically creates required OPC connections and internal mappings
