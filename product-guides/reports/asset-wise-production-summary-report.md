@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Asset-wise Production Summary Report
 
 ## Purpose
