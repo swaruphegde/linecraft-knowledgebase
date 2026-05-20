@@ -54,7 +54,9 @@ Whether you're setting up a new line, updating PLC mappings, or making last-minu
 
 </details>
 
-The Basic Configuration under Configuration Manager lets you build your line structure, map PLC tags, and apply updates using a simple Excel file
+## Overview
+
+Configuration Manager lets you define your line structure, map PLC tags, and apply targeted updates through a validated two-tab Excel template. The system handles all backend writes atomically — nothing is applied until every row passes validation.
 
 {% hint style="info" icon="user" %}
 <mark style="color:$warning;">**Who can use this feature?**</mark>
@@ -66,50 +68,49 @@ All users at the below role levels:
 * Line Configurator
 {% endhint %}
 
-## On this page
+### Before You Start
 
-#### Getting Started
-
-* [Before You Start](https://app.gitbook.com/o/pDAf3FQPWhPdFwj4FuIf/s/y2Me4Kn6229fD3kXS68B/~/edit/~/changes/144/product-guides/configuration-manager/basic-configuration#before-you-start)
-* [Choose Your Template](https://app.gitbook.com/o/pDAf3FQPWhPdFwj4FuIf/s/y2Me4Kn6229fD3kXS68B/~/edit/~/changes/144/product-guides/configuration-manager/basic-configuration#step-1-choose-your-template)
-
-#### Creating a Configuration
-
-* [Build Your Line Structure](https://app.gitbook.com/o/pDAf3FQPWhPdFwj4FuIf/s/y2Me4Kn6229fD3kXS68B/~/edit/~/changes/144/product-guides/configuration-manager/basic-configuration#tab-1-build-your-line-structure)
-* [Validation Rules - Line Builder](basic-configuration.md#validation-rules-line-builder)
-* [Configure PLC Mapping](https://app.gitbook.com/o/pDAf3FQPWhPdFwj4FuIf/s/y2Me4Kn6229fD3kXS68B/~/edit/~/changes/144/product-guides/configuration-manager/basic-configuration#tab-2-configure-plc-mapping)
-* [Upload Your File](https://app.gitbook.com/o/pDAf3FQPWhPdFwj4FuIf/s/y2Me4Kn6229fD3kXS68B/~/edit/~/changes/144/product-guides/configuration-manager/basic-configuration#step-3-upload-your-file)
-
-#### Troubleshooting
-
-* [Fix Upload Errors](https://app.gitbook.com/o/pDAf3FQPWhPdFwj4FuIf/s/y2Me4Kn6229fD3kXS68B/~/edit/~/changes/144/product-guides/configuration-manager/basic-configuration#step-4-fix-errors-if-needed)
-* [Common Upload Errors](https://app.gitbook.com/o/pDAf3FQPWhPdFwj4FuIf/s/y2Me4Kn6229fD3kXS68B/~/edit/~/changes/144/product-guides/configuration-manager/basic-configuration#common-upload-errors)
-
-#### Reference
-
-* [Best Practices](https://app.gitbook.com/o/pDAf3FQPWhPdFwj4FuIf/s/y2Me4Kn6229fD3kXS68B/~/edit/~/changes/144/product-guides/configuration-manager/basic-configuration#best-practices)
-* [Current Limitations](https://app.gitbook.com/o/pDAf3FQPWhPdFwj4FuIf/s/y2Me4Kn6229fD3kXS68B/~/edit/~/changes/144/product-guides/configuration-manager/basic-configuration#current-limitations)
-
-### ⏱ Before You Start
-
-Estimated setup time: **3–5 minutes**
+> _Estimated setup time:_ 3–10 minutes (depending on line complexity)
 
 Make sure you have:
 
-* [ ] Access to the production line
-* [ ] PLC mapping details (if configuring tags)
-* [ ] Microsoft Excel installed
-* [ ] Existing configuration file (if updating a live line)
+1. Zone and Cell names for your production line
+2. Asset names and types for each cell
+3. Data Logger, OPC, and PLC details - exactly as they exist in the system (names must match the database)
+4. Tag and Tag Address values - must match what is registered in the PLC mapping
+5. Microsoft Excel installed
+6. The correct Excel template (download from the UI - do not create your own)
+7. Existing configuration file (if updating a live line)
 
 {% hint style="info" icon="lightbulb-exclamation-on" %}
 Updating an existing line? Download the current configuration first. It’s faster and safer.
 {% endhint %}
 
+## How This Workflow Is Designed
+
+Production lines in active manufacturing environments change frequently - during ramp-up, commissioning, and customer-specific deployments. Making those changes through multiple UI screens is slow, error-prone, and difficult to track.
+
+Configuration Manager replaces that with a file-based approach. You define your line structure and PLC mappings in a structured Excel file. The system validates every field before applying anything - and if something is wrong, it tells you exactly which row and what to fix.
+
+Nothing is written to the backend until all validations pass. This means you can never end up with a partial or inconsistent configuration.
+
+The Excel file has two tabs, completed in this order:
+
+```
+Tab 1: Line Builder         → Define your physical line structure
+        ↓
+Tab 2: Basic Configuration  → Map PLC tags to your assets
+        ↓
+Upload → Validate → Apply
+```
+
+You can re-upload at any time to make incremental changes. Only the rows you modify are updated - the rest of your configuration stays intact.
+
 ## Step 1: Choose Your Template
 
-Start by downloading the correct Excel file.
+Start from the Configuration Manager UI.
 
-| If you want to...       | Download                   |
+| If you want to...       | Download...                |
 | ----------------------- | -------------------------- |
 | Create a new line       | **Mapping Template**       |
 | Update an existing line | **Existing Configuration** |
@@ -117,7 +118,7 @@ Start by downloading the correct Excel file.
 <figure><img src="../../.gitbook/assets/Screenshot 2026-05-07 112312.jpg" alt="Update an existing line - Click Download Existing button"><figcaption><p>Update an existing line - Click Download Existing button</p></figcaption></figure>
 
 {% hint style="info" icon="lightbulb-exclamation-on" %}
-We recommend using the existing configuration when making changes to a live line.
+Using the existing configuration as your starting point is always faster and safer when making changes to a live line.
 {% endhint %}
 
 ## Step 2: Fill in Your Excel File
@@ -128,14 +129,11 @@ Complete both tabs before uploading.
 
 ## Tab 1 - Build Your Line Structure
 
-This tab defines your physical production line.
+This tab defines the physical structure of your production line - how zones, cells, and assets relate to each other.
 
-You’ll configure:
+#### What to fill in
 
-* **Zone** → Optional grouping (for example: Assembly Zone)
-* **Cell** → Optional sub-grouping (for example: Welding Cell)
-* **Asset\_Name** → The machine or equipment name
-* **Asset\_Type** → Type of equipment
+<table><thead><tr><th width="162.5999755859375">Column</th><th width="169.60003662109375">Required?</th><th>What to enter</th></tr></thead><tbody><tr><td>Zone</td><td>Optional</td><td>Name of the production zone</td></tr><tr><td>Cell</td><td>Optional</td><td>Name of the cell within the zone</td></tr><tr><td>Asset_Name</td><td>Required</td><td>Unique name for each asset on the line</td></tr><tr><td>Asset_Type</td><td>Required</td><td>Must match one of the supported asset types</td></tr></tbody></table>
 
 ### Example
 
@@ -177,7 +175,7 @@ Before upload, make sure:
     * PICK\_UP\_CONVEYOR
 
 {% hint style="danger" %}
-If Asset Type is invalid, the upload will fail and your line structure will not be created.
+Asset\_Type must exactly match one of the values above. Any variation - including lowercase, extra spaces, or unsupported values - will cause the upload to fail
 {% endhint %}
 
 ## Tab 2 - Configure PLC Mapping
