@@ -10,7 +10,7 @@ icon: cube
 Overview
 
 
-Deployment Master module guides you through a structured, four-step workflow to configure Data Loggers, map PLCs, extract tags, and generate deployment-ready files. The system enforces the sequence, validates your inputs at every stage, and handles all internal complexity - so your configuration is consistent, complete, and ready to deploy.
+Deployment Master module guides you through a structured, four-step workflow to configure Data Loggers, map PLCs, extract tags, and generate deployment-ready files. The system enforces the sequence, validates your inputs at every stage, and handles all internal technicalities - so your configuration is consistent, complete, and ready to deploy.
 
 {% hint style="info" icon="user" %}
 <mark style="color:$warning;">**Who can use this feature?**</mark>
@@ -24,40 +24,38 @@ All users at the below role levels:
 
 ## Before you start
 
-**Estimated time:** 20-40 minutes (depending on PLC count and tag volume)
+<figure><img src="../../.gitbook/assets/Format (3).png" alt=""><figcaption></figcaption></figure>
+
+> _Estimated time: 20-40 minutes (depending on PLC count and tag volume)_
 
 Make sure you have the following ready:
 
-* [ ] Names of all Data Loggers on your line
-* [ ] PLC names, types, IP addresses, and port numbers for each Data Logger
-* [ ] PLC backup files (`.ap16`, `.ap17`, `.ap18`, or `.acd`) - or a CSV tag file if backups aren't available
-* [ ] Valid PLC type + driver combinations (refer to the `ControllerDriverConstant` table in your project database)
+1. Names of all Data Loggers on your line
+2. PLC names, types, IP addresses, and port numbers for each Data Logger
+3. PLC backup files (`.ap16`, `.ap17`, `.ap18`, or `.acd`) - or a CSV tag file if backups aren't available
+4. Valid PLC type + driver combinations (refer to the `ControllerDriverConstant` table in your project database)
 
 {% hint style="warning" icon="triangle-exclamation" %}
 The workflow is strictly sequential. Each step unlocks only after the previous one is complete. You cannot skip ahead.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/Format (3).png" alt=""><figcaption></figcaption></figure>
-
 ## How the Workflow Is Designed
-
-Deploying tags to a data logger involves several interdependent technical components - OPC connections, driver compatibility, tag addressing, and deployment file structure. Getting any of this wrong at the end of the process is costly.
-
-Config Automation is designed to prevent that.
-
-Instead of requiring you to manage each component manually, the workflow asks you to define what physically exists - your Data Loggers and PLCs. The system then derives the rest: OPC creation, driver validation, tag filtering, and deployment file generation.
-
-Validation happens at every step. Errors surface where they occur - not after deployment.<br>
 
 &#x20;![](<../../.gitbook/assets/unknown (4).png>)
 
-> 💡**You define physical reality. The system handles technical complexity.**
+Deploying tags to a data logger involves several interdependent technical components - OPC connections, driver compatibility, tag addressing, and deployment file structure.
 
-### Step 1: Configure Data Logger Structure
+Instead of requiring you to manage each component manually, the workflow asks you to define what physically exists - your Data Loggers and PLCs. The system then derives the rest: OPC creation, driver validation, tag filtering, and deployment file generation.
 
-This step defines the physical layout of your production line - which Data Loggers exist and which PLCs are connected to each one. Everything downstream depends on this being correct.
+### Configure Data Logger Structure
 
-#### How to configure
+Define the digital layout of your physical production line, including data loggers, PLCs and their interconnections.&#x20;
+
+{% stepper %}
+{% step %}
+### How to configure data logger structure
+
+<figure><img src="../../.gitbook/assets/Format-1 (3).png" alt=""><figcaption></figcaption></figure>
 
 1. Go to **Configuration Manager → Deployment Master → PLC Datalogger Structure**
 2. Download the **Excel mapping template** from the UI
@@ -73,22 +71,23 @@ This step defines the physical layout of your production line - which Data Logge
 | Port Number      | Optional - leave blank if not applicable                            |
 
 4. Upload the completed sheet
+{% endstep %}
 
-#### What the system does after upload:
+{% step %}
+### What the system does after upload
 
+*
+
+    <figure><img src="../../.gitbook/assets/Format-2 (3).png" alt=""><figcaption></figcaption></figure>
 * Validates all entries against the rules below
 * Checks that each PLC type + driver combination is supported
 * Automatically creates required OPC connections and internal mappings
 
-> If the upload is successful, the system creates everything it needs - you don't need to configure OPC or drivers manually.
+> _If the upload is successful, the system creates everything it needs - you don't need to configure OPC or drivers manually._
+{% endstep %}
 
-<figure><img src="../../.gitbook/assets/Format-1 (3).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../.gitbook/assets/Format-2 (3).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../.gitbook/assets/Format-3 (3).png" alt=""><figcaption></figcaption></figure>
-
-#### What happens if validation fails
+{% step %}
+### What if validation fails
 
 * **Nothing is saved** - no partial writes occur
 * You receive the same Excel file back, with an additional **Error** column appended after the Port Number column
@@ -99,7 +98,9 @@ This step defines the physical layout of your production line - which Data Logge
 **Only fix what's flagged.** You don't need to re-enter the entire sheet. Correct the rows with errors and upload again.
 {% endhint %}
 
-#### Important validations
+<details>
+
+<summary>Important validations</summary>
 
 * **Controller Type + Driver must be a valid combination.** Supported pairings are defined in the below table. Using an unsupported combination will block the upload.
 
@@ -111,17 +112,25 @@ This step defines the physical layout of your production line - which Data Logge
 * **Sheet name must be exactly** `Deployment Master` - any variation will cause the upload to fail.
 * **Column headers must be present and in the correct order.** Do not reorder or rename columns.
 
-> Full validation rules are documented in the Validation Rules - Data Logger Structure section.
+> _Full validation rules are documented in the Validation Rules - Data Logger Structure section._
 
-### Step 2: Upload PLC Data&#x20;
+</details>
+{% endstep %}
+{% endstepper %}
 
-Once the Data Logger structure is confirmed, the system needs to know which tags exist on each PLC. This step performs the first level of tag filtering — narrowing down from potentially thousands of tags to only those that are actually referenced in your PLC program.
+### Upload PLC Data&#x20;
+
+<figure><img src="../../.gitbook/assets/Format-4 (3).png" alt=""><figcaption></figcaption></figure>
+
+Once the Data Logger structure is confirmed, the system needs to know which tags exist on each PLC. This performs the first level of tag filtering — narrowing down from potentially thousands of tags to only those that are actually referenced in your PLC program.
 
 You have two options depending on whether PLC backup files are available.
 
-***
+{% stepper %}
+{% step %}
+### Upload PLC backup files
 
-#### Option A - Upload PLC Backup Files
+<figure><img src="../../.gitbook/assets/Format-9.png" alt=""><figcaption></figcaption></figure>
 
 Use this when you have backup files for your PLCs. This is the recommended path when backups are available, as the system can automatically extract only the referenced tags.
 
@@ -138,17 +147,13 @@ Parent Folder
     └── Supporting folders and files
 ```
 
-<figure><img src="../../.gitbook/assets/Format-9.png" alt=""><figcaption></figcaption></figure>
-
-Folder structure example:
-
-<figure><img src="../../.gitbook/assets/unknown (6).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../.gitbook/assets/unknown (7).png" alt=""><figcaption></figcaption></figure>
-
 {% hint style="warning" icon="triangle-exclamation" %}
 Do not upload a ZIP file. The parent folder must be uploaded **unzipped**. ZIP files will cause a validation error.
 {% endhint %}
+
+<details>
+
+<summary>More on how to upload</summary>
 
 **How to upload**
 
@@ -180,15 +185,17 @@ Do not upload a ZIP file. The parent folder must be uploaded **unzipped**. ZIP f
 **Note on Linecraft driver for Siemens PLC:** The Linecraft driver can be assigned to a Siemens PLC in the structure, but it is not supported by the tag parser. Tags from this driver combination will not be automatically extracted.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/Format-4 (3).png" alt=""><figcaption></figcaption></figure>
+</details>
+{% endstep %}
 
-### Option B: Upload a CSV Tag File (When PLC Backups Are Not Available)
+{% step %}
+### Upload a CSV Tag File
+
+<figure><img src="../../.gitbook/assets/Format-10.png" alt=""><figcaption></figcaption></figure>
 
 Use this when PLC backup files are not available. You manually provide the tag list for each PLC using a CSV file.
 
-**Download the CSV template** from the UI before starting. Do not create your own format.
-
-<figure><img src="../../.gitbook/assets/Format-10.png" alt=""><figcaption></figcaption></figure>
+> _**Download our CSV template**. Do not create your own format._
 
 #### CSV upload – folder structure
 
@@ -197,7 +204,9 @@ Parent Folder
 └── One CSV file per PLC
 ```
 
-**Key rules for CSV upload**
+<details>
+
+<summary>CSV upload guidelines</summary>
 
 * If a PLC has multiple drivers, tags for **all** drivers must be present in the CSV
 * Tags must only belong to the PLC the CSV is being uploaded for
@@ -205,31 +214,29 @@ Parent Folder
 * Tags for incompatible or unrecognized drivers will result in an error
 * An empty CSV file is not accepted
 
-> Full field-level CSV validation rules are documented in the Validation Rules - CSV Tag Upload section.
+> _Full field-level CSV validation rules are documented in the Validation Rules - CSV Tag Upload section._
 
 **Important: Re-upload constraints**
 
 <table><thead><tr><th width="300.39996337890625">Scenario</th><th>What's allowed</th></tr></thead><tbody><tr><td>PLC originally used a backup file</td><td>Cannot upload another backup or a CSV for that PLC</td></tr><tr><td>PLC originally used a CSV</td><td>Can upload a new CSV to update tags</td></tr><tr><td>PLC originally used a CSV</td><td>Cannot switch to a backup file upload</td></tr></tbody></table>
 
-> This restriction prevents versioning conflicts. Re-upload flexibility for backup-based PLCs will be introduced in a future release.
+> _This restriction prevents versioning conflicts. Re-upload flexibility for backup-based PLCs will be introduced in a future release._
 
-***
+</details>
+{% endstep %}
 
-At the end of Step 2, you have a filtered list of referenced tags - ready for final selection.
-
-***
-
-### Step 3: Select Tags
-
-This is where you make the final decision about which tags get deployed. The system has already reduced the tag volume through extraction. Now you review and confirm the deployment set.
-
-#### Why this step exists
-
-PLC backups can contain thousands of tags. Step 2 narrows the list to tags referenced in the PLC program. Step 3 lets you further refine that list based on what your production monitoring actually needs - selecting by signal relevance, not just availability.
+{% step %}
+### Select Tags
 
 <figure><img src="../../.gitbook/assets/Format-5 (3).png" alt=""><figcaption></figcaption></figure>
 
-#### How tags are organised
+This is where you make the final decision about which tags get deployed. The system has already reduced the tag volume through extraction. Now you review and confirm the deployment set.
+
+<details>
+
+<summary>How tags are organized</summary>
+
+<figure><img src="../../.gitbook/assets/Format-8.png" alt=""><figcaption></figcaption></figure>
 
 Tags are grouped into **main groups** and **sub-groups** based on functional and technical units. Three tools help you navigate and select:
 
@@ -245,8 +252,6 @@ Tags are grouped into **main groups** and **sub-groups** based on functional and
 * Download the signal template from the UI
 * Fill in your signal definitions — do not change header or column names
 * Upload the completed file
-
-<figure><img src="../../.gitbook/assets/Format-8.png" alt=""><figcaption></figcaption></figure>
 
 **IntelliSearch (left pane)**
 
@@ -264,18 +269,24 @@ Tags uploaded via CSV in Step 2 are automatically selected. This reflects the as
 
 #### Review and save
 
-1. Click **Review Tags**
-2. Confirm:
+1.
+
+    <figure><img src="../../.gitbook/assets/Format-6 (3).png" alt=""><figcaption></figcaption></figure>
+2. Click **Review Tags**
+3. Confirm:
    * Total selected tag count
    * Tag distribution across Data Loggers and PLCs
-
-<figure><img src="../../.gitbook/assets/Format-6 (3).png" alt=""><figcaption></figcaption></figure>
-
-3. If the summary looks correct, click **Save**
+4. If the summary looks correct, click **Save**
 
 > You can return and modify tag selections later if needed - this step is not final until deployment.
 
-### Step 4 - Generate Deployment Files
+</details>
+{% endstep %}
+
+{% step %}
+### Generate deployment files
+
+<figure><img src="../../.gitbook/assets/Format-7.png" alt=""><figcaption></figcaption></figure>
 
 Once tags are saved, return to the landing page and click **Get Deployment Files**.
 
@@ -283,11 +294,11 @@ The system generates a deployment package per Data Logger. Each package contains
 
 <table><thead><tr><th width="253.20001220703125">File</th><th>Purpose</th></tr></thead><tbody><tr><td><code>IO.xml</code></td><td>IO signal mapping</td></tr><tr><td><code>PLC.xml</code></td><td>PLC connection configuration</td></tr><tr><td><code>OPCUA.xml</code></td><td>OPC UA server configuration</td></tr><tr><td><code>Developer Parameter.xml</code></td><td>Developer-level parameters</td></tr><tr><td><code>System Parameter.xml</code></td><td>System-level parameters</td></tr></tbody></table>
 
-<figure><img src="../../.gitbook/assets/Format-7.png" alt=""><figcaption></figcaption></figure>
+> _You do not need to understand the internal structure of these files. They are deployment-ready outputs - hand them off directly to your deployment process._
+{% endstep %}
+{% endstepper %}
 
-> You do not need to understand the internal structure of these files. They are deployment-ready outputs - hand them off directly to your deployment process.
-
-### Validation Rules - Data Logger Structure
+## Validation Rules - Data Logger Structure
 
 Reference this section when your Step 1 upload fails.
 
@@ -306,9 +317,7 @@ Reference this section when your Step 1 upload fails.
 * No data is written to the database
 * Fix flagged rows and re-upload
 
-***
-
-### Validation Rules - CSV Tag Upload
+## Validation Rules - CSV Tag Upload
 
 Reference this section when your Step 2 CSV upload fails.
 
@@ -377,9 +386,7 @@ _Note: For Kepware drivers, `Int` is converted to `Short` and `Chararray` is con
 * No data is written to the database
 * Fix flagged rows and re-upload
 
-***
-
-### Error Handling
+## Error Handling
 
 | Situation                                            | What happens                                       | What to do                            |
 | ---------------------------------------------------- | -------------------------------------------------- | ------------------------------------- |
@@ -389,9 +396,7 @@ _Note: For Kepware drivers, `Int` is converted to `Short` and `Chararray` is con
 | Step 2 upload cancelled mid-way                      | Upload stops; no data is processed                 | Re-upload the complete folder         |
 | Step 2 upload completed but processing still running | Processing continues in background                 | Track status from PLC Upload Data tab |
 
-***
-
-### Common Mistakes
+## Common Mistakes
 
 Avoid these before uploading:
 
