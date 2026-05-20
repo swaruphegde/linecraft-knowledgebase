@@ -4,64 +4,143 @@ hidden: true
 
 # Bottleneck Report V1
 
-### Purpose
+## Purpose
 
-The Bottleneck Report helps teams identify process, workflow, or operational constraints that are slowing down overall performance.&#x20;
+The Bottleneck Report provides a comprehensive week-over-week analysis of production bottlenecks, along with detailed cycle-level and state-level insights. It helps users understand the underlying causes of bottlenecks and delivers actionable recommendations to improve production performance by addressing identified issues.
 
-### What This Report Covers
+The primary objective is to enable data-driven decision-making that enhances throughput and operational efficiency.
 
-The report provides insights into workflow performance by highlighting stages, tasks, or teams that create delays or reduce productivity. It typically covers:
-
-* Areas where work items are piling up
-* Stages with high wait times or low throughput
-* Tasks taking longer than expected
-* Resource or capacity constraints
-* Trends affecting delivery timelines and operational efficiency
-* Workflow patterns that impact overall system performance
-
-The report helps teams understand where inefficiencies exist and where optimization efforts should be focused.
-
-### Key Components
+## What This Report Covers
 
 {% stepper %}
 {% step %}
-### Bottleneck Identification
+### **Executive KPI Snapshot**
 
-Highlights the specific workflow stages or processes causing delays.
+The report presents a consolidated summary of overall production performance, including:
+
+* Overall Equipment Effectiveness (OEE)
+* Availability
+* Performance
+* Quality
+* Total Production
+
+This snapshot provides leadership with a quick and clear view of operational health.
 {% endstep %}
 
 {% step %}
-### Throughput Analysis
+### **Identification of Bottleneck Machines**
 
-Measures how much work is completed within a given timeframe to identify performance limitations.
+Machines are ranked using a Machine Importance Score, highlighting the most impactful bottlenecks in descending order.
+
+This prioritization enables teams to focus improvement efforts where they will generate the greatest operational benefit.
 {% endstep %}
 
 {% step %}
-### Cycle and Wait Time Metrics
+### **Structured Loss Analysis (A → P → Q Framework)**
 
-Shows how long work items remain in each stage and where delays are occurring.
+For each identified bottleneck machine, opportunities are analyzed in a structured and standardized sequence:
+
+Availability and/or Stability → Performance
+
+This framework ensures clarity, logical prioritization, and effective root-cause analysis when multiple opportunity categories exist.
 {% endstep %}
 
 {% step %}
-### Capacity Insights
+### **Top Availability Opportunity**
 
-Provides visibility into overloaded teams, systems, or resources contributing to slowdowns.
+When availability losses are detected, the report provides:
+
+* The top Availability Opportunity
+* Top 10 fault codes with corresponding source entities
+* Fault descriptions
+* Production impact (in parts)
+* Total downtime duration
+* Total downtime occurrences per fault
+
+Faults are automatically ranked by total downtime duration, allowing maintenance teams to prioritize the most impactful issues quickly.
+
+If no availability losses are recorded, this section remains blank to maintain a clean and focused report.
 {% endstep %}
 
 {% step %}
-### Trend and Pattern Analysis
+### **Top Stability Opportunity**
 
-Tracks recurring bottlenecks and workflow inefficiencies over time.
+When stability-related losses are identified, the report includes:
+
+* The top Stability Opportunity
+* Most problematic states ranked by occurrence
+* Production impact (in parts)
+* Fault descriptions
 {% endstep %}
 
 {% step %}
-### Actionable Recommendations
+### **Self-Cycle Histogram**
 
-Helps teams prioritize process improvements and operational changes to improve flow and delivery speed.
+The report also includes a Self-Cycle Histogram showing:
+
+* Identified problematic state instances
+* State durations
+
+This visualization helps teams identify:
+
+* State time deviations
+* Average state duration
+* Comparison against target cycle time
+* Process variability
+* Throughput instability
+
+By analyzing state behaviour, teams can address the most critical instability factors and eliminate hidden performance inefficiencies.
+
+If no stability opportunity is detected, this section remains blank.
+{% endstep %}
+
+{% step %}
+### **Top Performance Opportunity**
+
+When performance-related losses are identified, the report includes:
+
+Shift-wise and Part-type-wise Self-Cycle Histograms
+
+These histograms highlight cycles from assets with the most inefficient cycle behavior.
+
+They help uncover:
+
+* Cycle time deviations
+* Cycles exceeding target cycle time
+* JPH (Jobs Per Hour) loss due to over-cycling
+* Comparison with average and target cycle durations
+* Process variability
+* Throughput instability
+{% endstep %}
+
+{% step %}
+### **Additional Shift-wise Insights**
+
+**Additional Shift-wise Insights**
+
+* Total cycles per shift
+* Over-cycling occurrences
+* Average cycle time
+* Minimum cycle time
+* Maximum cycle time
+{% endstep %}
+
+{% step %}
+### **Additional Part-type-wise Insights**
+
+* Total cycles per part type
+* Over-cycling occurrences
+* Average cycle time
+* Minimum cycle time
+* Maximum cycle time
 {% endstep %}
 {% endstepper %}
 
-### How to Use This Report
+By analyzing cycle behaviour at both shift and part-type levels, teams can stabilize line speed, reduce variability, and eliminate hidden performance inefficiencies.
+
+If no performance opportunities are detected, this section remains blank.
+
+## How to Use This Report
 
 1. Review the identified bottlenecks to understand where delays are happening.
 2. Analyze throughput and wait-time metrics to determine the severity of constraints.
@@ -72,7 +151,7 @@ Helps teams prioritize process improvements and operational changes to improve f
 
 The report should be used regularly as part of operational reviews and continuous improvement initiatives.
 
-### Benefits
+## Benefits
 
 * Improves workflow efficiency and delivery speed
 * Helps teams proactively identify operational constraints
