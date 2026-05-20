@@ -38,7 +38,6 @@
   * [Basic Configuration](product-guides/configuration-manager/basic-configuration.md)
   * [Deployment Master](product-guides/configuration-manager/deployment-master.md)
   * [Data Processing](product-guides/configuration-manager/data-processing.md)
-  * [Data Processing 2](product-guides/configuration-manager/data-processing-2.md)
 * [🛑 Bottlenecks](product-guides/bottlenecks-1.md)
 * [📦 Part tracing old](product-guides/part-tracing.md)
 * [🔩 Settings](product-guides/settings-1.md)
