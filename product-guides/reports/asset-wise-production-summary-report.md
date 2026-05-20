@@ -1,6 +1,6 @@
 # Asset-wise Production Summary Report
 
-## Purpose
+## Overview
 
 The Asset-wise Production Summary Report provides a detailed view of production performance at an individual asset (machine/station) level. It is designed to help operations, maintenance, and engineering teams monitor how each asset contributes to overall production and identify inefficiencies or bottlenecks within the manufacturing line.
 
