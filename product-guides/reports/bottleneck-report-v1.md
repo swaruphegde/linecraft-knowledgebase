@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Bottleneck Report V1
 
 ## Purpose
