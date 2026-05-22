@@ -16,6 +16,8 @@ The primary objective is to enable data-driven decision-making that enhances thr
 {% step %}
 ### **Executive KPI Snapshot**
 
+<figure><img src="../../.gitbook/assets/1 (1).jpg" alt=""><figcaption></figcaption></figure>
+
 The report presents a consolidated summary of overall production performance, including:
 
 * Overall Equipment Effectiveness (OEE)
@@ -30,6 +32,8 @@ This snapshot provides leadership with a quick and clear view of operational hea
 {% step %}
 ### **Identification of Bottleneck Machines**
 
+<figure><img src="../../.gitbook/assets/2.jpg" alt=""><figcaption></figcaption></figure>
+
 Machines are ranked using a Machine Importance Score, highlighting the most impactful bottlenecks in descending order.
 
 This prioritization enables teams to focus improvement efforts where they will generate the greatest operational benefit.
@@ -37,6 +41,8 @@ This prioritization enables teams to focus improvement efforts where they will g
 
 {% step %}
 ### **Structured Loss Analysis (A → P → Q Framework)**
+
+<figure><img src="../../.gitbook/assets/3.jpg" alt=""><figcaption></figcaption></figure>
 
 For each identified bottleneck machine, opportunities are analyzed in a structured and standardized sequence:
 
@@ -47,6 +53,8 @@ This framework ensures clarity, logical prioritization, and effective root-cause
 
 {% step %}
 ### **Top Availability Opportunity**
+
+<figure><img src="../../.gitbook/assets/4.jpg" alt=""><figcaption></figcaption></figure>
 
 When availability losses are detected, the report provides:
 
@@ -65,6 +73,8 @@ If no availability losses are recorded, this section remains blank to maintain a
 {% step %}
 ### **Top Stability Opportunity**
 
+<figure><img src="../../.gitbook/assets/5.jpg" alt=""><figcaption></figcaption></figure>
+
 When stability-related losses are identified, the report includes:
 
 * The top Stability Opportunity
@@ -74,28 +84,9 @@ When stability-related losses are identified, the report includes:
 {% endstep %}
 
 {% step %}
-### **Self-Cycle Histogram**
-
-The report also includes a Self-Cycle Histogram showing:
-
-* Identified problematic state instances
-* State durations
-
-This visualization helps teams identify:
-
-* State time deviations
-* Average state duration
-* Comparison against target cycle time
-* Process variability
-* Throughput instability
-
-By analyzing state behaviour, teams can address the most critical instability factors and eliminate hidden performance inefficiencies.
-
-If no stability opportunity is detected, this section remains blank.
-{% endstep %}
-
-{% step %}
 ### **Top Performance Opportunity**
+
+<figure><img src="../../.gitbook/assets/6.jpg" alt=""><figcaption></figcaption></figure>
 
 When performance-related losses are identified, the report includes:
 
@@ -116,6 +107,8 @@ They help uncover:
 {% step %}
 ### **Additional Shift-wise Insights**
 
+<figure><img src="../../.gitbook/assets/7.jpg" alt=""><figcaption></figcaption></figure>
+
 **Additional Shift-wise Insights**
 
 * Total cycles per shift
@@ -127,6 +120,8 @@ They help uncover:
 
 {% step %}
 ### **Additional Part-type-wise Insights**
+
+<figure><img src="../../.gitbook/assets/8.jpg" alt=""><figcaption></figcaption></figure>
 
 * Total cycles per part type
 * Over-cycling occurrences
