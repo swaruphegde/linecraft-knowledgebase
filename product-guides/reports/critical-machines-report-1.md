@@ -2,17 +2,27 @@
 hidden: true
 ---
 
-# Critical Machines Report V1
+# Critical Machines Report
 
-## Purpose
+**Overview**
 
 The Critical Machines Report helps manufacturers pinpoint and prioritize the machines that most significantly impact production performance.
 
-## What This Report Covers
+This report systematically identifies those high-impact machines and delivers actionable insights to help teams:
 
-{% stepper %}
-{% step %}
-### **Executive KPI Snapshot**
+* Optimize ramp-up lines for improved design validation and stable output
+* Remove bottlenecks that restrict throughput
+* Minimize downtime and recurring equipment faults
+* Resolve quality losses affecting end-of-line performance
+* Improve Overall Equipment Effectiveness (OEE)
+
+Instead of responding after performance declines, the report enables proactive, data-driven intervention.
+
+<figure><img src="../../.gitbook/assets/Critical Machines.png" alt=""><figcaption></figcaption></figure>
+
+**What the Report Delivers**
+
+**1. Executive KPI Snapshot**
 
 The report provides a consolidated view of overall production performance, including:
 
@@ -23,10 +33,8 @@ The report provides a consolidated view of overall production performance, inclu
 * Total Production vs. Target
 * End-of-Line Part Loss
 * End-of-Line JPH Loss
-{% endstep %}
 
-{% step %}
-### **Identification of Critical Machines**
+**2. Identification of Critical Machines**
 
 Machines are ranked using a proprietary Machine Importance Score. The most critical machines are displayed in descending order of impact, allowing teams to focus improvement efforts where they will deliver the greatest results.
 
@@ -37,10 +45,8 @@ For each identified critical machine, losses are analysed in a structured sequen
 Availability → Performance → Quality
 
 This standardized approach ensures clarity and proper prioritization when multiple loss categories are present.
-{% endstep %}
 
-{% step %}
-### **Availability Loss Insights**
+**Availability Loss Insights**
 
 When availability losses are detected, the report presents:
 
@@ -53,10 +59,8 @@ When availability losses are detected, the report presents:
 Faults are automatically ranked by total downtime, enabling maintenance teams to quickly address the most impactful issues.
 
 If no availability losses are recorded, this section remains blank to maintain a clean and focused view.
-{% endstep %}
 
-{% step %}
-### **Performance Loss Insights**
+**Performance Loss Insights**
 
 If performance losses are identified, the report includes a:
 
@@ -75,10 +79,8 @@ This visualization helps uncover:
 By analysing cycle behaviour, teams can stabilize line speed and eliminate hidden performance inefficiencies.
 
 If no performance losses are detected, this section remains blank.
-{% endstep %}
 
-{% step %}
-### **Quality Loss Insights**
+**Quality Loss Insights**
 
 When quality losses are present, the report displays a Bad Parts Trend Analysis, adapted to the reporting period:
 
@@ -92,29 +94,3 @@ This enables identification of:
 * Recurring process-related issues
 
 If no quality losses are observed, this section remains blank.
-{% endstep %}
-{% endstepper %}
-
-## How to Use This Report
-
-This report systematically identifies those high-impact machines and delivers actionable insights to help teams:
-
-* Optimize ramp-up lines for improved design validation and stable output
-* Remove bottlenecks that restrict throughput
-* Minimize downtime and recurring equipment faults
-* Resolve quality losses affecting end-of-line performance
-* Improve Overall Equipment Effectiveness (OEE)
-
-Instead of responding after performance declines, the report enables proactive, data-driven intervention.
-
-## Benefits
-
-
-
-* Reduces unexpected downtime
-* Improves maintenance planning
-* Helps prioritize critical issues
-* Increases operational efficiency
-* Provides better visibility into machine health
-
-The report is especially valuable in manufacturing environments where machine reliability directly impacts productivity, quality, and operational costs.

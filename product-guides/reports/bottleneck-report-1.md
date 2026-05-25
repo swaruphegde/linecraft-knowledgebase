@@ -1,18 +1,21 @@
-# Bottleneck Report V1
+---
+hidden: true
+---
 
-## Purpose
+# Bottleneck Report
+
+**Overview**
 
 The Bottleneck Report provides a comprehensive week-over-week analysis of production bottlenecks, along with detailed cycle-level and state-level insights. It helps users understand the underlying causes of bottlenecks and delivers actionable recommendations to improve production performance by addressing identified issues.
 
-The primary objective is to enable data-driven decision-making that enhances throughput and operational efficiency.
+The primary objective is to enable data-driven decision-making that enhances throughput and operational efficiency.\
+<br>
 
-## What This Report Covers
+<figure><img src="../../.gitbook/assets/Bottleneck Report (2).png" alt=""><figcaption></figcaption></figure>
 
-{% stepper %}
-{% step %}
-### **Executive KPI Snapshot**
+**What the Report Delivers**
 
-<figure><img src="../../.gitbook/assets/1 (2).jpg" alt=""><figcaption></figcaption></figure>
+**1. Executive KPI Snapshot**
 
 The report presents a consolidated summary of overall production performance, including:
 
@@ -23,34 +26,22 @@ The report presents a consolidated summary of overall production performance, in
 * Total Production
 
 This snapshot provides leadership with a quick and clear view of operational health.
-{% endstep %}
 
-{% step %}
-### **Identification of Bottleneck Machines**
-
-<figure><img src="../../.gitbook/assets/2 (1).jpg" alt=""><figcaption></figcaption></figure>
+**2. Identification of Bottleneck Machines**
 
 Machines are ranked using a Machine Importance Score, highlighting the most impactful bottlenecks in descending order.
 
 This prioritization enables teams to focus improvement efforts where they will generate the greatest operational benefit.
-{% endstep %}
 
-{% step %}
-### **Structured Loss Analysis (A → P → Q Framework)**
-
-<figure><img src="../../.gitbook/assets/3 (1).jpg" alt=""><figcaption></figcaption></figure>
+**Structured Loss Analysis (A → P → Q Framework)**
 
 For each identified bottleneck machine, opportunities are analyzed in a structured and standardized sequence:
 
 Availability and/or Stability → Performance
 
 This framework ensures clarity, logical prioritization, and effective root-cause analysis when multiple opportunity categories exist.
-{% endstep %}
 
-{% step %}
-### **Top Availability Opportunity**
-
-<figure><img src="../../.gitbook/assets/4 (1).jpg" alt=""><figcaption></figcaption></figure>
+**Top Availability Opportunity**
 
 When availability losses are detected, the report provides:
 
@@ -64,12 +55,8 @@ When availability losses are detected, the report provides:
 Faults are automatically ranked by total downtime duration, allowing maintenance teams to prioritize the most impactful issues quickly.
 
 If no availability losses are recorded, this section remains blank to maintain a clean and focused report.
-{% endstep %}
 
-{% step %}
-### **Top Stability Opportunity**
-
-<figure><img src="../../.gitbook/assets/5 (1).jpg" alt=""><figcaption></figcaption></figure>
+**Top Stability Opportunity**
 
 When stability-related losses are identified, the report includes:
 
@@ -77,12 +64,27 @@ When stability-related losses are identified, the report includes:
 * Most problematic states ranked by occurrence
 * Production impact (in parts)
 * Fault descriptions
-{% endstep %}
 
-{% step %}
-### **Top Performance Opportunity**
+**Self-Cycle Histogram**
 
-<figure><img src="../../.gitbook/assets/6 (1).jpg" alt=""><figcaption></figcaption></figure>
+The report also includes a Self-Cycle Histogram showing:
+
+* Identified problematic state instances
+* State durations
+
+This visualization helps teams identify:
+
+* State time deviations
+* Average state duration
+* Comparison against target cycle time
+* Process variability
+* Throughput instability
+
+By analyzing state behaviour, teams can address the most critical instability factors and eliminate hidden performance inefficiencies.
+
+If no stability opportunity is detected, this section remains blank.
+
+**Top Performance Opportunity**
 
 When performance-related losses are identified, the report includes:
 
@@ -98,12 +100,6 @@ They help uncover:
 * Comparison with average and target cycle durations
 * Process variability
 * Throughput instability
-{% endstep %}
-
-{% step %}
-### **Additional Shift-wise Insights**
-
-<figure><img src="../../.gitbook/assets/7 (1).jpg" alt=""><figcaption></figcaption></figure>
 
 **Additional Shift-wise Insights**
 
@@ -111,46 +107,18 @@ They help uncover:
 * Over-cycling occurrences
 * Average cycle time
 * Minimum cycle time
-* Maximum cycle time
-{% endstep %}
+* Maximum cycle time&#x20;
 
-{% step %}
-### **Additional Part-type-wise Insights**
-
-![](<../../.gitbook/assets/8 (1).jpg>)
+**Additional Part-type-wise Insights**
 
 * Total cycles per part type
 * Over-cycling occurrences
 * Average cycle time
 * Minimum cycle time
 * Maximum cycle time
-{% endstep %}
-{% endstepper %}
 
 By analyzing cycle behaviour at both shift and part-type levels, teams can stabilize line speed, reduce variability, and eliminate hidden performance inefficiencies.
 
-If no performance opportunities are detected, this section remains blank.
+If no performance opportunities are detected, this section remains blank.\
+<br>
 
-## How to Use This Report
-
-1. Review the identified bottlenecks to understand where delays are happening.
-2. Analyze throughput and wait-time metrics to determine the severity of constraints.
-3. Compare workflow stages to identify imbalance in workload distribution.
-4. Investigate recurring patterns or trends impacting performance.
-5. Prioritize improvements such as reallocating resources, optimizing workflows, or removing dependencies.
-6. Monitor changes over time to measure the impact of process improvements.
-
-The report should be used regularly as part of operational reviews and continuous improvement initiatives.
-
-## Benefits
-
-* Improves workflow efficiency and delivery speed
-* Helps teams proactively identify operational constraints
-* Reduces delays and task accumulation
-* Enables better resource allocation and workload balancing
-* Supports data-driven decision-making
-* Enhances visibility into process performance
-* Improves overall productivity and system throughput
-* Helps organizations continuously optimize workflows and delivery processes
-
-The report ultimately enables teams to move from reactive problem-solving to proactive process optimization.

@@ -1,24 +1,16 @@
 # Critical Machines Report
 
-**Overview**
+## Purpose
 
 The Critical Machines Report helps manufacturers pinpoint and prioritize the machines that most significantly impact production performance.
 
-This report systematically identifies those high-impact machines and delivers actionable insights to help teams:
+## What This Report Covers
 
-* Optimize ramp-up lines for improved design validation and stable output
-* Remove bottlenecks that restrict throughput
-* Minimize downtime and recurring equipment faults
-* Resolve quality losses affecting end-of-line performance
-* Improve Overall Equipment Effectiveness (OEE)
+{% stepper %}
+{% step %}
+### **Executive KPI Snapshot**
 
-Instead of responding after performance declines, the report enables proactive, data-driven intervention.
-
-<figure><img src="../../.gitbook/assets/Critical Machines.png" alt=""><figcaption></figcaption></figure>
-
-**What the Report Delivers**
-
-**1. Executive KPI Snapshot**
+<figure><img src="../../.gitbook/assets/1 (3).jpg" alt=""><figcaption></figcaption></figure>
 
 The report provides a consolidated view of overall production performance, including:
 
@@ -29,20 +21,28 @@ The report provides a consolidated view of overall production performance, inclu
 * Total Production vs. Target
 * End-of-Line Part Loss
 * End-of-Line JPH Loss
+{% endstep %}
 
-**2. Identification of Critical Machines**
+{% step %}
+### **Identification of Critical Machines**
+
+<figure><img src="../../.gitbook/assets/2 (2).jpg" alt=""><figcaption></figcaption></figure>
 
 Machines are ranked using a proprietary Machine Importance Score. The most critical machines are displayed in descending order of impact, allowing teams to focus improvement efforts where they will deliver the greatest results.
 
 **Structured Loss Analysis (A → P → Q Framework)**
 
-For each identified critical machine, losses are analysed in a structured sequence:
+For each identified cri![](<../../.gitbook/assets/3 (3).jpg>)tical machine, losses are analysed in a structured sequence:
 
 Availability → Performance → Quality
 
 This standardized approach ensures clarity and proper prioritization when multiple loss categories are present.
+{% endstep %}
 
-**Availability Loss Insights**
+{% step %}
+### **Availability Loss Insights**
+
+<figure><img src="../../.gitbook/assets/4 (3).jpg" alt=""><figcaption></figcaption></figure>
 
 When availability losses are detected, the report presents:
 
@@ -55,8 +55,14 @@ When availability losses are detected, the report presents:
 Faults are automatically ranked by total downtime, enabling maintenance teams to quickly address the most impactful issues.
 
 If no availability losses are recorded, this section remains blank to maintain a clean and focused view.
+{% endstep %}
 
-**Performance Loss Insights**
+{% step %}
+### **Performance Loss Insights**
+
+<figure><img src="../../.gitbook/assets/5 (3).jpg" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/6 (2).jpg" alt=""><figcaption></figcaption></figure>
 
 If performance losses are identified, the report includes a:
 
@@ -75,8 +81,12 @@ This visualization helps uncover:
 By analysing cycle behaviour, teams can stabilize line speed and eliminate hidden performance inefficiencies.
 
 If no performance losses are detected, this section remains blank.
+{% endstep %}
 
-**Quality Loss Insights**
+{% step %}
+### **Quality Loss Insights**
+
+<figure><img src="../../.gitbook/assets/22.jpg" alt=""><figcaption></figcaption></figure>
 
 When quality losses are present, the report displays a Bad Parts Trend Analysis, adapted to the reporting period:
 
@@ -90,3 +100,27 @@ This enables identification of:
 * Recurring process-related issues
 
 If no quality losses are observed, this section remains blank.
+{% endstep %}
+{% endstepper %}
+
+## How to Use This Report
+
+This report systematically identifies those high-impact machines and delivers actionable insights to help teams:
+
+* Optimize ramp-up lines for improved design validation and stable output
+* Remove bottlenecks that restrict throughput
+* Minimize downtime and recurring equipment faults
+* Resolve quality losses affecting end-of-line performance
+* Improve Overall Equipment Effectiveness (OEE)
+
+Instead of responding after performance declines, the report enables proactive, data-driven intervention.
+
+## Benefits
+
+* Reduces unexpected downtime
+* Improves maintenance planning
+* Helps prioritize critical issues
+* Increases operational efficiency
+* Provides better visibility into machine health
+
+The report is especially valuable in manufacturing environments where machine reliability directly impacts productivity, quality, and operational costs.
