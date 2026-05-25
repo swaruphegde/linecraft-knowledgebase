@@ -1,4 +1,4 @@
-# Bottleneck Report V1
+# Bottleneck Report&#x20;
 
 ## Purpose
 
@@ -117,7 +117,7 @@ They help uncover:
 {% step %}
 ### **Additional Part-type-wise Insights**
 
-![](<../../.gitbook/assets/8 (1).jpg>)
+<figure><img src="../../.gitbook/assets/8 (2).jpg" alt=""><figcaption></figcaption></figure>
 
 * Total cycles per part type
 * Over-cycling occurrences

@@ -32,7 +32,9 @@ Machines are ranked using a proprietary Machine Importance Score. The most criti
 
 **Structured Loss Analysis (A → P → Q Framework)**
 
-For each identified cri![](<../../.gitbook/assets/3 (3).jpg>)tical machine, losses are analysed in a structured sequence:
+<figure><img src="../../.gitbook/assets/3 (4).jpg" alt=""><figcaption></figcaption></figure>
+
+For each identified critical machine, losses are analysed in a structured sequence:
 
 Availability → Performance → Quality
 
@@ -86,7 +88,7 @@ If no performance losses are detected, this section remains blank.
 {% step %}
 ### **Quality Loss Insights**
 
-<figure><img src="../../.gitbook/assets/22.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/badparts.jpg" alt=""><figcaption></figcaption></figure>
 
 When quality losses are present, the report displays a Bad Parts Trend Analysis, adapted to the reporting period:
 
