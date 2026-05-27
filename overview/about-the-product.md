@@ -1,6 +1,6 @@
 # 💡 About the product
 
-## About Linecraft AI
+## About Wipro Linecraft AI
 
 We empower manufacturers by transforming complex machine data into actionable intelligence, uncovering hidden capacity and driving operational excellence.
 
@@ -8,7 +8,7 @@ By exclusively leveraging machine-generated data, our innovative algorithms not 
 
 <figure><img src="../.gitbook/assets/image (39) (1).png" alt=""><figcaption></figcaption></figure>
 
-## Linecraft AI is not just a traditional line monitoring software
+## Wipro Linecraft AI is not just a traditional line monitoring software
 
 It is an advanced decision-making tool designed to unlock hidden bottlenecks, optimize manufacturing processes and boost overall equipment effectiveness (OEE) through real-time, AI-driven insights.
 

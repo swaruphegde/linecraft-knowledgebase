@@ -1,6 +1,6 @@
 # Table of contents
 
-* [👋 Welcome to Linecraft AI](README.md)
+* [👋 Welcome to Wipro Linecraft AI](README.md)
 
 ## Overview
 
