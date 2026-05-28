@@ -33,6 +33,8 @@ The Maintenance Report currently supports scheduled generation only and does not
 
 ### Report KPIs
 
+<figure><img src="../../.gitbook/assets/image (210).png" alt=""><figcaption></figcaption></figure>
+
 The report surfaces operational and maintenance-critical KPIs that help teams evaluate equipment effectiveness, production reliability and operational continuity.
 
 <details>
@@ -128,6 +130,8 @@ This KPI helps teams monitor:
 {% step %}
 ### OEE time series (End of line)
 
+<figure><img src="../../.gitbook/assets/image (211).png" alt=""><figcaption></figcaption></figure>
+
 Provides a time-series operational view of equipment effectiveness and production efficiency trends.
 
 > _Time-series visibility is essential for understanding how operational effectiveness evolves over time rather than relying only on static averages._
@@ -136,6 +140,8 @@ Provides a time-series operational view of equipment effectiveness and productio
 {% step %}
 ### Overall production
 
+<figure><img src="../../.gitbook/assets/image (212).png" alt=""><figcaption></figcaption></figure>
+
 Provides consolidated production visibility comparing planned versus actual manufacturing behavior.
 
 > _Production comparison visibility is essential for understanding whether output recovery behavior is masking deeper operational instability._
@@ -143,6 +149,8 @@ Provides consolidated production visibility comparing planned versus actual manu
 
 {% step %}
 ### Top 5 downtime assets
+
+<figure><img src="../../.gitbook/assets/image (213).png" alt=""><figcaption></figcaption></figure>
 
 Provides a ranked operational view of the five assets contributing most significantly to downtime during the reporting duration.
 
@@ -159,6 +167,8 @@ Provides a ranked operational view of the most significant downtime causes affec
 
 {% step %}
 ### Downtime pareto analysis
+
+<figure><img src="../../.gitbook/assets/image (214).png" alt=""><figcaption></figcaption></figure>
 
 Displays a Pareto visualization of downtime contribution using:
 
