@@ -34,6 +34,7 @@
   * [Bottleneck Report](product-guides/reports/bottleneck-report-1.md)
   * [Critical Machines Report](product-guides/reports/critical-machines-report-1.md)
   * [Maintenance Report](product-guides/reports/maintenance-report.md)
+  * [Qual](product-guides/reports/qual.md)
 * [📦 Part Tracing](<product-guides/part-tracing (1).md>)
 * [🔩 Settings](product-guides/settings.md)
 * [🛡️ Application administration](product-guides/application-administration.md)
