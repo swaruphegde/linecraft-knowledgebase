@@ -1,4 +1,4 @@
-# Qual
+# Quality Report
 
 ## Overview
 
@@ -152,6 +152,8 @@ Provides consolidated production visibility comparing planned versus actual manu
 {% step %}
 ### Quality summary
 
+<figure><img src="../../.gitbook/assets/image (215).png" alt=""><figcaption></figcaption></figure>
+
 Provides a consolidated operational summary of production quality performance during the reporting duration.
 
 > _Quality summary visibility is essential for understanding whether production output is being achieved sustainably without hidden quality degradation._
@@ -159,6 +161,8 @@ Provides a consolidated operational summary of production quality performance du
 
 {% step %}
 ### On-shift bad parts pareto
+
+<figure><img src="../../.gitbook/assets/image (216).png" alt=""><figcaption></figcaption></figure>
 
 Provides a pareto-based operational analysis of machines contributing most significantly to bad part generation during planned production windows.
 
