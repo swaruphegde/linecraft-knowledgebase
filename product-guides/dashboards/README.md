@@ -2,48 +2,118 @@
 description: >-
   Walkthrough of the various types of dashboards that Linecraft provides and how
   they work
+hidden: true
 ---
 
 # 📊 Dashboards
 
 ## Overview
 
-The dashboard provides you with a first glance of the most important data points on your line. These can either be standard KPIs that all lines will track or specific data points that you would like to be able to see at a glance.
+Dashboards serve as the operational intelligence layer of the Linecraft platform.
 
-The top section of the dashboard consists of cards that depict your top 5 bottlenecks over the last 2 weeks. This feature is only available as part of the analyze and optimize plan.
+They consolidate production, quality, downtime, and other crucial information into analytical workspaces, enabling teams to monitor manufacturing performance and identify emerging issues without navigating across multiple modules.
 
-<figure><img src="../../.gitbook/assets/Top Bottlenecks on Dashboard.jpg" alt=""><figcaption></figcaption></figure>
+Typical use cases include:
 
+* Monitoring production performance against targets
+* Tracking OEE, throughput, and quality trends
+* Identifying recurring operational losses
+* Investigating downtime patterns
+* Comparing performance across shifts, assets, or production lines
+* Surfacing improvement opportunities through data visualization
 
+## Why Dashboards Matter
 
-{% hint style="warning" %}
-If your line is on the monitor plan, you will not be able to see bottleneck cards.
-{% endhint %}
+Manufacturing performance is influenced by multiple interconnected factors:
 
-Below this, you will see a list of sub-tabs with 4 options. These are the 4 different types of dashboards that you can view:
+* Equipment availability
+* Production speed
+* Quality losses
+* Downtime events
+* Process conditions
 
-<figure><img src="../../.gitbook/assets/Types of Dashboard.jpg" alt=""><figcaption></figcaption></figure>
+Without a consolidated analytical view, identifying the source of performance degradation becomes difficult and time-consuming.
 
-#### Template dashboard
+Dashboards help operational teams:
 
-Under template dashboard, you can create a dashboard to view important parameters of your line with the help of pre-defined templates provided by Linecraft AI.&#x20;
+* Detect abnormal production behavior early
+* Monitor KPI trends over time
+* Improve response times during production issues
+* Create a common operational view across teams
 
-[Read more](template-dashboard.md)
+## Dashboard Types
 
-#### Analysis dashboard
+Linecraft dashboards are designed to support different layers of manufacturing analysis, from executive KPI monitoring to deep operational investigations and process-level monitoring.
 
-You can create custom graphs and configure them in the analysis dashboard. This allows for a more custom and tailored experience when analyzing your line.
+Each dashboard type serves a distinct analytical purpose.
 
-[Read more](analysis-dashboard.md)
+{% stepper %}
+{% step %}
+### Template Dashboards
 
-#### IOT-Quality dashboard
+Template Dashboards provide pre-configured analytical views built around common manufacturing use cases.
 
-The IoT-Quality dashboard enables you to plot custom, real-time graphs of your line's quality and process parameters that allow you to monitor your processes in real time.
+> _They accelerate dashboard creation by allowing users to deploy proven dashboard structures without manually configuring visualizations._
+{% endstep %}
 
-[Read more](iot-quality-dashboard.md)
+{% step %}
+### Analytical Dashboards
 
-#### KPI dashboard
+Analytical Dashboards provide a flexible environment for exploring manufacturing data through custom visualizations.
 
-The KPI dashboard allows you to monitor different KPIs of your line in real-time, by plotting custom graphs and configuring their layout.
+> _This enables teams to investigate specific business questions, analyze performance trends, and uncover relationships between different operational variables._
+{% endstep %}
 
-[Read more](kpi-dashboard.md)
+{% step %}
+### IoT & Quality Dashboards
+
+IoT & Quality Dashboards extend operational visibility beyond production metrics and into process behavior.
+
+> _These dashboards allow teams to visualize real-time and historical process parameters collected from machines of the manufacturing plan_
+{% endstep %}
+
+{% step %}
+### KPI Dashboards
+
+KPI Dashboards provide real-time visibility into key manufacturing KPIs through configurable visualizations, spanning across 40+ KPIs
+
+> _KPI Dashboards provide a live operational view of manufacturing performance, helping teams detect deviations, maintain production stability, and make timely decisions during active production._
+{% endstep %}
+{% endstepper %}
+
+## Best Practices
+
+To maximize dashboard effectiveness:
+
+### Focus on actionable metrics
+
+Prioritize metrics that influence operational decisions rather than purely informational indicators
+
+### Align dashboards with operational objectives
+
+Different teams require different views:
+
+| Team        | Primary Focus                                    |
+| ----------- | ------------------------------------------------ |
+| Production  | Throughput, OEE, Output                          |
+| Maintenance | Availability, MTTR, MTBF                         |
+| Quality     | Reject Trends, Process Stability                 |
+| Leadership  | Performance Trends and Improvement Opportunities |
+
+### Review trends, not single data points
+
+Individual events rarely tell the full story. Focus on:
+
+* Recurring patterns
+* Trend direction
+* Variability over time
+
+### Periodically refine visualizations
+
+As operational priorities evolve, dashboards should evolve with them. Remove unused visualizations and introduce new views that support current improvement initiatives.
+
+## Operational Outcome
+
+Dashboards transform production data into operational visibility.
+
+By combining production, asset, quality, and process intelligence within unified analytical workspaces, teams can identify constraints faster, investigate performance issues with greater confidence, and make informed decisions that improve manufacturing outcomes.
