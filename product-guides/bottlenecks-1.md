@@ -23,6 +23,28 @@ layout:
 
 # 🛑 Bottlenecks
 
+## Overview
+
+<figure><img src="../.gitbook/assets/image (172).png" alt=""><figcaption></figcaption></figure>
+
+The Bottlenecks module helps manufacturing teams identify the assets, cells, processes, and operational conditions that restrict overall line throughput.
+
+Production lines rarely lose performance because of a single catastrophic failure. More often, throughput is constrained by subtle inefficiencies that are difficult to detect through traditional manufacturing methods.
+
+The Bottlenecks module analyzes production behavior to uncover these hidden constraints, helping teams understand not only where throughput is being lost, but also why the loss is occurring and how it impacts the rest of the line.
+
+Typical use cases include:
+
+* Identifying throughput constraints
+* Understanding production instability
+* Investigating recurring wait conditions
+* Analyzing synchronization losses
+* Prioritizing improvement opportunities
+* Validating the impact of bottleneck assets
+* Recovering hidden production capacity
+
+
+
 <details>
 
 <summary>What are bottlenecks?</summary>
@@ -69,143 +91,152 @@ Once the PSS identifies these critical cycles and outlier nodes, it doesn't leav
 
 </details>
 
-## Overview
+## Why Bottleneck Management Matters
 
-<figure><img src="../.gitbook/assets/image (172).png" alt=""><figcaption></figcaption></figure>
-
-The bottlenecks module of Linecraft PSS enables you to understand the bottlenecks of your line, specifically, identify and analyze top bottleneck assets and why they are a bottleneck so that you can bring back your intended throughput without chasing invisible information.
-
-It can be found from the main menu by choosing the 'Bottlenecks' option. Once you're inside the module, you can:
-
-1. View top bottleneck cells and assets
-2. View how these bottlenecks are impacting availability, performance and stability
-3. Visualize how these bottlenecks are making other cells and assets wait
-4. Verify the bottleneck - drilldown to view granular details of the bottleneck machine from the visualization
-5. View opportunities to resolve the bottleneck's impact on availability, performance and stability
-
-## Module walkthrough
-
-### Bottleneck cells and assets
-
-Bottleneck cells and their assets can be viewed in the summary section of the bottlenecks module. This section includes a list of all cells and their assets that are bottlenecks of your line, ranked based on their impact (most to least).
-
-What is impact? It is the severity of the bottleneck entity in terms of availability, performance and stability. This is measured in %, taking into consideration the time the bottleneck makes adjacent cells or assets wait.
-
-> _This view helps you identify which cells and machines are the top bottlenecks of your production line and what is their impact on availability, performance and stability. This acts as the first step in your journey to identify and resolve bottlenecks._
-
-To view bottleneck cells:
+An unmanaged bottleneck affects more than the constrained machine itself. As bottlenecks develop, they exponentially introduce losses throughout the production system:
 
 {% stepper %}
 {% step %}
-#### Module selection
+### Upstream blocking
 
-Select the 'Bottlenecks' module from the main menu
+Machines are unable to transfer completed work and accumulate unnecessary waiting time
 {% endstep %}
 
 {% step %}
-#### List of bottleneck cells
+### Downstream starvation
 
-You will be displayed a list of top bottleneck cells, ranked by decreasing order of impact
+Machines remain idle while waiting for material from constrained processes or machines
+{% endstep %}
 
-Each bottleneck cells displays:
+{% step %}
+### JPH reduction
 
-1. Name of the cell
-2. JPH loss
-3. Bottleneck hours
-4. Total impact, which is further bifurcated in
-   1. Availability impact
-   2. Performance impact
-   3. Stability impact
+The maximum production capacity of the line becomes limited by the bottleneck entity.
+{% endstep %}
+
+{% step %}
+### Production instability
+
+Variability increases as machines repeatedly transition between operating and waiting conditions.
 {% endstep %}
 {% endstepper %}
 
-Each bottleneck cell may have one or more bottleneck assets. To view bottleneck assets:
+> _By identifying and resolving bottlenecks, organizations can improve throughput, stabalize production and unlock hidden capacities without additional capital investment._
+
+## Understanding Bottleneck Impact
+
+Every bottleneck identified by PSS is ranked according to its operational impact on availability, performance and stability of your line. Impact represents the severity of the bottleneck and quantifies how significantly it influences production performance.
+
+Impact is further categorized into:
 
 {% stepper %}
 {% step %}
-#### Click on 'View Bottleneck Assets'
+### Availability impact
 
-View the bottleneck assets of a bottleneck cell by clicking the 'View bottleneck assets' button
+Losses caused by machine unavailability and production interruptions
 {% endstep %}
 
 {% step %}
-#### List of bottleneck assets
+### Performance impact
 
-You will then be displayed a list of top bottleneck assets of the cell, ranked by decreasing order of impact
+Losses caused by reduced operating speed or extened cycle execution
+{% endstep %}
 
-Each bottleneck asset displays:
+{% step %}
+### Stability impact
 
-1. Name of the asset
-2. JPH loss
-3. Bottleneck hours
-4. Total impact, which is further bifurcated in
-   1. Availability impact
-   2. Performance impact
-   3. Stability impact
+Losses caused by operational variability, synchronization issues, and inconsistent production behavior.
 {% endstep %}
 {% endstepper %}
 
-### Bottleneck visualization
+> _This classification helps teams understand not only where throughput is being lost, but also the primary mechanism responsible for the loss._
 
-You can visualize how long bottlenecks are making cells or assets wait. The cells across the line show the direction of waits and their relative excess wait times. Cells that are bottlenecks will be highlighted red. There can be multiple bottlenecks in an interval.
+## Bottleneck Summary
 
-> _By visualizing bottlenecks, you will be able to understand the exact wait times of a selected bottleneck. This step acts as the next step in drilling further into understanding your bottleneck entities._
+The Bottlenecks module provides a ranked view of the cells and machines that most significantly constrain production.
 
-### Bottleneck timeline
+For each bottleneck entity, users can review:
 
-Machines are not always a bottleneck. Leverage the bottleneck timeline to identify instances where the machine was a bottleneck and impacted the availability, performance or stability of your production line.
+* Bottleneck severity
+* JPH loss
+* Bottleneck hours
+* Impact on availability, performance and stability
 
-{% stepper %}
-{% step %}
-#### Causes timeline
+> _This serves as the starting point for identifying the highest-value improvement opportunities within the production system._
 
-The bottleneck causes timeline indicates all the intervals in which the bottleneck machine impacts availability, performance or stability.
-{% endstep %}
+## Bottleneck Visualization
 
-{% step %}
-#### Timeline legend
+Understanding a bottleneck requires more than identifying the constrained asset.
 
-View availability, performance and stability impacts on the timeline, differentiated by colors. You can always refer to the legend to identify which areas are being impacted on the bottleneck timeline
-{% endstep %}
-{% endstepper %}
+The Bottleneck Visualization illustrates how bottlenecks affect the surrounding production system by displaying:
 
-### Bottleneck verification
+* Wait directions
+* Relative wait durations
+* Asset dependencies
+* Bottleneck propagation across the line
 
-Verifying a bottleneck helps in pointing out which assets are the problem in a specific interval and why
+> _Entities identified as bottlenecks are visually highlighted, allowing users to quickly understand how a localized constraint influences broader production behavior._
 
-> _The bottleneck causes timeline helps you navigate different time zones during production and the bottlenecks that occurred during the timelines._
->
-> _Verifying a bottleneck essentially allows you to view the cycles, interactions and downtime details of a machine while it was a bottleneck._
+## Bottleneck Timeline
 
-{% stepper %}
-{% step %}
-#### Click on the verify button
+Assets are not permanently constrained. A machine may operate normally during one period and become a bottleneck during another.
 
-Clicking on verify from the timeline for a cell or an interval will show an asset diagram with the self-performance and availability of each asset as well as the adjacent waits for the selected cell and interval
-{% endstep %}
+The Bottleneck Timeline highlights the specific intervals during which an asset impacts line performance.
 
-{% step %}
-#### View key KPIs and wait time of
+Users can investigate:
 
-Hover on an asset to view its availability, self performance and totals waits in the selected timeline
-{% endstep %}
+* Availability-related bottlenecks
+* Performance-related bottlenecks
+* Stability-related bottlenecks
 
-{% step %}
-#### Drilldown to view further details
+> _Timeline visualization helps teams understand when bottlenecks occur and how frequently they affect production._
 
-If you select 1 asset from the total waits diagram, you will see drilldowns for cycles and downtime details. This will take you to the cycles and downtime details for the selected asset in the selected interval.&#x20;
+## Bottleneck Verification
 
-Analyzing the cycles and downtime details will help you identify which faults or cycle issues were the cause behind an entity becoming a bottleneck
-{% endstep %}
+Identifying a bottleneck is only the first step.
 
-{% step %}
-#### Interaction drilldowns
+Verification enables users to understand the underlying reasons an asset became a bottleneck during a specific production interval.
 
-If you select 2 or more assets from the total waits diagram, you will see a drilldown for interactions. This will take you to the interactions for the selected assets in the selected interval.
-{% endstep %}
-{% endstepper %}
+For a selected bottleneck and timeframe, users can analyze:
 
+* Asset availability
+* Self-performance
+* Adjacent wait conditions
+* Cycle behavior
+* Downtime events
+* Asset interactions
 
+> _Verification provides a detailed operational view of the production environment at the moment the bottleneck occurred._
 
+## Cycle and Downtime Analysis
 
+Users can drill into cycle and downtime information to identify:
 
+* Fault conditions
+* Performance degradation
+* Extended cycle execution
+* Operational interruptions
+
+## Best Practices
+
+### Prioritize impact before frequency
+
+The most frequently occurring issue is not always the most important. Focus first on bottlenecks with the highest throughput impact.
+
+### Investigate wait conditions
+
+Bottlenecks often reveal themselves through excessive waiting behavior in adjacent assets. Review blocking and starvation patterns alongside asset performance.
+
+### Verify before acting
+
+A bottleneck asset is often a symptom rather than the root cause. Use verification and interaction analysis to understand the full operational context before implementing corrective actions.
+
+### Track improvement over time
+
+After implementing changes, continue monitoring bottleneck behavior to validate whether throughput constraints have been successfully reduced.
+
+## Operational Outcome
+
+The Bottlenecks module transforms hidden production constraints into actionable operational intelligence.
+
+By identifying throughput-limiting assets, quantifying their impact, visualizing their influence across the production system, and enabling detailed root-cause investigation, the module helps manufacturing teams improve synchronization, recover hidden capacity, and maximize overall line performance.
