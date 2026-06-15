@@ -12,11 +12,15 @@ The KPI Dashboard supports the creation of customized KPI trackers and visualiza
 {% step %}
 ### Graph definition
 
+<figure><img src="../../.gitbook/assets/image (240).png" alt=""><figcaption></figcaption></figure>
+
 Every KPI tracker begins with a descriptive name that clearly communicates its monitoring purpose.
 {% endstep %}
 
 {% step %}
 ### KPI selection
+
+<figure><img src="../../.gitbook/assets/image (241).png" alt=""><figcaption></figcaption></figure>
 
 Users can select the KPI they wish to monitor and configure the level at which the metric is evaluated.
 

@@ -4,6 +4,8 @@
 
 Template Dashboards provide pre-configured analytical views built around common manufacturing performance indicators and operational workflows.
 
+<figure><img src="../../.gitbook/assets/image (220).png" alt=""><figcaption></figcaption></figure>
+
 Rather than creating visualizations from scratch, users can leverage standardized dashboard templates designed to monitor production efficiency, equipment reliability, quality performance, and operational losses.
 
 These templates accelerate dashboard deployment while ensuring consistent KPI interpretation across lines, shifts, and facilities.
@@ -16,6 +18,8 @@ These templates accelerate dashboard deployment while ensuring consistent KPI in
 {% step %}
 ### OEE Trend
 
+<figure><img src="../../.gitbook/assets/image (221).png" alt=""><figcaption></figcaption></figure>
+
 The OEE Trend template tracks Overall Equipment Effectiveness over a selected period and compares actual performance against target values.
 
 > _Supports monitoring of manufacturing effectiveness and helps identify periods of reduced operational efficiency._
@@ -23,6 +27,8 @@ The OEE Trend template tracks Overall Equipment Effectiveness over a selected pe
 
 {% step %}
 ### JPH Trend
+
+<figure><img src="../../.gitbook/assets/image (222).png" alt=""><figcaption></figcaption></figure>
 
 The JPH (Jobs Per Hour) Trend template provides visibility into production throughput and the factors contributing to throughput losses.
 
@@ -39,6 +45,8 @@ In addition to JPH performance, the dashboard highlights:
 {% step %}
 ### On-Shift Good Part Production
 
+<figure><img src="../../.gitbook/assets/image (223).png" alt=""><figcaption></figcaption></figure>
+
 This template tracks the number of good parts produced during configured shift schedules and compares actual production against target output.
 
 > _Provides real-time visibility into production attainment and helps supervisors identify potential output shortfalls before shift completion._
@@ -47,6 +55,8 @@ This template tracks the number of good parts produced during configured shift s
 {% step %}
 ### Overall Production
 
+<figure><img src="../../.gitbook/assets/image (224).png" alt=""><figcaption></figcaption></figure>
+
 The Overall Production template tracks total production volume, including both good and bad parts, against planned production targets.
 
 > _Helps teams evaluate production volume trends and understand overall manufacturing output performance._
@@ -54,6 +64,8 @@ The Overall Production template tracks total production volume, including both g
 
 {% step %}
 ### Downtime vs Uptime
+
+<figure><img src="../../.gitbook/assets/image (225).png" alt=""><figcaption></figcaption></figure>
 
 Available in both machine-level and cell-level variants, this template compares productive operating time against downtime duration.
 
@@ -69,6 +81,8 @@ The visualization highlights:
 {% step %}
 ### JPH Time Series
 
+<figure><img src="../../.gitbook/assets/image (226).png" alt=""><figcaption></figcaption></figure>
+
 Available at both machine and cell levels, the JPH Time Series template provides detailed throughput analysis across production assets.
 
 The template includes:
@@ -83,6 +97,8 @@ The template includes:
 
 {% step %}
 ### OEE Time Series
+
+<figure><img src="../../.gitbook/assets/image (227).png" alt=""><figcaption></figcaption></figure>
 
 Available at both machine and cell levels, the OEE Time Series template provides a detailed breakdown of equipment effectiveness.
 
@@ -100,6 +116,8 @@ The template visualizes:
 {% step %}
 ### MTBF Time Series
 
+<figure><img src="../../.gitbook/assets/image (228).png" alt=""><figcaption></figcaption></figure>
+
 The Mean Time Between Failures (MTBF) template tracks the average operating duration between consecutive equipment failures over time.
 
 > _Provides insight into equipment reliability and helps maintenance teams identify deteriorating asset performance._
@@ -107,6 +125,8 @@ The Mean Time Between Failures (MTBF) template tracks the average operating dura
 
 {% step %}
 ### MTTR Time Series
+
+<figure><img src="../../.gitbook/assets/image (229).png" alt=""><figcaption></figcaption></figure>
 
 The Mean Time To Repair (MTTR) template tracks the average duration required to restore equipment following a failure event.
 
@@ -116,6 +136,8 @@ The Mean Time To Repair (MTTR) template tracks the average duration required to 
 {% step %}
 ### Bad Parts Pareto
 
+<figure><img src="../../.gitbook/assets/image (230).png" alt=""><figcaption></figcaption></figure>
+
 The Bad Parts Pareto template visualizes quality losses and highlights machines contributing most significantly to bad part production.
 
 > _Enables quality and production teams to prioritize corrective actions on the machines responsible for the majority of bad part production_
@@ -123,6 +145,8 @@ The Bad Parts Pareto template visualizes quality losses and highlights machines 
 
 {% step %}
 ### Bottleneck Impact
+
+<figure><img src="../../.gitbook/assets/image (231).png" alt=""><figcaption></figcaption></figure>
 
 The Bottleneck Impact template quantifies the effect of bottleneck machines and cells on availability, performance and stability
 

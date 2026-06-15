@@ -4,6 +4,8 @@
 
 Analytical Dashboards provide a flexible environment for exploring historical manufacturing data through custom visualizations.&#x20;
 
+<figure><img src="../../.gitbook/assets/image (232).png" alt=""><figcaption></figcaption></figure>
+
 Users can create tailored visualizations from a exhaustive list of operational KPIs, manufacturing parameters and custom formulas, allowing analysis to be aligned with specific business and operational objectives.
 
 ## Creating Custom Visualizations
@@ -14,6 +16,8 @@ Analytical Dashboards support the creation of custom graphs using historical pro
 {% step %}
 ### Graph definition
 
+<figure><img src="../../.gitbook/assets/image (233).png" alt=""><figcaption></figcaption></figure>
+
 Every graph begins with a descriptive name that provides context for the analysis
 
 > _Clear naming helps teams quickly identify the purpose of each visualization within the dashboard_
@@ -21,6 +25,8 @@ Every graph begins with a descriptive name that provides context for the analysi
 
 {% step %}
 ### Parameter selection
+
+<figure><img src="../../.gitbook/assets/image (234).png" alt=""><figcaption></figcaption></figure>
 
 Users can select from a broad range of manufacturing KPIs and operational parameters available within the platform. The selected parameter determines the operational behavior being analyzed.
 {% endstep %}
@@ -41,6 +47,8 @@ Analysis can be scoped to specific operational entities including:
 {% step %}
 ### Time-related configuration
 
+<figure><img src="../../.gitbook/assets/image (235).png" alt=""><figcaption></figcaption></figure>
+
 Users can configure how historical data is evaluated by selecting:
 
 * Date range
@@ -52,6 +60,8 @@ Users can configure how historical data is evaluated by selecting:
 
 {% step %}
 ### Visualization configuration
+
+<figure><img src="../../.gitbook/assets/image (236).png" alt=""><figcaption></figcaption></figure>
 
 Analytical Dashboards support multiple chart formats, enabling users to present information in a manner best suited to the data being evaluated.
 
@@ -67,6 +77,8 @@ Once configured, users can preview the visualization before saving it to the das
 
 {% step %}
 ### Custom formula analysis
+
+<figure><img src="../../.gitbook/assets/image (237).png" alt=""><figcaption></figcaption></figure>
 
 In addition to standard manufacturing KPIs, Analytics Dashboards support the creation of custom formulas which allow users to combine multiple parameters and mathematical operations to create organization-specific performance indicators.
 

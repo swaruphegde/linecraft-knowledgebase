@@ -13,6 +13,8 @@ Dashboards serve as the operational intelligence layer of the Linecraft platform
 
 They consolidate production, quality, downtime, and other crucial information into analytical workspaces, enabling teams to monitor manufacturing performance and identify emerging issues without navigating across multiple modules.
 
+<figure><img src="../../.gitbook/assets/image (217).png" alt=""><figcaption></figcaption></figure>
+
 Typical use cases include:
 
 * Monitoring production performance against targets
@@ -57,9 +59,9 @@ Template Dashboards provide pre-configured analytical views built around common 
 {% endstep %}
 
 {% step %}
-### Analytical Dashboards
+### Analysis Dashboards
 
-Analytical Dashboards provide a flexible environment for exploring manufacturing data through custom visualizations.
+Analysis Dashboards provide a flexible environment for exploring manufacturing data through custom visualizations.
 
 > _This enables teams to investigate specific business questions, analyze performance trends, and uncover relationships between different operational variables._
 {% endstep %}

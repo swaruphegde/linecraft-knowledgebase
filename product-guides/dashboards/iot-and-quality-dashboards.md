@@ -18,6 +18,8 @@ Each graph can be configured using a combination of process parameters, quality 
 {% step %}
 ### Graph definition
 
+<figure><img src="../../.gitbook/assets/image (238).png" alt=""><figcaption></figcaption></figure>
+
 Every visualization begins with a descriptive graph name that clearly communicates its analytical purpose.
 
 Examples include:
@@ -30,6 +32,8 @@ Examples include:
 
 {% step %}
 ### Parameter selection
+
+<figure><img src="../../.gitbook/assets/image (239).png" alt=""><figcaption></figcaption></figure>
 
 Users can select from available:
 
