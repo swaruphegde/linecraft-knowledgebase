@@ -17,6 +17,8 @@ layout:
     visible: true
   tags:
     visible: true
+  actions:
+    visible: true
 ---
 
 # 🛑 Bottlenecks
@@ -73,8 +75,6 @@ Once the PSS identifies these critical cycles and outlier nodes, it doesn't leav
 
 The bottlenecks module of Linecraft PSS enables you to understand the bottlenecks of your line, specifically, identify and analyze top bottleneck assets and why they are a bottleneck so that you can bring back your intended throughput without chasing invisible information.
 
-<figure><img src="../.gitbook/assets/Bottleneck main menu (2) (1).gif" alt=""><figcaption></figcaption></figure>
-
 It can be found from the main menu by choosing the 'Bottlenecks' option. Once you're inside the module, you can:
 
 1. View top bottleneck cells and assets
@@ -92,8 +92,6 @@ Bottleneck cells and their assets can be viewed in the summary section of the bo
 What is impact? It is the severity of the bottleneck entity in terms of availability, performance and stability. This is measured in %, taking into consideration the time the bottleneck makes adjacent cells or assets wait.
 
 > _This view helps you identify which cells and machines are the top bottlenecks of your production line and what is their impact on availability, performance and stability. This acts as the first step in your journey to identify and resolve bottlenecks._
-
-<figure><img src="../.gitbook/assets/Bottleneck list of critical cells.gif" alt=""><figcaption></figcaption></figure>
 
 To view bottleneck cells:
 
@@ -120,8 +118,6 @@ Each bottleneck cells displays:
    3. Stability impact
 {% endstep %}
 {% endstepper %}
-
-<figure><img src="../.gitbook/assets/Bottleneck list of critical machines.gif" alt=""><figcaption></figcaption></figure>
 
 Each bottleneck cell may have one or more bottleneck assets. To view bottleneck assets:
 
@@ -151,17 +147,11 @@ Each bottleneck asset displays:
 
 ### Bottleneck visualization
 
-<figure><img src="../.gitbook/assets/Bottleneck visualization.gif" alt=""><figcaption></figcaption></figure>
-
 You can visualize how long bottlenecks are making cells or assets wait. The cells across the line show the direction of waits and their relative excess wait times. Cells that are bottlenecks will be highlighted red. There can be multiple bottlenecks in an interval.
 
 > _By visualizing bottlenecks, you will be able to understand the exact wait times of a selected bottleneck. This step acts as the next step in drilling further into understanding your bottleneck entities._
 
 ### Bottleneck timeline
-
-<figure><img src="../.gitbook/assets/Bottleneck visualization (1).gif" alt=""><figcaption></figcaption></figure>
-
-
 
 Machines are not always a bottleneck. Leverage the bottleneck timeline to identify instances where the machine was a bottleneck and impacted the availability, performance or stability of your production line.
 
@@ -180,8 +170,6 @@ View availability, performance and stability impacts on the timeline, differenti
 {% endstepper %}
 
 ### Bottleneck verification
-
-<figure><img src="../.gitbook/assets/Bottleneck visualization (2).gif" alt=""><figcaption></figcaption></figure>
 
 Verifying a bottleneck helps in pointing out which assets are the problem in a specific interval and why
 
