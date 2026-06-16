@@ -25,7 +25,7 @@ You can view details of a machine for a specific period in the machine overview 
 
 On the same screen, you can change the time duration to view machine performance for a different period.&#x20;
 
-<figure><img src="../../.gitbook/assets/MM (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Landing Page (1).png" alt=""><figcaption></figcaption></figure>
 
 You can view all parameters of a machine by navigating to the parameters section. You can either opt to view the parameters in a table form or a graph form.&#x20;
 
