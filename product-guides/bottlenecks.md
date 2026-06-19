@@ -1,173 +1,250 @@
 ---
-description: >-
-  A deep dive into the various line level and asset level opportunities on your
-  line
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
 ---
 
-# ❗ Bottlenecks
+# 🛑 Bottlenecks
 
 ## Overview
 
-A cell or operation becomes a bottleneck when it throttles the line flow. This happens when both downstream and upstream cells wait for the cell in question.
+<figure><img src="../.gitbook/assets/image (172).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (47) (1).png" alt=""><figcaption></figcaption></figure>
+The Bottlenecks module helps manufacturing teams identify the assets, cells, processes, and operational conditions that restrict overall line throughput.
 
-The Linecraft bottlenecks algorithm abstracts away internal asset efficiency and wait times and aggregates serial and parallel paths within a cell.
+Production lines rarely lose performance because of a single catastrophic failure. More often, throughput is constrained by subtle inefficiencies that are difficult to detect through traditional manufacturing methods.
 
-<figure><img src="../.gitbook/assets/image (48) (1).png" alt=""><figcaption></figcaption></figure>
+The Bottlenecks module analyzes production behavior to uncover these hidden constraints, helping teams understand not only where throughput is being lost, but also why the loss is occurring and how it impacts the rest of the line.
 
-You can access the bottlenecks module from the main menu by clicking on the “Bottlenecks” card
+Typical use cases include:
 
-<figure><img src="../.gitbook/assets/image (49) (1).png" alt=""><figcaption></figcaption></figure>
+* Identifying throughput constraints
+* Understanding production instability
+* Investigating recurring wait conditions
+* Analyzing synchronization losses
+* Prioritizing improvement opportunities
+* Validating the impact of bottleneck assets
+* Recovering hidden production capacity
 
-The bottlenecks page consists of bottleneck cells’ summary, bottleneck visualization and bottleneck causes’ timeline.
 
-#### Bottleneck cells' summary
 
-The bottlenecks cell summary section shows you a list of all the cells that are bottlenecks on your line, ranked from most impact to least impact. Impact is the severity or magnitude of bottleneck in terms of the percentage of time it makes the adjacent cells wait. Bottleneck cells can be viewed at different intervals. To view the best results for bottlenecks, select 2 weeks interval from the calendar dropdown. This is the default date range as well.
+<details>
 
-Each cell in this list provides you the following information:
+<summary>What are bottlenecks?</summary>
 
-1. Name of the cell
-2. JPH loss when the cell was a bottleneck
-3. Bottleneck hours: Time (in hours) when the cell was a bottleneck
-4. Bottleneck impact: Impact on availability, performance and quality during bottleneck hours of the cell
+### Introduction to Bottlenecks in PSS
 
-<figure><img src="../.gitbook/assets/image (50) (1).png" alt=""><figcaption></figcaption></figure>
+Imagine you are managing a Cylinder Head Subassembly Line. You walk the factory floor, and everything seems to be running smoothly - the machines are moving, the lights are green and parts are rolling off the conveyor. But when you check the daily reports, your total throughput isn't hitting the expected target.
 
-Each bottleneck cell may have one or more bottleneck assets. To view these assets the their details, you can click on the “View bottleneck assets” button on the list of bottleneck cells. The number in parentheses highlights the number of bottleneck assets of the bottleneck cell.
+Where is the lost time going?
 
-<figure><img src="../.gitbook/assets/image (51) (1).png" alt=""><figcaption></figcaption></figure>
+In Linecraft's Productivity Synthesis System (PSS), a bottleneck isn't just a broken machine with a blaring siren. It is often an invisible mismatch in timing - any asset or cycle that secretly limits your overall line throughput. To find it, PSS acts as a detective, analyzing the temporal behavior of your entire line to find hidden inefficiencies and opportunities to resolve them.&#x20;
 
-The view opportunities button will show you the opportunities to reduce the impact of the selected bottleneck cell or asset.&#x20;
+***
 
-#### Bottleneck visualization
+#### What is a bottleneck?
 
-Bottleneck visualization shows how long the bottleneck is making the other cells wait. The cells across the line show the direction of waits and their relative excess wait times. Cells that are bottlenecks will be highlighted red. There can be multiple bottlenecks in an interval.
+<figure><img src="../.gitbook/assets/image (167).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (52) (1).png" alt=""><figcaption></figcaption></figure>
+In the context of PSS, a bottleneck is any asset, cell, process, cycle or state that limits your overall throughput. While the physical line might seem to be running smoothly, microscopic delays, mismatched timings and wait states cascade through the system, ultimately dictating the maximum speed of your entire production.
 
-#### Bottleneck causes timeline
+_Example of a bottleneck: An asset becomes a bottleneck when it makes both its upstream and downstream assets wait for it_
 
-The timeline indicates all the intervals in which the selected cell is a bottleneck. The colors correspond to the cause of the cell being a bottleneck.
+***
 
-<figure><img src="../.gitbook/assets/image (53) (1).png" alt=""><figcaption></figcaption></figure>
+#### Why managing bottlenecks matters
 
-The legend to understand the colors denoted in the timeline are as follows:
+An unmanaged bottleneck does more than just slow down a single machine. It causes upstream machines to become blocked (unable to pass parts forward) and downstream machines to become starved (idling while waiting for parts).&#x20;
 
-<figure><img src="../.gitbook/assets/image (54) (1).png" alt=""><figcaption></figcaption></figure>
+By identifying and resolving these hidden constraints, you can synchronize the entire line, unlocking hidden capacity without needing to add new hardware.
 
-#### Bottleneck verification
+***
 
-Clicking on verify from the timeline for a cell or an interval will show an asset diagram with the self-performance and availability of each asset as well as the adjacent waits for the selected cell and interval. This helps point out which asset or assets are the problem in that interval and why.
+#### How PSS identifies bottlenecks
 
-<figure><img src="../.gitbook/assets/image (55) (1).png" alt=""><figcaption></figcaption></figure>
+The PSS does not just look for broken machines; it analyzes the temporal behavior of your entire line to find inefficiencies. The module highlights bottlenecks using three primary indicators:
 
-Hover on an asset to view its availability, self performance and totals waits.
+* Critical Cycles: The system analyzes the "minimum" time requirements for all cycles and identifies the "critical" cycles. These are the cycles with the highest minimum timing, meaning they are the baseline steps that fundamentally limit your total throughput.
+* Outlier Nodes: The PSS flags nodes that consistently perform outside of defined conditions. A node is considered an outlier if it takes the most time to perform its states without interactions, or if it is constantly unavailable due to being dependent on another asset.
+* Wait States and Synchronization Loss: Bottlenecks frequently occur when assets fall out of rhythm. The system actively identifies "wait states" (when an asset is delayed while waiting for another asset) and detects losses of synchronization between interlinked machines.
 
-<figure><img src="../.gitbook/assets/image (56) (1).png" alt=""><figcaption></figcaption></figure>
+Our bottlenecks algorithm abstracts away internal asset efficiency and wait times and aggregates serial and parallel paths within a cell
 
-If you select 1 asset from the total waits diagram, you will see drilldowns for cycles and downtime details. These will take you to the cycles and downtime details for the selected asset in the selected interval.
+Once the PSS identifies these critical cycles and outlier nodes, it doesn't leave you guessing. The system provides opportunities designed to synchronize operations between assets.
 
-<figure><img src="../.gitbook/assets/image (57) (1).png" alt=""><figcaption></figcaption></figure>
+</details>
 
-If you select 2 or more assets from the total waits diagram, you will see a drilldown for interactions. This will take you to the interactions for the selected assets in the selected interval.
+## Why Bottleneck Management Matters
 
-<figure><img src="../.gitbook/assets/image (58) (1).png" alt=""><figcaption></figcaption></figure>
+An unmanaged bottleneck affects more than the constrained machine itself. As bottlenecks develop, they exponentially introduce losses throughout the production system:
 
-## Bottleneck opportunities
+{% stepper %}
+{% step %}
+### Upstream blocking
 
-Opportunities show the potential causes for bottlenecks on the line, and suggestions on how to fix them, with the objective of improving the efficiency of the line.
+Machines are unable to transfer completed work and accumulate unnecessary waiting time
+{% endstep %}
 
-<figure><img src="../.gitbook/assets/image (59) (1).png" alt=""><figcaption></figcaption></figure>
+{% step %}
+### Downstream starvation
 
-Opportunity cards describe the opportunities pertaining to the asset within the bottleneck cell, the type of opportunity as well as the potential impact of addressing the opportunity. By default when a cell is selected, opportunities for the first asset will be shown.
+Machines remain idle while waiting for material from constrained processes or machines
+{% endstep %}
 
-There are majorly three types of opportunity cards. These are:
+{% step %}
+### JPH reduction
 
-#### Availability opportunities
+The maximum production capacity of the line becomes limited by the bottleneck entity.
+{% endstep %}
 
-Availability opportunities are down time opportunities that are caused by assets in a cell being down and unavailable to produce. These generally explain the root cause of bottlenecks but are not necessarily actionable.<br>
+{% step %}
+### Production instability
 
-To drilldown into an availability opportunity, click on the card pertaining to availability opportunities for the selected asset. This will open a section that shows you all the hour intervals in which the selected asset faced a downtime along with the total number of downtimes in that hour and the total downtime duration.
+Variability increases as machines repeatedly transition between operating and waiting conditions.
+{% endstep %}
+{% endstepper %}
 
-\
-From here, you can select an interval and move into downtime details from the button available below. This will take you to the downtime details page for the selected hour.
+> _By identifying and resolving bottlenecks, organizations can improve throughput, stabalize production and unlock hidden capacities without additional capital investment._
 
-<figure><img src="../.gitbook/assets/image (60) (1).png" alt=""><figcaption></figcaption></figure>
+## Understanding Bottleneck Impact
 
-#### Stability opportunities
+Every bottleneck identified by PSS is ranked according to its operational impact on availability, performance and stability of your line. Impact represents the severity of the bottleneck and quantifies how significantly it influences production performance.
 
-There are two major types of stability opportunities. These are stuck states and stoppages.\
-Stuck states are events in which an asset is cycling but gets interlocked in a suboptimal state.&#x20;
+Impact is further categorized into:
 
-To drilldown into a stuck state opportunity, click on the card pertaining to this opportunity for the selected asset. This will open a section that shows you all the hour intervals in which the selected asset faced a stuck state along with the total number of stuck states in that hour and the total stuck state duration.&#x20;
+{% stepper %}
+{% step %}
+### Availability impact
 
-From here, you can select an interval and move into stuck states from the button available below.
+Losses caused by machine unavailability and production interruptions
+{% endstep %}
 
-<figure><img src="../.gitbook/assets/image (61) (1).png" alt=""><figcaption></figcaption></figure>
+{% step %}
+### Performance impact
 
-This will open the cycles page for the selected hour, with the stuck state/s highlighted.
+Losses caused by reduced operating speed or extened cycle execution
+{% endstep %}
 
-<figure><img src="../.gitbook/assets/image (62) (1).png" alt=""><figcaption></figcaption></figure>
+{% step %}
+### Stability impact
 
-Stoppages are events where an asset is down for 15 minutes or less. To drilldown into a stoppage opportunity, click on the card pertaining to this opportunity for the selected asset.&#x20;
+Losses caused by operational variability, synchronization issues, and inconsistent production behavior.
+{% endstep %}
+{% endstepper %}
 
-This will open a section that shows you all the hour intervals in which the selected asset faced a stoppage along with the total number of stoppages in that hour and the total stoppage duration. From here, you can select an interval and move into stoppages from the button available below.
+> _This classification helps teams understand not only where throughput is being lost, but also the primary mechanism responsible for the loss._
 
-<figure><img src="../.gitbook/assets/image (63) (1).png" alt=""><figcaption></figcaption></figure>
+## Bottleneck Summary
 
-This will open the downtimes page for the selected hour, with the stoppage/s highlighted.
+<figure><img src="../.gitbook/assets/image (243).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (64) (1).png" alt=""><figcaption></figcaption></figure>
+The Bottlenecks module provides a ranked view of the cells and machines that most significantly constrain production.
 
-#### Performance opportunities
+For each bottleneck entity, users can review:
 
-**Static delays**
+* Bottleneck severity
+* JPH loss
+* Bottleneck hours
+* Impact on availability, performance and stability
 
-Conditions in which the asset is waiting between operations, usually a delay that is added by the PLC programmers that can be eliminated. To drilldown into a Static Delays opportunity, click on the card pertaining to this opportunity for the selected asset. This will open a section that shows you the state histogram for all the states in the cycles of the selected asset along with each states num instances, modes, means and standard deviations.
+> _This serves as the starting point for identifying the highest-value improvement opportunities within the production system._
 
-<figure><img src="../.gitbook/assets/image (77).png" alt=""><figcaption></figcaption></figure>
+## Bottleneck Visualization
 
-From here, you can select a state and click on A/B comparison to compare a fast and slow cycle for the selected state.
+<figure><img src="../.gitbook/assets/image (244).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (69).png" alt=""><figcaption></figcaption></figure>
+Understanding a bottleneck requires more than identifying the constrained asset.
 
-#### Variable cycle times
+The Bottleneck Visualization illustrates how bottlenecks affect the surrounding production system by displaying:
 
-Cycles for the same asset are taking variable amounts of time. This indicates that the same operation can be performed more optimally (in the faster cycles). The fast and slow cycles can be compared to exploit this opportunity. To drilldown into a Static Delays opportunity, click on the card pertaining to this opportunity for the selected asset. This will open a section that shows you the state histogram for all the states in the cycles of the selected asset along with each states num instances, modes, means and standard deviations.
+* Wait directions
+* Relative wait durations
+* Asset dependencies
+* Bottleneck propagation across the line
 
-<figure><img src="../.gitbook/assets/image (70).png" alt=""><figcaption></figcaption></figure>
+> _Entities identified as bottlenecks are visually highlighted, allowing users to quickly understand how a localized constraint influences broader production behavior._
 
-From here, you can select a state and click on A/B comparison to compare a fast and slow cycle for the selected state.
+## Bottleneck Timeline
 
-<figure><img src="../.gitbook/assets/image (71).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (245).png" alt=""><figcaption></figcaption></figure>
 
-#### Interface delays
+Assets are not permanently constrained. A machine may operate normally during one period and become a bottleneck during another.
 
-When assets are exchanging signals there are often delays and interlocks programmed into the system. These delays can be removed to improve the cycle time of both interfacing assets. To drilldown into an Interface delays opportunity, click on the card pertaining to this opportunity for the selected asset. This will open a section that shows you all the hour intervals in which the selected asset faced an Interface delay along with the start time and end time for the interval.
+The Bottleneck Timeline highlights the specific intervals during which an asset impacts line performance.
 
-<figure><img src="../.gitbook/assets/image (72).png" alt=""><figcaption></figcaption></figure>
+Users can investigate:
 
-From here, you can select an interval and move into interactions from the button available below. This will show you the interaction graph between the selected asset and the asset it is facing interaction delays with.
+* Availability-related bottlenecks
+* Performance-related bottlenecks
+* Stability-related bottlenecks
 
-<figure><img src="../.gitbook/assets/image (73).png" alt=""><figcaption></figcaption></figure>
+> _Timeline visualization helps teams understand when bottlenecks occur and how frequently they affect production._
 
-#### Cyclical walls
+## Bottleneck Verification
 
-It is sometimes observed that assets are simultaneously waiting on each other - either directly or through a chain of waits. This indicates that the assets are sub optimally programmed to work together. Typical root causes for this type of opportunity are :
+<figure><img src="../.gitbook/assets/image (246).png" alt=""><figcaption></figcaption></figure>
 
-* Sub-optimal priority logic for common zones
-* Sub-optimal wait positions for automation
+Identifying a bottleneck is only the first step.
 
-To drilldown into a Cyclical Waits opportunity, click on the card pertaining to this opportunity for the selected asset. This will open a section that shows you all the hour intervals in which the selected asset faced Cyclical Waits along with the start time and end time for the interval.
+Verification enables users to understand the underlying reasons an asset became a bottleneck during a specific production interval.
 
-<figure><img src="../.gitbook/assets/image (74).png" alt=""><figcaption></figcaption></figure>
+For a selected bottleneck and timeframe, users can analyze:
 
-From here, you can select an interval and move into interactions from the button available below. This will show you the interaction graph between the selected asset and the asset it is facing cyclical waits with.
+* Asset availability
+* Self-performance
+* Adjacent wait conditions
+* Cycle behavior
+* Downtime events
+* Asset interactions
 
-<figure><img src="../.gitbook/assets/image (75).png" alt=""><figcaption></figcaption></figure>
+> _Verification provides a detailed operational view of the production environment at the moment the bottleneck occurred._
 
-#### Interaction wait delays
+## Cycle and Downtime Analysis
 
-There are sometimes delays programmed into the asset while interfacing with other assets. This means that even after the asset has been given the go-ahead to process a part / release a part, it still waits for a time before performing the action. These delays can be removed to improve the cycle time.
+<figure><img src="../.gitbook/assets/image (247).png" alt=""><figcaption></figcaption></figure>
+
+Users can drill into cycle and downtime information to identify:
+
+* Fault conditions
+* Performance degradation
+* Extended cycle execution
+* Operational interruptions
+
+## Best Practices
+
+### Prioritize impact before frequency
+
+The most frequently occurring issue is not always the most important. Focus first on bottlenecks with the highest throughput impact.
+
+### Investigate wait conditions
+
+Bottlenecks often reveal themselves through excessive waiting behavior in adjacent assets. Review blocking and starvation patterns alongside asset performance.
+
+### Verify before acting
+
+A bottleneck asset is often a symptom rather than the root cause. Use verification and interaction analysis to understand the full operational context before implementing corrective actions.
+
+### Track improvement over time
+
+After implementing changes, continue monitoring bottleneck behavior to validate whether throughput constraints have been successfully reduced.
+
+## Operational Outcome
+
+The Bottlenecks module transforms hidden production constraints into actionable operational intelligence.
+
+By identifying throughput-limiting assets, quantifying their impact, visualizing their influence across the production system, and enabling detailed root-cause investigation, the module helps manufacturing teams improve synchronization, recover hidden capacity, and maximize overall line performance.

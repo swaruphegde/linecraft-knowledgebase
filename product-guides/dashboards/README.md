@@ -2,7 +2,6 @@
 description: >-
   Walkthrough of the various types of dashboards that Linecraft provides and how
   they work
-hidden: true
 ---
 
 # 📊 Dashboards
