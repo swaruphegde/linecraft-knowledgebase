@@ -153,6 +153,8 @@ Losses caused by operational variability, synchronization issues, and inconsiste
 
 ## Bottleneck Summary
 
+<figure><img src="../.gitbook/assets/image (243).png" alt=""><figcaption></figcaption></figure>
+
 The Bottlenecks module provides a ranked view of the cells and machines that most significantly constrain production.
 
 For each bottleneck entity, users can review:
@@ -165,6 +167,8 @@ For each bottleneck entity, users can review:
 > _This serves as the starting point for identifying the highest-value improvement opportunities within the production system._
 
 ## Bottleneck Visualization
+
+<figure><img src="../.gitbook/assets/image (244).png" alt=""><figcaption></figcaption></figure>
 
 Understanding a bottleneck requires more than identifying the constrained asset.
 
@@ -179,6 +183,8 @@ The Bottleneck Visualization illustrates how bottlenecks affect the surrounding 
 
 ## Bottleneck Timeline
 
+<figure><img src="../.gitbook/assets/image (245).png" alt=""><figcaption></figcaption></figure>
+
 Assets are not permanently constrained. A machine may operate normally during one period and become a bottleneck during another.
 
 The Bottleneck Timeline highlights the specific intervals during which an asset impacts line performance.
@@ -192,6 +198,8 @@ Users can investigate:
 > _Timeline visualization helps teams understand when bottlenecks occur and how frequently they affect production._
 
 ## Bottleneck Verification
+
+<figure><img src="../.gitbook/assets/image (246).png" alt=""><figcaption></figcaption></figure>
 
 Identifying a bottleneck is only the first step.
 
@@ -209,6 +217,8 @@ For a selected bottleneck and timeframe, users can analyze:
 > _Verification provides a detailed operational view of the production environment at the moment the bottleneck occurred._
 
 ## Cycle and Downtime Analysis
+
+<figure><img src="../.gitbook/assets/image (247).png" alt=""><figcaption></figcaption></figure>
 
 Users can drill into cycle and downtime information to identify:
 
