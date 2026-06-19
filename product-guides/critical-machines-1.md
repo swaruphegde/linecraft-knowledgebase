@@ -103,6 +103,8 @@ The Critical Machine module provides multiple analytical views that help teams u
 {% step %}
 ### Self-performance analysis
 
+<figure><img src="../.gitbook/assets/image (251).png" alt=""><figcaption></figcaption></figure>
+
 Self-performance evaluates how efficiently an asset executes its own production cycles and highlights cycle distribution, over-cycling events, lost production time and cycle variability
 
 > _Helps identify machine-level inefficiencies that directly impact production output._
@@ -111,13 +113,17 @@ Self-performance evaluates how efficiently an asset executes its own production 
 {% step %}
 ### Total performance analysis
 
+<figure><img src="../.gitbook/assets/image (249).png" alt=""><figcaption></figcaption></figure>
+
 Total performance evaluates production behavior while considering interactions with adjacent assets and provides visibility into end-to-end cycle behavior, interaction-driven delays and system-level performance losses
 
-> _Helps distinguish machine inefficiences from losses caused by broader production system interactions._
+> _Helps distinguish machine inefficiencies from losses caused by broader production system interactions._
 {% endstep %}
 
 {% step %}
 ### Downtime analysis
+
+<figure><img src="../.gitbook/assets/image (252).png" alt=""><figcaption></figcaption></figure>
 
 Downtime analysis provides visibility into both the frequency and duration of downtime events. Users can investigate:
 
@@ -126,11 +132,15 @@ Downtime analysis provides visibility into both the frequency and duration of do
 * Downtime causes
 * Production interruptions
 
+<figure><img src="../.gitbook/assets/image (255).png" alt=""><figcaption></figcaption></figure>
+
 > _Supports_ _analysis of availability-related production losses._
 {% endstep %}
 
 {% step %}
 ### Quality analysis
+
+<figure><img src="../.gitbook/assets/image (254).png" alt=""><figcaption></figcaption></figure>
 
 Quality analysis evaluates rejected production and bad part generation over time and helps teams identify:
 
