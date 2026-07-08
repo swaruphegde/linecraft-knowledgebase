@@ -28,6 +28,8 @@ Condition Monitoring helps answer questions such as:
 
 ### Alerts overview
 
+<figure><img src="../.gitbook/assets/image (256).png" alt=""><figcaption></figcaption></figure>
+
 The overview page provides a consolidated view of alert activity across any production line, helping users quickly asses operational health and identify areas requiring attention.
 
 The dashboard includes insights such as:
@@ -40,6 +42,8 @@ The dashboard includes insights such as:
 > _By default, the overview displays data from the previous week, allowing users to review recent production behavior while also supporting configurable time ranges for broader operational analysis._
 
 ### Creating Alerts
+
+<figure><img src="../.gitbook/assets/image (257).png" alt=""><figcaption></figcaption></figure>
 
 Alerts are configured by defining the operational conditions that trigger a notification. Each alert consists of several configurable components that determine:
 
@@ -100,6 +104,8 @@ This ensures the right personnel receive timeline information whenever monitored
 
 ## Managing Alerts
 
+<figure><img src="../.gitbook/assets/image (258).png" alt=""><figcaption></figcaption></figure>
+
 The "My Alerts" section provides a centralized workspace for managing personally configured alerts.
 
 Users can:
@@ -114,6 +120,8 @@ Users can:
 
 ## Team Alerts
 
+<figure><img src="../.gitbook/assets/image (259).png" alt=""><figcaption></figcaption></figure>
+
 Manufacturing operations often require multiple teams to collaborate around shared production responsibilities.
 
 The Team Alerts section displays alerts configured by other users and shared with the current user.
@@ -125,6 +133,8 @@ Users can:
 * Filter and organize shared monitoring rules
 
 ## Alert History
+
+<figure><img src="../.gitbook/assets/image (260).png" alt=""><figcaption></figcaption></figure>
 
 Alert History provides a chronological record of all alerts triggered during a selected period.
 
@@ -145,9 +155,25 @@ When configured conditions are met, Condition Monitoring automatically delivers 
 
 Supported notification methods include:
 
-* In-app notifications
-* Email notifications
-* SMS notifications
+{% stepper %}
+{% step %}
+### In-app notifications
+
+<figure><img src="../.gitbook/assets/image (263).png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
+
+{% step %}
+### Email notifications
+
+<figure><img src="../.gitbook/assets/image (264).png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
+
+{% step %}
+### SMS notifications
+
+<figure><img src="../.gitbook/assets/image (265).png" alt="" width="375"><figcaption></figcaption></figure>
+{% endstep %}
+{% endstepper %}
 
 > _Delivering alerts through multiple channels helps ensure critical operational events reach the appropriate personnel without delay._
 
