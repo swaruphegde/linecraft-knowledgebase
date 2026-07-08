@@ -1,117 +1,180 @@
----
-description: Configure alerts for conditions that you would like to track
----
-
-# 🔔 Condition monitoring
+# 🔔 Condition Monitoring
 
 ## Overview
 
-Condition monitoring allows the user to set up alerts for conditions that they would like to be alerted about.&#x20;You can access condition monitoring from the main menu by clicking the "Condition Monitoring" module.
+The Condition Monitoring module enables teams to proactively monitor production conditions by configuring alerts for critical operational events and process parameters.
 
-<figure><img src="../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
+Rather than relying on manual observation or post-production analysis, Condition Monitoring continuously evaluates configured conditions and notifies relevant personnel whenever predefined thresholds or events occur.
 
-The overview tab displays a summarized view of the following, pertaining to the alerts that have been set up:
+By providing timely notifications and historical alert insights, the module helps teams detect abnormalities early, reduce response times, and minimize the operational impact of equipment failures, process deviations, and quality issues.
 
-1. List of recently triggered alerts
-2. Trend of alerts triggered over time
-3. Top parameters on which alerts were triggered
-4. Top 5 assets that triggered the most alerts
-5. Top 5 cells that triggered the most alerts
+## Why use Condition Monitoring?
 
-This tab will give a quick overview about configured alerts and help you understand which areas to focus on and if there is an overall improvement of their lines or not.&#x20;
+Manufacturing issues often begin as small deviations before developing into larger production problems.
 
-{% hint style="info" %}
-If no alerts have been set up, then the overview screen will be empty&#x20;
-{% endhint %}
+Unexpected increases in temperature, abnormal cycle times, excessive downtime, or declining process performance may not immediately affect production output but can quickly escalate if left unnoticed.
 
-By default, you will be displayed the above information for the last 7 days. You can change the range of the data by selecting any one of the following options from the date range option:
+Condition Monitoring helps answer questions such as:
 
-1. Today - by hour
-2. Last 7 days - by day
-3. Last 14 days - by day
-4. Last month - by day
-5. Last quarter - by month
+* Which operational conditions require immediate attention?
+* Which assets are generating the most alerts?
+* Are alert occurrences increasing over time?
+* Which process parameters are most unstable?
+* Are recurring alerts indicating a larger operational issue?
 
-You will be able to create a new alert by clicking the "Create alert" button on the overview section.&#x20;
+> _By continuously monitoring production conditions, the module enables teams to respond proactively rather than reacting after production performance has already been affected._
 
-<figure><img src="../.gitbook/assets/Alerts Stats.png" alt=""><figcaption></figcaption></figure>
+## Understanding Condition Monitoring
 
-## Creating an alert
+### Alerts overview
 
-You will be displayed the alert creation screen when they click on the “Create alert” button on the overview screen. You can set up alerts by entering the following information: <br>
+The overview page provides a consolidated view of alert activity across any production line, helping users quickly asses operational health and identify areas requiring attention.
 
-1. Group name for the alert being configured – this is used to classify various types of alerts
-2. Trigger conditions for the alert – you can select the following conditions for triggering the alert
-   1. Parameter on which the alert will be based&#x20;
-   2. Level of the alert – Line, cell, asset or sub-assembly (You can select multiple or all entities)&#x20;
-   3. Condition and frequency – Determines when to trigger the alert&#x20;
-3. Once the alert conditions are set, you can select the channels/people to send the alerts to
-4. Once an alert has been created, you can view alerts that you have created under the “My Alerts” tab
+The dashboard includes insights such as:
 
-<figure><img src="../.gitbook/assets/Multi-condition.png" alt=""><figcaption></figcaption></figure>
+* Recently triggered alerts
+* Alert trends over time
+* Parameters generating the highest number of alerts
+* Assets and cells which trigger the most alerts
 
-<figure><img src="../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
+> _By default, the overview displays data from the previous week, allowing users to review recent production behavior while also supporting configurable time ranges for broader operational analysis._
 
-## My alerts
+### Creating Alerts
 
-The “My alerts” tab lists the alerts created by you and serves as a dedicated space to manage your alerts. You will be displayed an empty state when there are no alerts set up with a button to create their first alert. Clicking on this button will redirect you to the create alert screen&#x20;
+Alerts are configured by defining the operational conditions that trigger a notification. Each alert consists of several configurable components that determine:
 
-You can view the list of alerts either by group name or by level. By default, view by group name will be selected. &#x20;
+* What is monitored
+* When it is monitored
+* When notifications should be sent
 
-**View by group name**&#x20;
+{% stepper %}
+{% step %}
+### Alert group
 
-Along with viewing the list of alerts, you can sort and filter the list. By default, the list will be sorted by ascending order of group name without any filters&#x20;
+Alerts can be organized into groups to simplify management and classify similar monitoring objectives.
 
-You can modify or delete existing alerts by clicking on the modify action from the list of alerts&#x20;
+Grouping related alerts makes it easier to manage large monitoring environments and maintain consistency across production lines.
+{% endstep %}
 
-You can delete an alert group (all alerts that are part of the group) from the “delete group” button from the list of alerts.
+{% step %}
+### Monitoring parameters
 
-<figure><img src="../.gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
+Alerts can be configured using the production parameters most relevant to operational performance.
 
-**View by level**&#x20;
+The selected parameter becomes the condition continuously monitored by the system
+{% endstep %}
 
-The “My alerts” tab lists down alerts created by you with the following information and options, grouped by the level of alerts&#x20;
+{% step %}
+### Monitoring scope
 
-Like group name view, you can sort and filter the list of alerts. By default, they will be sorted by ascending order of level without any filters&#x20;
+Alerts can be applied across different production levels, including:
 
-Unlike the group name view, you can only modify an alert. You will, however, not be able to delete an alert or an alert group from the level view of the list&#x20;
+* Production lines
+* Cells
+* Assets
+* Sub-assemblies
 
-<figure><img src="../.gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
+> _This flexibility enables organizations to monitor conditions at both high-level production areas and individual equipment._
+{% endstep %}
 
-## Team alerts
+{% step %}
+### Trigger conditions
 
-The team alerts tab displays the list of alerts that other users have set for you. If no alert has been set by others, then they will be displayed an empty screen. &#x20;
+Trigger conditions determine when an alert should be generated. Users can define the evaluation criteria, threshold conditions and monitoring frequency based on operational requirements.
 
-Alerts set by others will be displayed with the following information under the “Team alerts” section. &#x20;
+> _These configurations ensure alerts are generated only when meaningful production events occur._
+{% endstep %}
 
-You will have the option to sort and filter the list of team alerts. By default, the sorting will be on ascending order of group name and no filters will be applied. &#x20;
+{% step %}
+### Notification recipients
 
-You can also enable/disable alerts from the list.
+Once monitoring conditions have been configured, alerts can be assigned to the appropriate recipients and communication channels. Notifications can be delivered through:
 
-<figure><img src="../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>
+* In-app notifications
+* Email
+* SMS
 
-## Alert history
+This ensures the right personnel receive timeline information whenever monitored conditions require attention.
+{% endstep %}
+{% endstepper %}
 
-The alert history tab lists all received alerts for the specified date range.  If no alerts have been received for the specified date range, then you will be displayed an empty screen.&#x20;
+## Managing Alerts
 
-If you received alerts for the specified date range, then you will be displayed the list of alerts with the following information.&#x20;
+The "My Alerts" section provides a centralized workspace for managing personally configured alerts.
 
-You can sort and filter the list of received alerts. By default, the alerts will be sorted on descending order of start time and no filters will be applied.&#x20;
+Users can:
 
-Whenever there are new alerts, then a “Load new alerts” button will be available to you, through which they can sync alerts and update their alerts history to the latest.&#x20;
+* Review configured alerts
+* Organize alerts by group or production level
+* Modify monitoring conditions
+* Delete alert groups
+* Update notification settings
 
-<figure><img src="../.gitbook/assets/All Alerts.png" alt=""><figcaption></figcaption></figure>
+> _This workspace helps ensure monitoring configurations remain aligned with changing operational requirements._
 
-## Alert notifications
+## Team Alerts
 
-Whenever an alert is triggered, then all recipient you will get: &#x20;
+Manufacturing operations often require multiple teams to collaborate around shared production responsibilities.
 
-1. An in-app notification (if configured)&#x20;
-2. SMS (if configured)
-3. Email (if configured)
+The Team Alerts section displays alerts configured by other users and shared with the current user.
 
-<figure><img src="../.gitbook/assets/image (58).png" alt=""><figcaption><p>In-app notification</p></figcaption></figure>
+Users can:
 
-<figure><img src="../.gitbook/assets/image (59).png" alt=""><figcaption><p>Email</p></figcaption></figure>
+* Review assigned alerts
+* Enable or disable notifications
+* Filter and organize shared monitoring rules
 
-<figure><img src="../.gitbook/assets/image (60).png" alt="" width="188"><figcaption><p>SMS</p></figcaption></figure>
+## Alert History
+
+Alert History provides a chronological record of all alerts triggered during a selected period.
+
+Historical alert analysis helps teams investigate recurring operational issues, identify production trends, and validate the effectiveness of corrective actions.
+
+Users can review:
+
+* Alert occurrences
+* Trigger times
+* Alert status
+* Historical activity over configurable time periods
+
+> _New alerts can be synchronized directly from the history view to ensure investigations always include the latest production events._
+
+## Alert Notifications
+
+When configured conditions are met, Condition Monitoring automatically delivers notifications through the selected communication channels.
+
+Supported notification methods include:
+
+* In-app notifications
+* Email notifications
+* SMS notifications
+
+> _Delivering alerts through multiple channels helps ensure critical operational events reach the appropriate personnel without delay._
+
+## Best Practices
+
+### Monitor critical conditions
+
+Configure alerts for parameters that have a direct impact on production, equipment reliability, and product quality rather than monitoring every available metric.
+
+### Avoid alert fatigue
+
+Define meaningful thresholds that minimize unnecessary notifications while ensuring important operational events are never overlooked.
+
+### Organize alerts logically
+
+Group alerts by production area, asset type, or operational objective to simplify management and improve visibility.
+
+### Review alert trends regularly
+
+Recurring alerts often indicate underlying process issues rather than isolated events. Use the Overview and Alert History pages to identify patterns that require long-term corrective action.
+
+### Keep alert ownership updated
+
+Regularly review notification recipients to ensure alerts reach the teams responsible for responding to production events.
+
+## Operational Outcome
+
+The Condition Monitoring module transforms operational conditions into proactive manufacturing intelligence.
+
+By continuously monitoring production parameters, notifying the appropriate teams when abnormal conditions occur, and providing historical visibility into alert activity, the module helps organizations detect issues earlier, reduce response times, improve operational stability, and prevent small deviations from developing into significant production losses.
