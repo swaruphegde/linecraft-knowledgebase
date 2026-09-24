@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # 🛡️ Application administration
 
 **Overview**&#x20;
